@@ -1,0 +1,3 @@
+.communityBtn:hover > div {
+    border-color: var(--primary);
+}
