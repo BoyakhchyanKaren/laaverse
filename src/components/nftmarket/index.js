@@ -1,4 +1,4 @@
-import NftBanner from './nftBanner';
+import { NftBanner } from './nftBanner';
 import { TopSeller } from './topseller';
 import { TopCollection } from './topcollection';
 import { SellNfts } from './sellnfts';
