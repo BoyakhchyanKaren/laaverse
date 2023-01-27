@@ -22,7 +22,9 @@ export const TopCollectionItems = () => {
                   By<ByJonson> Jonson</ByJonson>
                 </ByJonson1>
               </Group3>
-              <Image2 src={`https://file.rendit.io/n/PnkkUXhoDFcxgSpoAmxS.svg`} />
+              <button>
+                <Image2 src={`https://file.rendit.io/n/PnkkUXhoDFcxgSpoAmxS.svg`} />
+              </button>
             </Group>
             <Images1 src={`https://file.rendit.io/n/0AcxzlyKsRhH8x7Vpk4r.png`} />
             <Group1>
@@ -36,7 +38,9 @@ export const TopCollectionItems = () => {
                 <Element4 />
               </Group4>
               <Group5>
-                <Image4 src={`https://file.rendit.io/n/IoKejSjojfKF2dfETYwM.svg`} />
+                <button>
+                  <Image4 src={`https://file.rendit.io/n/IoKejSjojfKF2dfETYwM.svg`} />
+                </button>
                 <Text5>50</Text5>
               </Group5>
             </Group2>
@@ -77,7 +81,9 @@ export const TopCollection = () => {
                     By<ByJonson> Jonson</ByJonson>
                   </ByJonson1>
                 </Group3>
-                <Image2 src={`https://file.rendit.io/n/PnkkUXhoDFcxgSpoAmxS.svg`} />
+                <button>
+                  <Image2 src={`https://file.rendit.io/n/PnkkUXhoDFcxgSpoAmxS.svg`} />
+                </button>
               </Group>
               <Images1 src={`https://file.rendit.io/n/0AcxzlyKsRhH8x7Vpk4r.png`} />
               <Group1>
@@ -91,7 +97,9 @@ export const TopCollection = () => {
                   <Element4 />
                 </Group4>
                 <Group5>
-                  <Image4 src={`https://file.rendit.io/n/IoKejSjojfKF2dfETYwM.svg`} />
+                  <button>
+                    <Image4 src={`https://file.rendit.io/n/IoKejSjojfKF2dfETYwM.svg`} />
+                  </button>
                   <Text5>50</Text5>
                 </Group5>
               </Group2>
@@ -198,15 +206,16 @@ const Group2 = styled.div`
   justify-content: flex-end;
   align-items: flex-start;
 `;
-const Group4 = styled.div`
+const Group4 = styled.button`
   width: 116px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  z-index: 20;
 `;
-const Text4 = styled.div`
+const Text4 = styled.button`
   width: 74px;
   height: 24px;
   left: 21px;
@@ -232,15 +241,14 @@ const Group5 = styled.div`
   gap: 5px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   padding: 5px 0px 8px 0px;
 `;
 const Image4 = styled.img`
-  width: 19px;
-  height: 16px;
-  align-self: flex-end;
-  margin: 0px 0px 1px 0px;
+  width: 20px;
+  height: 20px;
+  align-self: center;
 `;
 const Text5 = styled.div`
   width: 21px;

@@ -2,40 +2,40 @@ import React from "react";
 import styled from "styled-components";
 
 export const TopSeller = () => {
-    return (
-        <FrameRootRootRoot>
-            <Text2>Top Seller</Text2>
-            <BlackFlexRow>
-                {[1, 2, 3, 4].map(() => {
-                    return (
-                        <BlackFlexColumn>
-                            <Group13>
-                                <Image1 src={`https://file.rendit.io/n/ka5Kb5BoNvAu9A8nW3wc.png`} />
-                                <Group15>
-                                    <Text7>Mazanov Sky</Text7>
-                                    <Eth7>
-                                        885.5 <Eth>Eth</Eth>
-                                    </Eth7>
-                                </Group15>
-                            </Group13>
-                            <Group14>
-                                <FlexColumn17>
-                                    <Image13
-                                        src={`https://file.rendit.io/n/P1ukYYedeZoSyTE7xnRJ.svg`}
-                                    />
-                                </FlexColumn17>
-                                <FlexColumn17>
-                                    <Image13
-                                        src={`https://file.rendit.io/n/6Ct1RPm3FxtVr9ADLLFQ.svg`}
-                                    />
-                                </FlexColumn17>
-                            </Group14>
-                        </BlackFlexColumn>
-                    )
-                })}
-            </BlackFlexRow>
-        </FrameRootRootRoot>
-    );
+  return (
+    <FrameRootRootRoot>
+      <Text2>Top Seller</Text2>
+      <BlackFlexRow>
+        {[1, 2, 3, 4].map(() => {
+          return (
+            <BlackFlexColumn>
+              <Group13>
+                <Image1 src={`https://file.rendit.io/n/ka5Kb5BoNvAu9A8nW3wc.png`} />
+                <Group15>
+                  <Text7>Mazanov Sky</Text7>
+                  <Eth7>
+                    885.5 <Eth>Eth</Eth>
+                  </Eth7>
+                </Group15>
+              </Group13>
+              <Group14>
+                <AddButton>
+                  <Image13
+                    src={`https://file.rendit.io/n/P1ukYYedeZoSyTE7xnRJ.svg`}
+                  />
+                </AddButton>
+                <ShareButton>
+                  <Image13
+                    src={`https://file.rendit.io/n/6Ct1RPm3FxtVr9ADLLFQ.svg`}
+                  />
+                </ShareButton>
+              </Group14>
+            </BlackFlexColumn>
+          )
+        })}
+      </BlackFlexRow>
+    </FrameRootRootRoot>
+  );
 };
 
 const Image1 = styled.img`
@@ -142,7 +142,20 @@ const Group14 = styled.div`
   align-items: flex-start;
   padding: 0px 76.8px 0px 75.5px;
 `;
-const FlexColumn17 = styled.div`
+const AddButton = styled.button`
+  height: 20px;
+  width: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 5px;
+  border-width: 1px;
+  border-radius: 2px;
+  border-style: solid;
+  border-color: #9d9898;
+`;
+const ShareButton = styled.button`
   height: 20px;
   width: 20px;
   display: flex;

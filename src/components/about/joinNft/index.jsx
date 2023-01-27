@@ -46,8 +46,9 @@ const FlexColumn = styled.div`
     rgba(154, 24, 215, 0.5) -16%,
     rgba(255, 255, 255, 0.5) 180%
   );
+  z-index: 20;
 `;
-const Text1 = styled.div`
+const Text1 = styled.button`
   width: 137px;
   height: 24px;
   color: #ffffff;

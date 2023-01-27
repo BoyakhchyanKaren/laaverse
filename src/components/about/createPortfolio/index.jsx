@@ -93,7 +93,7 @@ const PurpleHeartFlexColumn = styled.div`
   border-color: #06021a;
   background-color: rgba(141, 22, 193, 0.69);
 `;
-const FlexColumn3 = styled.div`
+const FlexColumn3 = styled.button`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

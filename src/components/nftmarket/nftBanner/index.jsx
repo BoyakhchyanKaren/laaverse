@@ -27,12 +27,12 @@ export const NftBanner = () => {
                 dapps free by creating account today
               </Paragraph>
             </Group7>
-            <FlexRow1>
+            <GetStartedButton>
               <Text5>Let’s Get Started</Text5>
               <Image1
                 src={`https://file.rendit.io/n/AMBIC2P5VGnKETp1zUGK.svg`}
               />
-            </FlexRow1>
+            </GetStartedButton>
           </Group6>
           <Image2 src={`https://file.rendit.io/n/eb4rTsVH1b5zyMsE9Ofh.png`} />
         </FlexRow>
@@ -117,7 +117,7 @@ const Text4 = styled.div`
   font-family: Poppins;
 `;
 const Paragraph = styled.div`
-  width: 498px;
+  width: 500px;
   height: 60px;
   color: #ffffff;
   font-size: 20px;
@@ -125,7 +125,7 @@ const Paragraph = styled.div`
   font-family: Poppins;
   white-space: nowrap;
 `;
-const FlexRow1 = styled.div`
+const GetStartedButton = styled.button`
   gap: 15px;
   display: flex;
   flex-direction: row;
@@ -134,6 +134,7 @@ const FlexRow1 = styled.div`
   padding: 17px 26px;
   border-radius: 45px;
   background-image: linear-gradient(90deg, #9061f4 -15%, #c30ff1 121%);
+  z-index: 20;
 `;
 const Text5 = styled.div`
   width: 152px;

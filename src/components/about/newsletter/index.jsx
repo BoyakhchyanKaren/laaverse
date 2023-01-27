@@ -1,14 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import './style.css';
 
 export const NewsLetter = () => {
   return (
     <FrameRootRootRoot>
       <Text1>Get Newsletter</Text1>
       <Text2>Get udpated with news, tips & tricks</Text2>
-      <MidnightBlueFlexColumn>
-        <Text3>your email</Text3>
-      </MidnightBlueFlexColumn>
+      <input
+        className='email-input12'
+        placeholder="Enter your email"
+      />
       <BlackFlexColumn>
         <FlexColumn>
           <Text4>Subscribe</Text4>
@@ -20,6 +22,7 @@ export const NewsLetter = () => {
 };
 
 const FrameRootRootRoot = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,30 +55,8 @@ const Text2 = styled.div`
   text-align: center;
   text-transform: capitalize;
 `;
-const MidnightBlueFlexColumn = styled.div`
+const BlackFlexColumn = styled.button`
   height: 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin: 0px 0px 76.5px 275px;
-  padding: 18.8px 396px 20.1px 26.7px;
-  border-width: 1px;
-  border-radius: 10px;
-  border-style: solid;
-  border-color: #ffffff;
-  background-color: rgba(33, 12, 56, 0.33);
-`;
-const Text3 = styled.div`
-  width: 87.6px;
-  height: 27.7px;
-  color: rgba(255, 255, 255, 0.35);
-  font-size: 14px;
-  font-weight: 500;
-  font-family: Poppins;
-`;
-const BlackFlexColumn = styled.div`
-  height: 70px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -105,6 +86,7 @@ const Text4 = styled.div`
   font-weight: 500;
   font-family: Poppins;
   text-align: center;
+  align-self: center;
 `;
 const Image1 = styled.img`
   width: 1077px;

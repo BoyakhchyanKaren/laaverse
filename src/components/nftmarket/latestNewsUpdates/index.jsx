@@ -9,93 +9,39 @@ export const LatestNewsUpdates = () => {
           <Text1>Latest News Update</Text1>
         </PurpleHeartFlexColumn>
         <Group>
-          <RoyalPurpleFlexColumn>
-            <Group1>
-              <Group3>
-                <Group4>
-                  <Image1
-                    src={`https://file.rendit.io/n/GAcvJrbrqHnNEMQr7nGT.svg`}
+          {[1, 2, 3].map(() => {
+            return (
+              <RoyalPurpleFlexColumn>
+                <Group1>
+                  <Group3>
+                    <Group4>
+                      <Image1
+                        src={`https://file.rendit.io/n/GAcvJrbrqHnNEMQr7nGT.svg`}
+                      />
+                      <Text2>Admin</Text2>
+                    </Group4>
+                    <Group4>
+                      <Image1
+                        src={`https://file.rendit.io/n/ScKDiGAsC3fykaofwS9g.svg`}
+                      />
+                      <Text3>Jan 12, 2023</Text3>
+                    </Group4>
+                  </Group3>
+                  <Image3
+                    src={`https://file.rendit.io/n/auHjx6XAhkXILpAzw9Ar.svg`}
                   />
-                  <Text2>Admin</Text2>
-                </Group4>
-                <Group4>
-                  <Image1
-                    src={`https://file.rendit.io/n/ScKDiGAsC3fykaofwS9g.svg`}
-                  />
-                  <Text3>Jan 12, 2023</Text3>
-                </Group4>
-              </Group3>
-              <Image3
-                src={`https://file.rendit.io/n/auHjx6XAhkXILpAzw9Ar.svg`}
-              />
-              <Paragraph>
-                NFTs, rare digital items worlds <br />
-                crypto collectibles
-              </Paragraph>
-            </Group1>
-            <Group2>
-              <Text4>Read More</Text4>
-              <Element1 />
-            </Group2>
-          </RoyalPurpleFlexColumn>
-          <RoyalPurpleFlexColumn1>
-            <Group1>
-              <Group3>
-                <Group4>
-                  <Image1
-                    src={`https://file.rendit.io/n/GAcvJrbrqHnNEMQr7nGT.svg`}
-                  />
-                  <Text2>Admin</Text2>
-                </Group4>
-                <Group4>
-                  <Image1
-                    src={`https://file.rendit.io/n/ScKDiGAsC3fykaofwS9g.svg`}
-                  />
-                  <Text3>Jan 12, 2023</Text3>
-                </Group4>
-              </Group3>
-              <Image3
-                src={`https://file.rendit.io/n/auHjx6XAhkXILpAzw9Ar.svg`}
-              />
-              <Paragraph>
-                NFTs, rare digital items worlds <br />
-                crypto collectibles
-              </Paragraph>
-            </Group1>
-            <Group2>
-              <Text4>Read More</Text4>
-              <Element1 />
-            </Group2>
-          </RoyalPurpleFlexColumn1>
-          <RoyalPurpleFlexColumn2>
-            <Group1>
-              <Group3>
-                <Group4>
-                  <Image1
-                    src={`https://file.rendit.io/n/GAcvJrbrqHnNEMQr7nGT.svg`}
-                  />
-                  <Text2>Admin</Text2>
-                </Group4>
-                <Group4>
-                  <Image1
-                    src={`https://file.rendit.io/n/ScKDiGAsC3fykaofwS9g.svg`}
-                  />
-                  <Text3>Jan 12, 2023</Text3>
-                </Group4>
-              </Group3>
-              <Image3
-                src={`https://file.rendit.io/n/auHjx6XAhkXILpAzw9Ar.svg`}
-              />
-              <Paragraph>
-                NFTs, rare digital items worlds <br />
-                crypto collectibles
-              </Paragraph>
-            </Group1>
-            <Group2>
-              <Text4>Read More</Text4>
-              <Element1 />
-            </Group2>
-          </RoyalPurpleFlexColumn2>
+                  <Paragraph>
+                    NFTs, rare digital items worlds <br />
+                    crypto collectibles
+                  </Paragraph>
+                </Group1>
+                <ReadMoreButton>
+                  <Text4>Read More</Text4>
+                  <Element1 />
+                </ReadMoreButton>
+              </RoyalPurpleFlexColumn>
+            )
+          })}
         </Group>
       </MidnightBlueFlexColumn>
     </IstockphotoxRootRootRoot>
@@ -162,7 +108,7 @@ const Paragraph = styled.div`
   font-family: Poppins;
   white-space: nowrap;
 `;
-const Group2 = styled.div`
+const ReadMoreButton = styled.button`
   width: 101px;
   position: relative;
   display: flex;
@@ -248,29 +194,6 @@ const RoyalPurpleFlexColumn = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   margin: 0px 29px 0px 0px;
-  padding: 19px 9px 21px 9px;
-  border-radius: 6px;
-  background-color: #320651;
-  box-shadow: 2px 4px 4px 1px rgba(14, 14, 15, 0.25);
-`;
-const RoyalPurpleFlexColumn1 = styled.div`
-  gap: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin: 0px 30px 0px 0px;
-  padding: 19px 9px 21px 9px;
-  border-radius: 6px;
-  background-color: #320651;
-  box-shadow: 2px 4px 4px 1px rgba(14, 14, 15, 0.25);
-`;
-const RoyalPurpleFlexColumn2 = styled.div`
-  gap: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   padding: 19px 9px 21px 9px;
   border-radius: 6px;
   background-color: #320651;
