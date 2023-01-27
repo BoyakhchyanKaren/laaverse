@@ -10,7 +10,8 @@ const HomeFooter = () => {
         style = {{
             backgroundImage : `url(${BgImage})`,
             backgroundSize : 'cover',
-            backgroundRepeat : 'no-repeat'
+            backgroundRepeat : 'no-repeat',
+            backgroundColor: '#2b032a',
         }}
         >
             <div>

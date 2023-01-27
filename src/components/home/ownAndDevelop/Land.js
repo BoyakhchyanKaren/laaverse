@@ -7,7 +7,7 @@ const Land = () => {
             <div className='flex-1 relative z-20'>
                 <h1 className='md:text-4xl sm:text-3xl text-2xl relative font-bold'>
                     <span className='text-purple-400'>Own & Dev</span>
-                    <span className='text-primaryLight'>lop Y</span>
+                    <span className='text-primaryLight'>elop Y</span>
                     <span className='text-light'>our Land</span>
                 </h1>
                 <div className="heading-line"></div>

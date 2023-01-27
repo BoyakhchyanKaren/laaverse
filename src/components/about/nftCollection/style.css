@@ -1,0 +1,9 @@
+.title-line {
+    width: 600px;
+    align-self: center;
+    height: 10px;
+    background: rgb(98, 19, 125);
+    background: linear-gradient(37deg, rgba(98, 19, 125, 1) 0%, rgba(176, 58, 217, 1) 100%);
+    border-radius: 50px;
+    margin: 1.1rem 0;
+}

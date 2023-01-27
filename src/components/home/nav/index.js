@@ -8,7 +8,7 @@ import { useDrawerContext } from 'context/drawerContext';
 
 
 const Nav = () => {
-    const { showDrawer , setShowDrawer } = useDrawerContext();
+    const { showDrawer, setShowDrawer } = useDrawerContext();
 
     return (
         <div className='flex items-center justify-between bg-darkBlue gap-2  xl:px-8 py-4 sm:px-4 px-2'>
@@ -31,8 +31,8 @@ const Nav = () => {
                 <button>Connect Wallet</button>
             </div>
 
-            <div className={`hamburger ${showDrawer ? 'change' : ''}`} 
-            onClick={() => setShowDrawer(prev => !prev)}>
+            <div className={`hamburger ${showDrawer ? 'change' : ''}`}
+                onClick={() => setShowDrawer(!showDrawer)}>
                 <div className="bar1"></div>
                 <div className="bar2"></div>
                 <div className="bar3"></div>
