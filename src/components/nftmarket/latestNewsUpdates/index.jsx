@@ -1,105 +1,105 @@
 import React from "react";
 import styled from "styled-components";
 
-export const LatestNewsUpdates = ({ }) => {
-    return (
-        <IstockphotoxRootRootRoot>
-            <MidnightBlueFlexColumn>
-                <PurpleHeartFlexColumn>
-                    <Text1>Latest News Update</Text1>
-                </PurpleHeartFlexColumn>
-                <Group>
-                    <RoyalPurpleFlexColumn>
-                        <Group1>
-                            <Group3>
-                                <Group4>
-                                    <Image1
-                                        src={`https://file.rendit.io/n/GAcvJrbrqHnNEMQr7nGT.svg`}
-                                    />
-                                    <Text2>Admin</Text2>
-                                </Group4>
-                                <Group4>
-                                    <Image1
-                                        src={`https://file.rendit.io/n/ScKDiGAsC3fykaofwS9g.svg`}
-                                    />
-                                    <Text3>Jan 12, 2023</Text3>
-                                </Group4>
-                            </Group3>
-                            <Image3
-                                src={`https://file.rendit.io/n/auHjx6XAhkXILpAzw9Ar.svg`}
-                            />
-                            <Paragraph>
-                                NFTs, rare digital items worlds <br />
-                                crypto collectibles
-                            </Paragraph>
-                        </Group1>
-                        <Group2>
-                            <Text4>Read More</Text4>
-                            <Element1 />
-                        </Group2>
-                    </RoyalPurpleFlexColumn>
-                    <RoyalPurpleFlexColumn1>
-                        <Group1>
-                            <Group3>
-                                <Group4>
-                                    <Image1
-                                        src={`https://file.rendit.io/n/GAcvJrbrqHnNEMQr7nGT.svg`}
-                                    />
-                                    <Text2>Admin</Text2>
-                                </Group4>
-                                <Group4>
-                                    <Image1
-                                        src={`https://file.rendit.io/n/ScKDiGAsC3fykaofwS9g.svg`}
-                                    />
-                                    <Text3>Jan 12, 2023</Text3>
-                                </Group4>
-                            </Group3>
-                            <Image3
-                                src={`https://file.rendit.io/n/auHjx6XAhkXILpAzw9Ar.svg`}
-                            />
-                            <Paragraph>
-                                NFTs, rare digital items worlds <br />
-                                crypto collectibles
-                            </Paragraph>
-                        </Group1>
-                        <Group2>
-                            <Text4>Read More</Text4>
-                            <Element1 />
-                        </Group2>
-                    </RoyalPurpleFlexColumn1>
-                    <RoyalPurpleFlexColumn2>
-                        <Group1>
-                            <Group3>
-                                <Group4>
-                                    <Image1
-                                        src={`https://file.rendit.io/n/GAcvJrbrqHnNEMQr7nGT.svg`}
-                                    />
-                                    <Text2>Admin</Text2>
-                                </Group4>
-                                <Group4>
-                                    <Image1
-                                        src={`https://file.rendit.io/n/ScKDiGAsC3fykaofwS9g.svg`}
-                                    />
-                                    <Text3>Jan 12, 2023</Text3>
-                                </Group4>
-                            </Group3>
-                            <Image3
-                                src={`https://file.rendit.io/n/auHjx6XAhkXILpAzw9Ar.svg`}
-                            />
-                            <Paragraph>
-                                NFTs, rare digital items worlds <br />
-                                crypto collectibles
-                            </Paragraph>
-                        </Group1>
-                        <Group2>
-                            <Text4>Read More</Text4>
-                            <Element1 />
-                        </Group2>
-                    </RoyalPurpleFlexColumn2>
-                </Group>
-            </MidnightBlueFlexColumn>
-        </IstockphotoxRootRootRoot>
-    );
+export const LatestNewsUpdates = () => {
+  return (
+    <IstockphotoxRootRootRoot>
+      <MidnightBlueFlexColumn>
+        <PurpleHeartFlexColumn>
+          <Text1>Latest News Update</Text1>
+        </PurpleHeartFlexColumn>
+        <Group>
+          <RoyalPurpleFlexColumn>
+            <Group1>
+              <Group3>
+                <Group4>
+                  <Image1
+                    src={`https://file.rendit.io/n/GAcvJrbrqHnNEMQr7nGT.svg`}
+                  />
+                  <Text2>Admin</Text2>
+                </Group4>
+                <Group4>
+                  <Image1
+                    src={`https://file.rendit.io/n/ScKDiGAsC3fykaofwS9g.svg`}
+                  />
+                  <Text3>Jan 12, 2023</Text3>
+                </Group4>
+              </Group3>
+              <Image3
+                src={`https://file.rendit.io/n/auHjx6XAhkXILpAzw9Ar.svg`}
+              />
+              <Paragraph>
+                NFTs, rare digital items worlds <br />
+                crypto collectibles
+              </Paragraph>
+            </Group1>
+            <Group2>
+              <Text4>Read More</Text4>
+              <Element1 />
+            </Group2>
+          </RoyalPurpleFlexColumn>
+          <RoyalPurpleFlexColumn1>
+            <Group1>
+              <Group3>
+                <Group4>
+                  <Image1
+                    src={`https://file.rendit.io/n/GAcvJrbrqHnNEMQr7nGT.svg`}
+                  />
+                  <Text2>Admin</Text2>
+                </Group4>
+                <Group4>
+                  <Image1
+                    src={`https://file.rendit.io/n/ScKDiGAsC3fykaofwS9g.svg`}
+                  />
+                  <Text3>Jan 12, 2023</Text3>
+                </Group4>
+              </Group3>
+              <Image3
+                src={`https://file.rendit.io/n/auHjx6XAhkXILpAzw9Ar.svg`}
+              />
+              <Paragraph>
+                NFTs, rare digital items worlds <br />
+                crypto collectibles
+              </Paragraph>
+            </Group1>
+            <Group2>
+              <Text4>Read More</Text4>
+              <Element1 />
+            </Group2>
+          </RoyalPurpleFlexColumn1>
+          <RoyalPurpleFlexColumn2>
+            <Group1>
+              <Group3>
+                <Group4>
+                  <Image1
+                    src={`https://file.rendit.io/n/GAcvJrbrqHnNEMQr7nGT.svg`}
+                  />
+                  <Text2>Admin</Text2>
+                </Group4>
+                <Group4>
+                  <Image1
+                    src={`https://file.rendit.io/n/ScKDiGAsC3fykaofwS9g.svg`}
+                  />
+                  <Text3>Jan 12, 2023</Text3>
+                </Group4>
+              </Group3>
+              <Image3
+                src={`https://file.rendit.io/n/auHjx6XAhkXILpAzw9Ar.svg`}
+              />
+              <Paragraph>
+                NFTs, rare digital items worlds <br />
+                crypto collectibles
+              </Paragraph>
+            </Group1>
+            <Group2>
+              <Text4>Read More</Text4>
+              <Element1 />
+            </Group2>
+          </RoyalPurpleFlexColumn2>
+        </Group>
+      </MidnightBlueFlexColumn>
+    </IstockphotoxRootRootRoot>
+  );
 };
 
 const Group1 = styled.div`

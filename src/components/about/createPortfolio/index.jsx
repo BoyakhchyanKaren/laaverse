@@ -1,28 +1,28 @@
 import React from "react";
 import styled from "styled-components";
 
-export default ({ }) => {
-    return (
-        <FrameRootRootRoot>
-            <Group1>
-                <FlexColumn1>
-                    <Group>
-                        <Text1>Create Your NFT Portfolio</Text1>
-                        <Text2>Get upated with news, tips & tricks</Text2>
-                    </Group>
-                    <PurpleHeartFlexColumn>
-                        <FlexColumn3>
-                            <Text3>Join Now</Text3>
-                        </FlexColumn3>
-                    </PurpleHeartFlexColumn>
-                </FlexColumn1>
-                <Ellipse src={`https://file.rendit.io/n/xgm1s4HCgyMfZNxY0JsG.svg`} />
-                <Image1 src={`https://file.rendit.io/n/jQzpbNF0Yv9X6SGGByWq.png`} />
-                <Ellipse1 src={`https://file.rendit.io/n/4PmfANswQKkBYHMVQCRe.svg`} />
-            </Group1>
-            <Image2 src={`https://file.rendit.io/n/272PYl0clddWcbDxDMTt.svg`} />
-        </FrameRootRootRoot>
-    );
+export const CreatePortfolio = () => {
+  return (
+    <FrameRootRootRoot>
+      <Group1>
+        <FlexColumn1>
+          <Group>
+            <Text1>Create Your NFT Portfolio</Text1>
+            <Text2>Get upated with news, tips & tricks</Text2>
+          </Group>
+          <PurpleHeartFlexColumn>
+            <FlexColumn3>
+              <Text3>Join Now</Text3>
+            </FlexColumn3>
+          </PurpleHeartFlexColumn>
+        </FlexColumn1>
+        <Ellipse src={`https://file.rendit.io/n/xgm1s4HCgyMfZNxY0JsG.svg`} />
+        <Image1 src={`https://file.rendit.io/n/jQzpbNF0Yv9X6SGGByWq.png`} />
+        <Ellipse1 src={`https://file.rendit.io/n/4PmfANswQKkBYHMVQCRe.svg`} />
+      </Group1>
+      <Image2 src={`https://file.rendit.io/n/272PYl0clddWcbDxDMTt.svg`} />
+    </FrameRootRootRoot>
+  );
 };
 
 const FrameRootRootRoot = styled.div`

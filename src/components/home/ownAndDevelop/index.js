@@ -13,7 +13,7 @@ const OwnAndDevelop = () => {
             <div>
                 <RoadMap />
             </div>
-            <div className='absolute bottom-[25%] left-0 w-full h-full' style={{backgroundImage : `url(${Shadow})` , backgroundRepeat : 'no-repeat'}}></div>
+            <div className='absolute bottom-[25%] left-0 w-full h-full' style={{ backgroundImage: `url(${Shadow})`, backgroundRepeat: 'no-repeat' }}></div>
         </div>
     )
 }

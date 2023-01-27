@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import BgImage from 'assets/images/home/bg1.png';
 
-export default ({ }) => {
+export const JoinNft = () => {
   return (
     <div className='w-full md:h-[40vh] h-[55vh] flex items-center justify-center' style={{
       backgroundImage: `url(${BgImage})`,

@@ -1,78 +1,78 @@
 import React from "react";
 import styled from "styled-components";
 
-export default ({ }) => {
-    return (
-        <RectangleRootRootRoot>
-            <Group4>
-                <About src={`https://file.rendit.io/n/zx08RnY6baDQd33iymg4.png`} />
-                <Ellipse2 src={`https://file.rendit.io/n/fGFvG5Lu2X0ZCoGGNcOL.svg`} />
-                <Ellipse8 src={`https://file.rendit.io/n/R1x95lBC0ZRvYRPG2Vze.svg`} />
-                <Group>
-                    <About1 src={`https://file.rendit.io/n/L5pQwpDK3E6JtaDJf5wZ.png`} />
-                    <Ellipse3 src={`https://file.rendit.io/n/mUg8dn2YLtKjFRbUnst9.svg`} />
-                    <Ellipse6 src={`https://file.rendit.io/n/R1x95lBC0ZRvYRPG2Vze.svg`} />
-                    <Ellipse7 src={`https://file.rendit.io/n/R1x95lBC0ZRvYRPG2Vze.svg`} />
-                    <Ellipse9 src={`https://file.rendit.io/n/R1x95lBC0ZRvYRPG2Vze.svg`} />
-                    <Ellipse10
-                        src={`https://file.rendit.io/n/BfI82yEL5PYavtkS7iUU.svg`}
-                    />
-                    <Group1>
-                        <Ellipse
-                            src={`https://file.rendit.io/n/fGFvG5Lu2X0ZCoGGNcOL.svg`}
-                        />
-                        <FlexColumn2>
-                            <Image1
-                                src={`https://file.rendit.io/n/eQpOlZY5QBVxArFlUJm4.png`}
-                            />
-                        </FlexColumn2>
-                        <Group2>
-                            <About2
-                                src={`https://file.rendit.io/n/x57v8dopRiH5JiNln84R.png`}
-                            />
-                            <Ellipse5
-                                src={`https://file.rendit.io/n/mUg8dn2YLtKjFRbUnst9.svg`}
-                            />
-                            <Ellipse1
-                                src={`https://file.rendit.io/n/fGFvG5Lu2X0ZCoGGNcOL.svg`}
-                            />
-                            <Image2
-                                src={`https://file.rendit.io/n/N1jKOznHEoJxRsOWsSqQ.png`}
-                            />
-                            <Group3>
-                                <About3
-                                    src={`https://file.rendit.io/n/jJmVauSaV38FtZeyipYp.png`}
-                                />
-                                <Ellipse11
-                                    src={`https://file.rendit.io/n/XxQC2G7ofBfq2K4Ne71D.svg`}
-                                />
-                                <Ellipse4
-                                    src={`https://file.rendit.io/n/mUg8dn2YLtKjFRbUnst9.svg`}
-                                />
-                            </Group3>
-                        </Group2>
-                    </Group1>
-                </Group>
-            </Group4>
-            <Group5>
-                <Paragraph>
-                    Laaverse will allow users to purchase virtual land or properties using
-                    NFTs.
-                </Paragraph>
-                <Paragraph1>
-                    In Laaverse, users who own virtual land will be able to develop and
-                    customise their properties as they see fit. <br />
-                    This could include building virtual homes or businesses, or even
-                    creating unique landscapes.
-                </Paragraph1>
-                <PurpleMountainsMajestyFlexColumn>
-                    <FlexColumn5>
-                        <Text1>More About US</Text1>
-                    </FlexColumn5>
-                </PurpleMountainsMajestyFlexColumn>
-            </Group5>
-        </RectangleRootRootRoot>
-    );
+export const NftCollection = () => {
+  return (
+    <RectangleRootRootRoot>
+      <Group4>
+        <About src={`https://file.rendit.io/n/zx08RnY6baDQd33iymg4.png`} />
+        <Ellipse2 src={`https://file.rendit.io/n/fGFvG5Lu2X0ZCoGGNcOL.svg`} />
+        <Ellipse8 src={`https://file.rendit.io/n/R1x95lBC0ZRvYRPG2Vze.svg`} />
+        <Group>
+          <About1 src={`https://file.rendit.io/n/L5pQwpDK3E6JtaDJf5wZ.png`} />
+          <Ellipse3 src={`https://file.rendit.io/n/mUg8dn2YLtKjFRbUnst9.svg`} />
+          <Ellipse6 src={`https://file.rendit.io/n/R1x95lBC0ZRvYRPG2Vze.svg`} />
+          <Ellipse7 src={`https://file.rendit.io/n/R1x95lBC0ZRvYRPG2Vze.svg`} />
+          <Ellipse9 src={`https://file.rendit.io/n/R1x95lBC0ZRvYRPG2Vze.svg`} />
+          <Ellipse10
+            src={`https://file.rendit.io/n/BfI82yEL5PYavtkS7iUU.svg`}
+          />
+          <Group1>
+            <Ellipse
+              src={`https://file.rendit.io/n/fGFvG5Lu2X0ZCoGGNcOL.svg`}
+            />
+            <FlexColumn2>
+              <Image1
+                src={`https://file.rendit.io/n/eQpOlZY5QBVxArFlUJm4.png`}
+              />
+            </FlexColumn2>
+            <Group2>
+              <About2
+                src={`https://file.rendit.io/n/x57v8dopRiH5JiNln84R.png`}
+              />
+              <Ellipse5
+                src={`https://file.rendit.io/n/mUg8dn2YLtKjFRbUnst9.svg`}
+              />
+              <Ellipse1
+                src={`https://file.rendit.io/n/fGFvG5Lu2X0ZCoGGNcOL.svg`}
+              />
+              <Image2
+                src={`https://file.rendit.io/n/N1jKOznHEoJxRsOWsSqQ.png`}
+              />
+              <Group3>
+                <About3
+                  src={`https://file.rendit.io/n/jJmVauSaV38FtZeyipYp.png`}
+                />
+                <Ellipse11
+                  src={`https://file.rendit.io/n/XxQC2G7ofBfq2K4Ne71D.svg`}
+                />
+                <Ellipse4
+                  src={`https://file.rendit.io/n/mUg8dn2YLtKjFRbUnst9.svg`}
+                />
+              </Group3>
+            </Group2>
+          </Group1>
+        </Group>
+      </Group4>
+      <Group5>
+        <Paragraph>
+          Laaverse will allow users to purchase virtual land or properties using
+          NFTs.
+        </Paragraph>
+        <Paragraph1>
+          In Laaverse, users who own virtual land will be able to develop and
+          customise their properties as they see fit. <br />
+          This could include building virtual homes or businesses, or even
+          creating unique landscapes.
+        </Paragraph1>
+        <PurpleMountainsMajestyFlexColumn>
+          <FlexColumn5>
+            <Text1>More About US</Text1>
+          </FlexColumn5>
+        </PurpleMountainsMajestyFlexColumn>
+      </Group5>
+    </RectangleRootRootRoot>
+  );
 };
 
 const RectangleRootRootRoot = styled.div`

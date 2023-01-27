@@ -3,15 +3,15 @@ import styled from "styled-components";
 import { TopCollectionItems } from '../topcollection';
 
 export const ExploreProduct = () => {
-    return (
-        <RootRootRootRoot>
-            <RectangleRootRootRoot>
-                <Text1>Explore Product</Text1>
-            </RectangleRootRootRoot>
-            <TopCollectionItems />
-            <TopCollectionItems />
-        </RootRootRootRoot>
-    )
+  return (
+    <RootRootRootRoot>
+      <RectangleRootRootRoot>
+        <Text1>Explore Product</Text1>
+      </RectangleRootRootRoot>
+      <TopCollectionItems />
+      <TopCollectionItems />
+    </RootRootRootRoot>
+  )
 };
 
 

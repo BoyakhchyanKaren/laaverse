@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export default ({ }) => {
+export const TopSeller = () => {
     return (
         <FrameRootRootRoot>
             <Text2>Top Seller</Text2>

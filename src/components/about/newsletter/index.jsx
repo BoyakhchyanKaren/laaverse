@@ -1,22 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 
-export default ({ }) => {
-    return (
-        <FrameRootRootRoot>
-            <Text1>Get Newsletter</Text1>
-            <Text2>Get udpated with news, tips & tricks</Text2>
-            <MidnightBlueFlexColumn>
-                <Text3>your email</Text3>
-            </MidnightBlueFlexColumn>
-            <BlackFlexColumn>
-                <FlexColumn>
-                    <Text4>Subscribe</Text4>
-                </FlexColumn>
-            </BlackFlexColumn>
-            <Image1 src={`https://file.rendit.io/n/XwxopXdjqhka24dHB9AS.svg`} />
-        </FrameRootRootRoot>
-    );
+export const NewsLetter = () => {
+  return (
+    <FrameRootRootRoot>
+      <Text1>Get Newsletter</Text1>
+      <Text2>Get udpated with news, tips & tricks</Text2>
+      <MidnightBlueFlexColumn>
+        <Text3>your email</Text3>
+      </MidnightBlueFlexColumn>
+      <BlackFlexColumn>
+        <FlexColumn>
+          <Text4>Subscribe</Text4>
+        </FlexColumn>
+      </BlackFlexColumn>
+      <Image1 src={`https://file.rendit.io/n/XwxopXdjqhka24dHB9AS.svg`} />
+    </FrameRootRootRoot>
+  );
 };
 
 const FrameRootRootRoot = styled.div`

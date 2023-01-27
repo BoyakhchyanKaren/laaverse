@@ -2,117 +2,107 @@ import React from "react";
 import styled from "styled-components";
 
 export const TopCollectionItems = () => {
-    return (
-        <div style={{
-            display: 'flex',
-            flexDirection: 'row',
-            gap: '50px'
-        }}>
-            {[1, 2, 3, 4].map(() => {
-                return (
-                    <RoyalPurpleFlexColumn1>
-                        <Group>
-                            <Group3>
-                                <Ellipse>
-                                    <Image1
-                                        src={`https://file.rendit.io/n/iHrPlz8zRxuCVU6TK0vp.png`}
-                                    />
-                                </Ellipse>
-                                <ByJonson1>
-                                    By<ByJonson> Jonson</ByJonson>
-                                </ByJonson1>
-                            </Group3>
-                            <Image2 src={`https://file.rendit.io/n/PnkkUXhoDFcxgSpoAmxS.svg`} />
-                        </Group>
-                        <Images1 src={`https://file.rendit.io/n/0AcxzlyKsRhH8x7Vpk4r.png`} />
-                        <Group1>
-                            <Text2>NFT Collection</Text2>
-                            <Text3>5.4 ETH</Text3>
-                        </Group1>
-                        <Image3 src={`https://file.rendit.io/n/eDbPbJTIE5KlhF2Yp0zj.svg`} />
-                        <Group2>
-                            <Group4>
-                                <Text4>Place Bid</Text4>
-                                <Element4 />
-                            </Group4>
-                            <Group5>
-                                <Image4 src={`https://file.rendit.io/n/IoKejSjojfKF2dfETYwM.svg`} />
-                                <Text5>50</Text5>
-                            </Group5>
-                        </Group2>
-                    </RoyalPurpleFlexColumn1>
-                )
-            })}
-        </div>
-    )
+  return (
+    <div style={{
+      display: 'flex',
+      flexDirection: 'row',
+      gap: '50px'
+    }}>
+      {[1, 2, 3, 4].map(() => {
+        return (
+          <RoyalPurpleFlexColumn1>
+            <Group>
+              <Group3>
+                <Ellipse>
+                  <Image1
+                    src={`https://file.rendit.io/n/iHrPlz8zRxuCVU6TK0vp.png`}
+                  />
+                </Ellipse>
+                <ByJonson1>
+                  By<ByJonson> Jonson</ByJonson>
+                </ByJonson1>
+              </Group3>
+              <Image2 src={`https://file.rendit.io/n/PnkkUXhoDFcxgSpoAmxS.svg`} />
+            </Group>
+            <Images1 src={`https://file.rendit.io/n/0AcxzlyKsRhH8x7Vpk4r.png`} />
+            <Group1>
+              <Text2>NFT Collection</Text2>
+              <Text3>5.4 ETH</Text3>
+            </Group1>
+            <Image3 src={`https://file.rendit.io/n/eDbPbJTIE5KlhF2Yp0zj.svg`} />
+            <Group2>
+              <Group4>
+                <Text4>Place Bid</Text4>
+                <Element4 />
+              </Group4>
+              <Group5>
+                <Image4 src={`https://file.rendit.io/n/IoKejSjojfKF2dfETYwM.svg`} />
+                <Text5>50</Text5>
+              </Group5>
+            </Group2>
+          </RoyalPurpleFlexColumn1>
+        )
+      })}
+    </div>
+  )
 }
 
-export const TopCollection = ({ }) => {
-    return (
-        <RootRootRootRoot>
-            <div style={{
-                display: 'flex',
-                alignSelf: 'flex-start'
-            }}>
-                <Text1 style={{
-                    marginLeft: '60px'
-                }}>Top Collection</Text1>
-            </div>
-            <div style={{
-                display: 'flex',
-                flexDirection: 'row',
-                gap: '50px'
-            }}>
-                {[1, 2, 3, 4].map(() => {
-                    return (
-                        <RoyalPurpleFlexColumn1>
-                            <Group>
-                                <Group3>
-                                    <Ellipse>
-                                        <Image1
-                                            src={`https://file.rendit.io/n/iHrPlz8zRxuCVU6TK0vp.png`}
-                                        />
-                                    </Ellipse>
-                                    <ByJonson1>
-                                        By<ByJonson> Jonson</ByJonson>
-                                    </ByJonson1>
-                                </Group3>
-                                <Image2 src={`https://file.rendit.io/n/PnkkUXhoDFcxgSpoAmxS.svg`} />
-                            </Group>
-                            <Images1 src={`https://file.rendit.io/n/0AcxzlyKsRhH8x7Vpk4r.png`} />
-                            <Group1>
-                                <Text2>NFT Collection</Text2>
-                                <Text3>5.4 ETH</Text3>
-                            </Group1>
-                            <Image3 src={`https://file.rendit.io/n/eDbPbJTIE5KlhF2Yp0zj.svg`} />
-                            <Group2>
-                                <Group4>
-                                    <Text4>Place Bid</Text4>
-                                    <Element4 />
-                                </Group4>
-                                <Group5>
-                                    <Image4 src={`https://file.rendit.io/n/IoKejSjojfKF2dfETYwM.svg`} />
-                                    <Text5>50</Text5>
-                                </Group5>
-                            </Group2>
-                        </RoyalPurpleFlexColumn1>
-                    )
-                })}
-            </div>
-        </RootRootRootRoot>
-    );
+export const TopCollection = () => {
+  return (
+    <RootRootRootRoot>
+      <div style={{
+        display: 'flex',
+        alignSelf: 'flex-start'
+      }}>
+        <Text1 style={{
+          marginLeft: '60px'
+        }}>Top Collection</Text1>
+      </div>
+      <div style={{
+        display: 'flex',
+        flexDirection: 'row',
+        gap: '50px'
+      }}>
+        {[1, 2, 3, 4].map(() => {
+          return (
+            <RoyalPurpleFlexColumn1>
+              <Group>
+                <Group3>
+                  <Ellipse>
+                    <Image1
+                      src={`https://file.rendit.io/n/iHrPlz8zRxuCVU6TK0vp.png`}
+                    />
+                  </Ellipse>
+                  <ByJonson1>
+                    By<ByJonson> Jonson</ByJonson>
+                  </ByJonson1>
+                </Group3>
+                <Image2 src={`https://file.rendit.io/n/PnkkUXhoDFcxgSpoAmxS.svg`} />
+              </Group>
+              <Images1 src={`https://file.rendit.io/n/0AcxzlyKsRhH8x7Vpk4r.png`} />
+              <Group1>
+                <Text2>NFT Collection</Text2>
+                <Text3>5.4 ETH</Text3>
+              </Group1>
+              <Image3 src={`https://file.rendit.io/n/eDbPbJTIE5KlhF2Yp0zj.svg`} />
+              <Group2>
+                <Group4>
+                  <Text4>Place Bid</Text4>
+                  <Element4 />
+                </Group4>
+                <Group5>
+                  <Image4 src={`https://file.rendit.io/n/IoKejSjojfKF2dfETYwM.svg`} />
+                  <Text5>50</Text5>
+                </Group5>
+              </Group2>
+            </RoyalPurpleFlexColumn1>
+          )
+        })}
+      </div>
+    </RootRootRootRoot>
+  );
 };
 
-const RoyalPurpleFlexColumn = styled.div`
-  height: 411px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 12px 16px;
-  border-radius: 8px;
-  background-color: #320651;
-`;
 const Group = styled.div`
   width: 256px;
   display: flex;
@@ -280,15 +270,6 @@ const RootRootRootRoot = styled.div`
   gap: 20px;
   padding: 15px 0;
   background-color: #06021A;
-`;
-const Group24 = styled.div`
-  gap: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-self: flex-start;
-  align-items: flex-start;
-  margin: 0px 24px 0px 0px;
 `;
 const Text1 = styled.div`
   width: 175px;

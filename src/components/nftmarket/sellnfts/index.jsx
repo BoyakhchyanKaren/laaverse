@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export default ({ }) => {
+export const SellNfts = () => {
     return (
         <RectangleRootRootRoot>
             <Text1>Create And Sell your NFTS</Text1>
@@ -172,16 +172,6 @@ const Nfts = styled.img`
   right: 0;
   margin-left: 60px;
 `;
-const Group1 = styled.div`
-  width: 70px;
-  height: 249px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 1px 13px 1px 220px;
-`;
 const Text5 = styled.div`
   width: 179px;
   height: 30px;
@@ -192,21 +182,6 @@ const Text5 = styled.div`
   font-family: Poppins;
   white-space: nowrap;
 `;
-const Nfts1 = styled.img`
-  width: 70px;
-  height: 74px;
-  position: relative;
-`;
-const Group2 = styled.div`
-  width: 68px;
-  height: 251px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 0px 13px 0px 222px;
-`;
 const Text7 = styled.div`
   width: 148px;
   height: 30px;
@@ -216,21 +191,6 @@ const Text7 = styled.div`
   font-weight: 700;
   font-family: Poppins;
   white-space: nowrap;
-`;
-const Nfts2 = styled.img`
-  width: 68px;
-  height: 76px;
-  position: relative;
-`;
-const Group3 = styled.div`
-  width: 69px;
-  height: 245px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 3px 13px 3px 221px;
 `;
 const Text8 = styled.div`
   width: 74px;
@@ -250,9 +210,4 @@ const Text9 = styled.div`
   font-weight: 700;
   font-family: Poppins;
   white-space: nowrap;
-`;
-const Nfts3 = styled.img`
-  width: 69px;
-  height: 70px;
-  position: relative;
 `;

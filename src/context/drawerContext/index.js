@@ -1,16 +1,16 @@
-import { useContext , createContext , useState } from "react";
+import { useContext, createContext, useState } from "react";
 
 const DrawerContext = createContext();
 
 export const useDrawerContext = () => useContext(DrawerContext);
 
 const DrawerContextProvider = ({ children }) => {
-    const [showDrawer , setShowDrawer] = useState(false);
+    const [showDrawer, setShowDrawer] = useState(false);
 
     return (
-        <DrawerContext.Provider 
+        <DrawerContext.Provider
             value={{
-                showDrawer , setShowDrawer
+                showDrawer, setShowDrawer
             }}
         >
             {children}

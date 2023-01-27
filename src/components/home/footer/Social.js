@@ -11,8 +11,9 @@ const Social = () => {
             <div className='relative text-pure sm:text-2xl text-xl font-semibold'>
                 Find Us On Social Media
                 <div className="absolute -bottom-4 left-0 w-full h-[5px] rounded-full"
-                style={{ 
-                    background:' linear-gradient(90deg, #8A03EF 0%, #C06EC7 108.06%)'}}
+                    style={{
+                        background: ' linear-gradient(90deg, #8A03EF 0%, #C06EC7 108.06%)'
+                    }}
                 ></div>
             </div>
             <div className='flex items-center gap-2 mt-4 mb-4'>

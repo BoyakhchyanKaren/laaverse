@@ -16,12 +16,12 @@ const CharactersNFTs = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium vero nisi numquam dolore pariatur omnis laboriosam reiciendis dolores quidem ex ullam, doloribus similique, eveniet debitis, repellendus ad corrupti velit commodi.</p>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit minus cupiditate laborum adipisci.</p>
                 </div>
-               
+
             </div>
             <div className='flex-1 relative z-20'>
                 <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1dbc1935-6542-4ee3-822f-135cff4ba62c/dd718v0-d9286e35-0018-4ace-a8ef-88c2f23b0a0c.png/v1/fill/w_736,h_558,strp/quantum_realm_suits___transparent__by_speedcam_dd718v0-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTU4IiwicGF0aCI6IlwvZlwvMWRiYzE5MzUtNjU0Mi00ZWUzLTgyMmYtMTM1Y2ZmNGJhNjJjXC9kZDcxOHYwLWQ5Mjg2ZTM1LTAwMTgtNGFjZS1hOGVmLTg4YzJmMjNiMGEwYy5wbmciLCJ3aWR0aCI6Ijw9NzM2In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.kiCz4lh7LsE-6iEC1Lrd5pnegfgFijIwvvsNhTMcn2o" alt="" />
             </div>
-            <div className='absolute bottom-0 left-0 w-full h-full' style={{backgroundImage : `url(${Shadow})` , backgroundRepeat : 'no-repeat'}}></div>
+            <div className='absolute bottom-0 left-0 w-full h-full' style={{ backgroundImage: `url(${Shadow})`, backgroundRepeat: 'no-repeat' }}></div>
         </div>
     )
 }

@@ -2,37 +2,37 @@ import React from "react";
 import styled from "styled-components";
 import BgImage from 'assets/images/home/bg1.png';
 
-export default ({ }) => {
-    return (
-        <div className='w-full md:h-[40vh] h-[55vh] flex items-center justify-center' style={{
-            backgroundImage: `url(${BgImage})`,
-            backgroundPosition: 'center',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat'
-        }}>
-            <RootRootRootRoot>
-                <Ellipse />
-                <MidnightBlueFlexColumn>
-                    <Text1>
-                        We
-                        {"  "}
-                        Are Partnered With Top Brands
-                    </Text1>
-                </MidnightBlueFlexColumn>
-                <Ellipse1 />
-                <Group>
-                    <Download src={`https://file.rendit.io/n/LbgBkZ88APKomUzBB8mj.png`} />
-                    <Download1 src={`https://file.rendit.io/n/jHgjI9n1bAbeApotjzVs.png`} />
-                    <Download2 src={`https://file.rendit.io/n/Z6XSQJXUQaaVoxlxR1cw.png`} />
-                    <FlexColumn>
-                        <Download3
-                            src={`https://file.rendit.io/n/p2930YkZXenpzNUNPAp0.png`}
-                        />
-                    </FlexColumn>
-                </Group>
-            </RootRootRootRoot>
-        </div>
-    );
+export const PartnerBrands = () => {
+  return (
+    <div className='w-full md:h-[40vh] h-[55vh] flex items-center justify-center' style={{
+      backgroundImage: `url(${BgImage})`,
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat'
+    }}>
+      <RootRootRootRoot>
+        <Ellipse />
+        <MidnightBlueFlexColumn>
+          <Text1>
+            We
+            {"  "}
+            Are Partnered With Top Brands
+          </Text1>
+        </MidnightBlueFlexColumn>
+        <Ellipse1 />
+        <Group>
+          <Download src={`https://file.rendit.io/n/LbgBkZ88APKomUzBB8mj.png`} />
+          <Download1 src={`https://file.rendit.io/n/jHgjI9n1bAbeApotjzVs.png`} />
+          <Download2 src={`https://file.rendit.io/n/Z6XSQJXUQaaVoxlxR1cw.png`} />
+          <FlexColumn>
+            <Download3
+              src={`https://file.rendit.io/n/p2930YkZXenpzNUNPAp0.png`}
+            />
+          </FlexColumn>
+        </Group>
+      </RootRootRootRoot>
+    </div>
+  );
 };
 
 const RootRootRootRoot = styled.div`

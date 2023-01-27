@@ -1,84 +1,84 @@
 import React from "react";
 import styled from "styled-components";
 
-export default ({ }) => {
-    return (
-        <FrameRootRootRoot>
-            <Image1 src={`https://file.rendit.io/n/GyJIBsHdzTzYPye9Y2Es.svg`} />
-            <FlexColumn>
-                <Text1>Team Member</Text1>
-            </FlexColumn>
-            <Text2>Our Amazing Team Members</Text2>
-            <Group3>
-                <RoyalPurpleFlexColumn>
-                    <Images1 src={`https://file.rendit.io/n/dqWttbzNSppPTjpye4bX.png`} />
-                </RoyalPurpleFlexColumn>
-                <RoyalPurpleFlexColumn>
-                    <Images1 src={`https://file.rendit.io/n/1sagcYKl1KtrLxMUGMjH.png`} />
-                </RoyalPurpleFlexColumn>
-                <RoyalPurpleFlexColumn>
-                    <Images1 src={`https://file.rendit.io/n/E4akVpseI5kLebeHbdXb.png`} />
-                </RoyalPurpleFlexColumn>
-            </Group3>
-            <Group4>
-                <Text3>Ralph Edwards</Text3>
-                <Text4>Jenny Wilson</Text4>
-                <Text5>John Wilson</Text5>
-            </Group4>
-            <Group5>
-                <Text6>Project Manager</Text6>
-                <Text7>Designer</Text7>
-                <Text8>Developer</Text8>
-            </Group5>
-            <Group6>
-                <Group>
-                    {[
-                        {
-                            src: `https://file.rendit.io/n/97XGhAUVE5L1xJSpHtoh.svg`,
-                        },
-                        {
-                            src: `https://file.rendit.io/n/gt2uzN4x8b0D0BrsTuIa.svg`,
-                        },
-                        {
-                            src: `https://file.rendit.io/n/RnsDWKAM0RTHyC6dhEKd.svg`,
-                        },
-                    ].map((data) => (
-                        <Image3 src={data.src} />
-                    ))}
-                </Group>
-                <Group>
-                    {[
-                        {
-                            src: `https://file.rendit.io/n/97XGhAUVE5L1xJSpHtoh.svg`,
-                        },
-                        {
-                            src: `https://file.rendit.io/n/gt2uzN4x8b0D0BrsTuIa.svg`,
-                        },
-                        {
-                            src: `https://file.rendit.io/n/RnsDWKAM0RTHyC6dhEKd.svg`,
-                        },
-                    ].map((data) => (
-                        <Image3 src={data.src} />
-                    ))}
-                </Group>
-                <Group>
-                    {[
-                        {
-                            src: `https://file.rendit.io/n/97XGhAUVE5L1xJSpHtoh.svg`,
-                        },
-                        {
-                            src: `https://file.rendit.io/n/gt2uzN4x8b0D0BrsTuIa.svg`,
-                        },
-                        {
-                            src: `https://file.rendit.io/n/RnsDWKAM0RTHyC6dhEKd.svg`,
-                        },
-                    ].map((data) => (
-                        <Image3 src={data.src} />
-                    ))}
-                </Group>
-            </Group6>
-        </FrameRootRootRoot>
-    );
+export const TeamMembers = () => {
+  return (
+    <FrameRootRootRoot>
+      <Image1 src={`https://file.rendit.io/n/GyJIBsHdzTzYPye9Y2Es.svg`} />
+      <FlexColumn>
+        <Text1>Team Member</Text1>
+      </FlexColumn>
+      <Text2>Our Amazing Team Members</Text2>
+      <Group3>
+        <RoyalPurpleFlexColumn>
+          <Images1 src={`https://file.rendit.io/n/dqWttbzNSppPTjpye4bX.png`} />
+        </RoyalPurpleFlexColumn>
+        <RoyalPurpleFlexColumn>
+          <Images1 src={`https://file.rendit.io/n/1sagcYKl1KtrLxMUGMjH.png`} />
+        </RoyalPurpleFlexColumn>
+        <RoyalPurpleFlexColumn>
+          <Images1 src={`https://file.rendit.io/n/E4akVpseI5kLebeHbdXb.png`} />
+        </RoyalPurpleFlexColumn>
+      </Group3>
+      <Group4>
+        <Text3>Ralph Edwards</Text3>
+        <Text4>Jenny Wilson</Text4>
+        <Text5>John Wilson</Text5>
+      </Group4>
+      <Group5>
+        <Text6>Project Manager</Text6>
+        <Text7>Designer</Text7>
+        <Text8>Developer</Text8>
+      </Group5>
+      <Group6>
+        <Group>
+          {[
+            {
+              src: `https://file.rendit.io/n/97XGhAUVE5L1xJSpHtoh.svg`,
+            },
+            {
+              src: `https://file.rendit.io/n/gt2uzN4x8b0D0BrsTuIa.svg`,
+            },
+            {
+              src: `https://file.rendit.io/n/RnsDWKAM0RTHyC6dhEKd.svg`,
+            },
+          ].map((data) => (
+            <Image3 src={data.src} />
+          ))}
+        </Group>
+        <Group>
+          {[
+            {
+              src: `https://file.rendit.io/n/97XGhAUVE5L1xJSpHtoh.svg`,
+            },
+            {
+              src: `https://file.rendit.io/n/gt2uzN4x8b0D0BrsTuIa.svg`,
+            },
+            {
+              src: `https://file.rendit.io/n/RnsDWKAM0RTHyC6dhEKd.svg`,
+            },
+          ].map((data) => (
+            <Image3 src={data.src} />
+          ))}
+        </Group>
+        <Group>
+          {[
+            {
+              src: `https://file.rendit.io/n/97XGhAUVE5L1xJSpHtoh.svg`,
+            },
+            {
+              src: `https://file.rendit.io/n/gt2uzN4x8b0D0BrsTuIa.svg`,
+            },
+            {
+              src: `https://file.rendit.io/n/RnsDWKAM0RTHyC6dhEKd.svg`,
+            },
+          ].map((data) => (
+            <Image3 src={data.src} />
+          ))}
+        </Group>
+      </Group6>
+    </FrameRootRootRoot>
+  );
 };
 
 const RoyalPurpleFlexColumn = styled.div`

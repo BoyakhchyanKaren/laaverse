@@ -11,22 +11,22 @@ const RoadMapSlider = () => {
                 slidesPerView={4}
                 spaceBetween={30}
                 pagination={{
-                clickable: true,
+                    clickable: true,
                 }}
                 modules={[Pagination]}
                 className="roadMapSlider"
                 breakpoints={{
-                    1100 : {
-                        slidesPerView : 4
+                    1100: {
+                        slidesPerView: 4
                     },
-                    850 : {
-                        slidesPerView : 3
+                    850: {
+                        slidesPerView: 3
                     },
-                    650 : {
-                        slidesPerView : 2 
+                    650: {
+                        slidesPerView: 2
                     },
-                    200 : {
-                        slidesPerView : 1
+                    200: {
+                        slidesPerView: 1
                     }
                 }}
             >
@@ -34,11 +34,11 @@ const RoadMapSlider = () => {
                     data?.map(item => (
                         <SwiperSlide key={item?.id}>
                             <div className={`w-full h-full ${item?.id % 2 !== 0 ? 'bg-primaryDark' : ''} border border-primaryLight rounded-lg relative`}>
-                                <div 
-                                className="my-[2px] ml-0.5 w-fit py-[2px] px-3 text-pure text-sm rounded-md"
-                                style={{ 
-                                    background: 'linear-gradient(270deg, #C87BFF 0%, #9A18D7 100%)' 
-                                }}
+                                <div
+                                    className="my-[2px] ml-0.5 w-fit py-[2px] px-3 text-pure text-sm rounded-md"
+                                    style={{
+                                        background: 'linear-gradient(270deg, #C87BFF 0%, #9A18D7 100%)'
+                                    }}
                                 >
                                     {item?.phase}
                                 </div>
@@ -46,7 +46,7 @@ const RoadMapSlider = () => {
                                 <p className="text-gray-100 text-sm ml-2">{item?.desc}</p>
                                 <ul className="pt-6 border-t border-t-primaryLight mt-6 pl-2 flex flex-col gap-3">
                                     {
-                                        item?.features?.map( f =>(
+                                        item?.features?.map(f => (
                                             <li className="flex items-center gap-2 text-light text-[13px]">
                                                 <div>
                                                     <CheckSvg />

@@ -2,59 +2,59 @@ import React from "react";
 import styled from "styled-components";
 import BgImage from 'assets/images/home/bg1.png';
 
-export default ({ }) => {
-    return (
-        <div className='w-full md:h-[70vh] h-[55vh] flex items-center justify-center' style={{
-            backgroundImage: `url(${BgImage})`,
-            backgroundPosition: 'center',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat'
-        }}>
-            <RootRootRootRoot>
-                <FlexRow />
-                <Image1 src={`https://file.rendit.io/n/iJOGlq9gcEBe6Ebh5i1l.svg`} />
-                <FlexRow1>
-                    <Group1>
-                        <Text1>100k</Text1>
-                        <Text2>Registered User</Text2>
-                    </Group1>
-                    <Image2 src={`https://file.rendit.io/n/Hg1k6C8coBoVu2YDgLVo.svg`} />
-                    <Group2>
-                        <Text3>5M</Text3>
-                        <Text4>Total Assets</Text4>
-                    </Group2>
-                    <Image10 src={`https://file.rendit.io/n/Hg1k6C8coBoVu2YDgLVo.svg`} />
-                    <Group3>
-                        <Text5>10B</Text5>
-                        <Text6>Yearly Trading</Text6>
-                    </Group3>
-                </FlexRow1>
-                <FlexColumn1 />
-                <FlexRow4 />
-                <Image9 src={`https://file.rendit.io/n/mSf8hwr7ljfQ1lnVx73T.svg`} />
-                <FlexColumn3 />
-                <Ellipse src={`https://file.rendit.io/n/XFKjn2Sp2Uh8EfvtWOI9.svg`} />
-                <Ellipse1 src={`https://file.rendit.io/n/efp8WVar6kkdrSg4S79T.svg`} />
-                <Group>
-                    <Ellipse2>
-                        <Image3 src={`https://file.rendit.io/n/RMB0phELYh81UhthiHKC.png`} />
-                        <Image4 src={`https://file.rendit.io/n/CTAF5QnodKcR3OeIXqcl.png`} />
-                        <Image5 src={`https://file.rendit.io/n/XHt8emtV0QbXh8RSKrJj.png`} />
-                        <Image6 src={`https://file.rendit.io/n/3YCqM3J9ytFDffbmKwm9.png`} />
-                        <Image7 src={`https://file.rendit.io/n/SZm6hKvTKjZFvAOsCKOC.png`} />
-                        <Image8 src={`https://file.rendit.io/n/YStzypympvLJtiHyxPr1.png`} />
-                    </Ellipse2>
-                    <Ellipse3>
-                        <Gallery src={`https://file.rendit.io/n/JzRwfayMCG5BzEeuuHtX.png`} />
-                    </Ellipse3>
-                    <Ellipse4>
-                        <Image11 src={`https://file.rendit.io/n/dkjpW8MZCPhknH5cLSYv.png`} />
-                    </Ellipse4>
-                    <Image12 src={`https://file.rendit.io/n/eqSGkUPpdS7tFRc3XlBP.png`} />
-                </Group>
-            </RootRootRootRoot>
-        </div>
-    );
+export const Statistic = () => {
+  return (
+    <div className='w-full md:h-[70vh] h-[55vh] flex items-center justify-center' style={{
+      backgroundImage: `url(${BgImage})`,
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat'
+    }}>
+      <RootRootRootRoot>
+        <FlexRow />
+        <Image1 src={`https://file.rendit.io/n/iJOGlq9gcEBe6Ebh5i1l.svg`} />
+        <FlexRow1>
+          <Group1>
+            <Text1>100k</Text1>
+            <Text2>Registered User</Text2>
+          </Group1>
+          <Image2 src={`https://file.rendit.io/n/Hg1k6C8coBoVu2YDgLVo.svg`} />
+          <Group2>
+            <Text3>5M</Text3>
+            <Text4>Total Assets</Text4>
+          </Group2>
+          <Image10 src={`https://file.rendit.io/n/Hg1k6C8coBoVu2YDgLVo.svg`} />
+          <Group3>
+            <Text5>10B</Text5>
+            <Text6>Yearly Trading</Text6>
+          </Group3>
+        </FlexRow1>
+        <FlexColumn1 />
+        <FlexRow4 />
+        <Image9 src={`https://file.rendit.io/n/mSf8hwr7ljfQ1lnVx73T.svg`} />
+        <FlexColumn3 />
+        <Ellipse src={`https://file.rendit.io/n/XFKjn2Sp2Uh8EfvtWOI9.svg`} />
+        <Ellipse1 src={`https://file.rendit.io/n/efp8WVar6kkdrSg4S79T.svg`} />
+        <Group>
+          <Ellipse2>
+            <Image3 src={`https://file.rendit.io/n/RMB0phELYh81UhthiHKC.png`} />
+            <Image4 src={`https://file.rendit.io/n/CTAF5QnodKcR3OeIXqcl.png`} />
+            <Image5 src={`https://file.rendit.io/n/XHt8emtV0QbXh8RSKrJj.png`} />
+            <Image6 src={`https://file.rendit.io/n/3YCqM3J9ytFDffbmKwm9.png`} />
+            <Image7 src={`https://file.rendit.io/n/SZm6hKvTKjZFvAOsCKOC.png`} />
+            <Image8 src={`https://file.rendit.io/n/YStzypympvLJtiHyxPr1.png`} />
+          </Ellipse2>
+          <Ellipse3>
+            <Gallery src={`https://file.rendit.io/n/JzRwfayMCG5BzEeuuHtX.png`} />
+          </Ellipse3>
+          <Ellipse4>
+            <Image11 src={`https://file.rendit.io/n/dkjpW8MZCPhknH5cLSYv.png`} />
+          </Ellipse4>
+          <Image12 src={`https://file.rendit.io/n/eqSGkUPpdS7tFRc3XlBP.png`} />
+        </Group>
+      </RootRootRootRoot>
+    </div>
+  );
 };
 
 const RootRootRootRoot = styled.div`

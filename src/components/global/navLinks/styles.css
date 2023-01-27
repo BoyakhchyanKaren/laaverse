@@ -1,8 +1,9 @@
-@media (max-width: 1290px){
-    .navLinks{
-        gap : 1rem;
+@media (max-width: 1290px) {
+    .navLinks {
+        gap: 1rem;
     }
-    .navLinks > li{
+
+    .navLinks>li {
         font-size: 14px;
     }
 }

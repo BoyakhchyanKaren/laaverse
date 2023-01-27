@@ -12,17 +12,17 @@ const Land = () => {
                 </h1>
                 <div className="heading-line"></div>
                 <div className='flex flex-col text-light lg:pr-16 sm:pr-8 pr-0 mt-12'>
-                    <p>Buy available land tiles from anywhere in the world or check the 
-                    marketplace to see who is selling theirs.
+                    <p>Buy available land tiles from anywhere in the world or check the
+                        marketplace to see who is selling theirs.
                     </p>
                     <p>
-                    There are millions of dollars worth of Player-to-Players land traded every year.
+                        There are millions of dollars worth of Player-to-Players land traded every year.
                     </p>
-                    <p>Land Owners can participate in the EcoSim by building a Mentar 
-                    to begin detecting E-ther. </p>
+                    <p>Land Owners can participate in the EcoSim by building a Mentar
+                        to begin detecting E-ther. </p>
                     <p>
-                    Over time you can decide how to take your land’s development
-                    to the next level.</p>
+                        Over time you can decide how to take your land’s development
+                        to the next level.</p>
                 </div>
                 <div className='flex items-center justify-between sm:gap-x-4 gap-x-3 gap-y-8 text-light mt-12 relative z-20 flex-wrap'>
                     <div className='border-2 md:w-[120px] w-[100px] h-[100px] md:h-[120px] border-dashed rounded-full flex items-center justify-center flex-col '>

@@ -5,14 +5,14 @@ import Social from './Social';
 
 const HomeFooter = () => {
     return (
-        <div 
-        className='w-full  h-full pt-20 pb-10 px-2'
-        style = {{
-            backgroundImage : `url(${BgImage})`,
-            backgroundSize : 'cover',
-            backgroundRepeat : 'no-repeat',
-            backgroundColor: '#2b032a',
-        }}
+        <div
+            className='w-full  h-full pt-20 pb-10 px-2'
+            style={{
+                backgroundImage: `url(${BgImage})`,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                backgroundColor: '#2b032a',
+            }}
         >
             <div>
                 <JoinCommunity />

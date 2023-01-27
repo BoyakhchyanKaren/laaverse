@@ -2,306 +2,306 @@ import React from "react";
 import styled from "styled-components";
 import BgImage from 'assets/images/home/bg1.png';
 
-export default ({ }) => {
-    return (
-        <div className='flex items-center justify-center' style={{
-            backgroundImage: `url(${BgImage})`,
-            backgroundPosition: 'center',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            overflow: 'hidden',
-            backgroundColor: '#2b032a',
-        }}>
-            <FrameRootRootRoot>
-                <Group23>
-                    <Group>
-                        <Group1>
-                            <FlexRow1>
-                                <Group4>
-                                    <Image1
-                                        src={`https://file.rendit.io/n/hO6iBkwhtvAcdvsCPNvO.svg`}
-                                    />
-                                    <Image2
-                                        src={`https://file.rendit.io/n/ruHGb7HBauL4E33ZDAov.svg`}
-                                    />
-                                    <Image3
-                                        src={`https://file.rendit.io/n/oulRPRM6pbcHAR9Cr7dJ.svg`}
-                                    />
-                                    <Group6>
-                                        <Image4
-                                            src={`https://file.rendit.io/n/glMFg9q2Th7tGZPCQarb.svg`}
-                                        />
-                                        <Image5
-                                            src={`https://file.rendit.io/n/jVWZBZzNZpgEBmDHcxJv.svg`}
-                                        />
-                                        <Image6
-                                            src={`https://file.rendit.io/n/suGDJyf0otMCGquKWki5.svg`}
-                                        />
-                                    </Group6>
-                                    <Group7>
-                                        <Image7
-                                            src={`https://file.rendit.io/n/hiPgPNYxfyuYzrT9EBaZ.svg`}
-                                        />
-                                        <Image6
-                                            src={`https://file.rendit.io/n/rJ9mvQDq7EZ8KN2OhnxQ.svg`}
-                                        />
-                                    </Group7>
-                                </Group4>
-                                <Image9
-                                    src={`https://file.rendit.io/n/tTA1lebkDgQDURyVftNp.svg`}
-                                />
-                                <Group5>
-                                    <Text1>Connect your wallet</Text1>
-                                    <Paragraph>
-                                        Suspendisse tristique neque a lorem placerat pharetra. <br />
-                                        Class aptent taciti sociosqu ad litora torquent per conubia{" "}
-                                        <br />
-                                        nostra, per inceptos himenaeos
-                                    </Paragraph>
-                                </Group5>
-                            </FlexRow1>
-                            <BlackFlexColumn>
-                                <Text2>Step 1</Text2>
-                            </BlackFlexColumn>
-                        </Group1>
-                        <Group2>
-                            <FlexRow2>
-                                <Group8>
-                                    <FlexColumn8>
-                                        <Image10
-                                            src={`https://file.rendit.io/n/WWkdeahrORXwIHwbExh4.svg`}
-                                        />
-                                    </FlexColumn8>
-                                    <Image11
-                                        src={`https://file.rendit.io/n/OdFz8AI7EBre1dEWXuLk.svg`}
-                                    />
-                                    <FlexRow3>
-                                        <Image12
-                                            src={`https://file.rendit.io/n/wYClIyjULGUnkuwdkw7g.svg`}
-                                        />
-                                        <Image13
-                                            src={`https://file.rendit.io/n/hylICOg2UQmBbOMMhjao.svg`}
-                                        />
-                                        <Image14
-                                            src={`https://file.rendit.io/n/ArRd72lYfLDjlvm4arAg.svg`}
-                                        />
-                                        <Image15
-                                            src={`https://file.rendit.io/n/py9wwGIzIMFEkj9JMaK5.svg`}
-                                        />
-                                    </FlexRow3>
-                                    <FlexColumn9>
-                                        <Image16
-                                            src={`https://file.rendit.io/n/JXgF6788eG96wNKZY9nz.svg`}
-                                        />
-                                    </FlexColumn9>
-                                    <FlexColumn10>
-                                        <Image17
-                                            src={`https://file.rendit.io/n/yg2vtc7XPry18m5D1GKy.svg`}
-                                        />
-                                    </FlexColumn10>
-                                </Group8>
-                                <Image9
-                                    src={`https://file.rendit.io/n/tTA1lebkDgQDURyVftNp.svg`}
-                                />
-                                <Group5>
-                                    <Text3>Buy your NFT</Text3>
-                                    <Paragraph>
-                                        Suspendisse tristique neque a lorem placerat pharetra. <br />
-                                        Class aptent taciti sociosqu ad litora torquent per conubia{" "}
-                                        <br />
-                                        nostra, per inceptos himenaeos
-                                    </Paragraph>
-                                </Group5>
-                            </FlexRow2>
-                            <BlackFlexColumn1>
-                                <Text4>Step 2</Text4>
-                            </BlackFlexColumn1>
-                        </Group2>
-                        <Group2>
-                            <FlexRow4>
-                                <Group10>
-                                    <FlexColumn14>
-                                        <Image19
-                                            src={`https://file.rendit.io/n/0hsOjmuRXfNAqMzsEHlZ.svg`}
-                                        />
-                                    </FlexColumn14>
-                                    <FlexColumn15>
-                                        <Image19
-                                            src={`https://file.rendit.io/n/NgPopXHrAYMhvCk69bwj.svg`}
-                                        />
-                                    </FlexColumn15>
-                                    <Image21
-                                        src={`https://file.rendit.io/n/YoCbXWTSz5GN5DjemKRJ.svg`}
-                                    />
-                                    <Image22
-                                        src={`https://file.rendit.io/n/vcq1BAjRuLVnU2h9eQiL.svg`}
-                                    />
-                                    <Image23
-                                        src={`https://file.rendit.io/n/e449UmyfjGZXGVRaqRqF.svg`}
-                                    />
-                                    <Image24
-                                        src={`https://file.rendit.io/n/UIhWGslUWYvF2Qd8s3Aa.svg`}
-                                    />
-                                    <Image25
-                                        src={`https://file.rendit.io/n/uZ9DHK60eWV5hgQcX1jA.svg`}
-                                    />
-                                    <Image26
-                                        src={`https://file.rendit.io/n/SIIyG4e8bMfzn6MKwHaz.svg`}
-                                    />
-                                    <Image27
-                                        src={`https://file.rendit.io/n/VvpGQFJ6wBuFFd8LeLGR.svg`}
-                                    />
-                                    <Image28
-                                        src={`https://file.rendit.io/n/YYzfRamWc3mnHwCikJIz.svg`}
-                                    />
-                                    <Image29
-                                        src={`https://file.rendit.io/n/u729wmRH6bZ7ie25cxNW.svg`}
-                                    />
-                                    <Group12>
-                                        <Image30
-                                            src={`https://file.rendit.io/n/2vQWN01uZfZHsOoSoBQ7.svg`}
-                                        />
-                                        <Image31
-                                            src={`https://file.rendit.io/n/W9KD98mOmjdSMUgwzowU.svg`}
-                                        />
-                                        <Group14>
-                                            <Image32
-                                                src={`https://file.rendit.io/n/dBPSNvTW8vm5WgUyRd1Y.svg`}
-                                            />
-                                            <Group15>
-                                                <Group16>
-                                                    <Image33
-                                                        src={`https://file.rendit.io/n/omcoRA4aBf2E2I9Bj7w3.svg`}
-                                                    />
-                                                    <Image34
-                                                        src={`https://file.rendit.io/n/vD7mxFwfLCTBgJ2Faf4f.svg`}
-                                                    />
-                                                    <Image31
-                                                        src={`https://file.rendit.io/n/I9NUkKmCCYs6DRhWbmnO.svg`}
-                                                    />
-                                                </Group16>
-                                                <Group17>
-                                                    <Image36
-                                                        src={`https://file.rendit.io/n/XkyFimEMXaVBTbflyXTj.svg`}
-                                                    />
-                                                    <Image37
-                                                        src={`https://file.rendit.io/n/ePtWheKU3DP9UgdQZNRm.svg`}
-                                                    />
-                                                </Group17>
-                                            </Group15>
-                                            <Image38
-                                                src={`https://file.rendit.io/n/6vXCpPGKiNzquXx43BJA.svg`}
-                                            />
-                                        </Group14>
-                                    </Group12>
-                                    <Group13>
-                                        <Image39
-                                            src={`https://file.rendit.io/n/0cEd8njZbdElpJvTncd2.svg`}
-                                        />
-                                        <Image39
-                                            src={`https://file.rendit.io/n/z7V085MjZ1PdMlYsPwHx.svg`}
-                                        />
-                                    </Group13>
-                                </Group10>
-                                <Image9
-                                    src={`https://file.rendit.io/n/tTA1lebkDgQDURyVftNp.svg`}
-                                />
-                                <Group5>
-                                    <Text5>Create collection</Text5>
-                                    <Paragraph>
-                                        Suspendisse tristique neque a lorem placerat pharetra. <br />
-                                        Class aptent taciti sociosqu ad litora torquent per conubia{" "}
-                                        <br />
-                                        nostra, per inceptos himenaeos
-                                    </Paragraph>
-                                </Group5>
-                            </FlexRow4>
-                            <BlackFlexColumn1>
-                                <Text4>Step 3</Text4>
-                            </BlackFlexColumn1>
-                        </Group2>
-                    </Group>
-                    <Image42 src={`https://file.rendit.io/n/8tZOLvnTp3N4TfEGyThC.png`} />
-                </Group23>
-                <Group24>
-                    <FlexRow8>
-                        <Group18>
-                            <Image43
-                                src={`https://file.rendit.io/n/17RnQlz4S5Us7wnEey2h.svg`}
-                            />
-                            <FlexColumn21>
-                                <Image44
-                                    src={`https://file.rendit.io/n/JxPMAqRYCaxtIieeht6g.svg`}
-                                />
-                                <FlexColumn22>
-                                    <Image45
-                                        src={`https://file.rendit.io/n/RGXOXJT7bxh5wo1YgSgP.svg`}
-                                    />
-                                </FlexColumn22>
-                                <FlexColumn23>
-                                    <Image46
-                                        src={`https://file.rendit.io/n/xhI8SpnCvnBhu4leufdt.svg`}
-                                    />
-                                </FlexColumn23>
-                            </FlexColumn21>
-                            <Group20>
-                                <Image47
-                                    src={`https://file.rendit.io/n/s2iHGYrGS4fu8PHSIioN.svg`}
-                                />
-                                <Image48
-                                    src={`https://file.rendit.io/n/yLdWG9Ti9Ep7iRF1Stgy.svg`}
-                                />
-                                <Image49
-                                    src={`https://file.rendit.io/n/nzBfsaceHSBUgEJUZE4l.svg`}
-                                />
-                            </Group20>
-                            <Group21>
-                                <Image50
-                                    src={`https://file.rendit.io/n/wr1cyUbnop6H09cjWzIm.svg`}
-                                />
-                                <Image51
-                                    src={`https://file.rendit.io/n/Nw7F5FrwflR67tL8jcRX.svg`}
-                                />
-                                <Image51
-                                    src={`https://file.rendit.io/n/DCua812N55h8RgQIsNOY.svg`}
-                                />
-                                <Image53
-                                    src={`https://file.rendit.io/n/WlNnJQ3lapBlUX0t3LO9.svg`}
-                                />
-                            </Group21>
-                            <Group22>
-                                {[
-                                    {
-                                        src: `https://file.rendit.io/n/OX6npyU2csSL1xgObCW2.svg`,
-                                    },
-                                    {
-                                        src: `https://file.rendit.io/n/BPbWJ3vJpCexlRPczubU.svg`,
-                                    },
-                                    {
-                                        src: `https://file.rendit.io/n/tcfzHtI4SJRAufEzxO6d.svg`,
-                                    },
-                                ].map((data) => (
-                                    <Image53 src={data.src} />
-                                ))}
-                            </Group22>
-                        </Group18>
-                        <Image9 src={`https://file.rendit.io/n/tTA1lebkDgQDURyVftNp.svg`} />
-                        <Group19>
-                            <Text7>Sell your NFT</Text7>
-                            <Paragraph>
-                                Suspendisse tristique neque a lorem placerat pharetra. <br />
-                                Class aptent taciti sociosqu ad litora torquent per conubia <br />
-                                nostra, per inceptos himenaeos
-                            </Paragraph>
-                        </Group19>
-                    </FlexRow8>
-                    <BlackFlexColumn3>
-                        <Text8>Step 4</Text8>
-                    </BlackFlexColumn3>
-                </Group24>
-            </FrameRootRootRoot>
-        </div>
-    );
+export const Steps = () => {
+  return (
+    <div className='flex items-center justify-center' style={{
+      backgroundImage: `url(${BgImage})`,
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      overflow: 'hidden',
+      backgroundColor: '#2b032a',
+    }}>
+      <FrameRootRootRoot>
+        <Group23>
+          <Group>
+            <Group1>
+              <FlexRow1>
+                <Group4>
+                  <Image1
+                    src={`https://file.rendit.io/n/hO6iBkwhtvAcdvsCPNvO.svg`}
+                  />
+                  <Image2
+                    src={`https://file.rendit.io/n/ruHGb7HBauL4E33ZDAov.svg`}
+                  />
+                  <Image3
+                    src={`https://file.rendit.io/n/oulRPRM6pbcHAR9Cr7dJ.svg`}
+                  />
+                  <Group6>
+                    <Image4
+                      src={`https://file.rendit.io/n/glMFg9q2Th7tGZPCQarb.svg`}
+                    />
+                    <Image5
+                      src={`https://file.rendit.io/n/jVWZBZzNZpgEBmDHcxJv.svg`}
+                    />
+                    <Image6
+                      src={`https://file.rendit.io/n/suGDJyf0otMCGquKWki5.svg`}
+                    />
+                  </Group6>
+                  <Group7>
+                    <Image7
+                      src={`https://file.rendit.io/n/hiPgPNYxfyuYzrT9EBaZ.svg`}
+                    />
+                    <Image6
+                      src={`https://file.rendit.io/n/rJ9mvQDq7EZ8KN2OhnxQ.svg`}
+                    />
+                  </Group7>
+                </Group4>
+                <Image9
+                  src={`https://file.rendit.io/n/tTA1lebkDgQDURyVftNp.svg`}
+                />
+                <Group5>
+                  <Text1>Connect your wallet</Text1>
+                  <Paragraph>
+                    Suspendisse tristique neque a lorem placerat pharetra. <br />
+                    Class aptent taciti sociosqu ad litora torquent per conubia{" "}
+                    <br />
+                    nostra, per inceptos himenaeos
+                  </Paragraph>
+                </Group5>
+              </FlexRow1>
+              <BlackFlexColumn>
+                <Text2>Step 1</Text2>
+              </BlackFlexColumn>
+            </Group1>
+            <Group2>
+              <FlexRow2>
+                <Group8>
+                  <FlexColumn8>
+                    <Image10
+                      src={`https://file.rendit.io/n/WWkdeahrORXwIHwbExh4.svg`}
+                    />
+                  </FlexColumn8>
+                  <Image11
+                    src={`https://file.rendit.io/n/OdFz8AI7EBre1dEWXuLk.svg`}
+                  />
+                  <FlexRow3>
+                    <Image12
+                      src={`https://file.rendit.io/n/wYClIyjULGUnkuwdkw7g.svg`}
+                    />
+                    <Image13
+                      src={`https://file.rendit.io/n/hylICOg2UQmBbOMMhjao.svg`}
+                    />
+                    <Image14
+                      src={`https://file.rendit.io/n/ArRd72lYfLDjlvm4arAg.svg`}
+                    />
+                    <Image15
+                      src={`https://file.rendit.io/n/py9wwGIzIMFEkj9JMaK5.svg`}
+                    />
+                  </FlexRow3>
+                  <FlexColumn9>
+                    <Image16
+                      src={`https://file.rendit.io/n/JXgF6788eG96wNKZY9nz.svg`}
+                    />
+                  </FlexColumn9>
+                  <FlexColumn10>
+                    <Image17
+                      src={`https://file.rendit.io/n/yg2vtc7XPry18m5D1GKy.svg`}
+                    />
+                  </FlexColumn10>
+                </Group8>
+                <Image9
+                  src={`https://file.rendit.io/n/tTA1lebkDgQDURyVftNp.svg`}
+                />
+                <Group5>
+                  <Text3>Buy your NFT</Text3>
+                  <Paragraph>
+                    Suspendisse tristique neque a lorem placerat pharetra. <br />
+                    Class aptent taciti sociosqu ad litora torquent per conubia{" "}
+                    <br />
+                    nostra, per inceptos himenaeos
+                  </Paragraph>
+                </Group5>
+              </FlexRow2>
+              <BlackFlexColumn1>
+                <Text4>Step 2</Text4>
+              </BlackFlexColumn1>
+            </Group2>
+            <Group2>
+              <FlexRow4>
+                <Group10>
+                  <FlexColumn14>
+                    <Image19
+                      src={`https://file.rendit.io/n/0hsOjmuRXfNAqMzsEHlZ.svg`}
+                    />
+                  </FlexColumn14>
+                  <FlexColumn15>
+                    <Image19
+                      src={`https://file.rendit.io/n/NgPopXHrAYMhvCk69bwj.svg`}
+                    />
+                  </FlexColumn15>
+                  <Image21
+                    src={`https://file.rendit.io/n/YoCbXWTSz5GN5DjemKRJ.svg`}
+                  />
+                  <Image22
+                    src={`https://file.rendit.io/n/vcq1BAjRuLVnU2h9eQiL.svg`}
+                  />
+                  <Image23
+                    src={`https://file.rendit.io/n/e449UmyfjGZXGVRaqRqF.svg`}
+                  />
+                  <Image24
+                    src={`https://file.rendit.io/n/UIhWGslUWYvF2Qd8s3Aa.svg`}
+                  />
+                  <Image25
+                    src={`https://file.rendit.io/n/uZ9DHK60eWV5hgQcX1jA.svg`}
+                  />
+                  <Image26
+                    src={`https://file.rendit.io/n/SIIyG4e8bMfzn6MKwHaz.svg`}
+                  />
+                  <Image27
+                    src={`https://file.rendit.io/n/VvpGQFJ6wBuFFd8LeLGR.svg`}
+                  />
+                  <Image28
+                    src={`https://file.rendit.io/n/YYzfRamWc3mnHwCikJIz.svg`}
+                  />
+                  <Image29
+                    src={`https://file.rendit.io/n/u729wmRH6bZ7ie25cxNW.svg`}
+                  />
+                  <Group12>
+                    <Image30
+                      src={`https://file.rendit.io/n/2vQWN01uZfZHsOoSoBQ7.svg`}
+                    />
+                    <Image31
+                      src={`https://file.rendit.io/n/W9KD98mOmjdSMUgwzowU.svg`}
+                    />
+                    <Group14>
+                      <Image32
+                        src={`https://file.rendit.io/n/dBPSNvTW8vm5WgUyRd1Y.svg`}
+                      />
+                      <Group15>
+                        <Group16>
+                          <Image33
+                            src={`https://file.rendit.io/n/omcoRA4aBf2E2I9Bj7w3.svg`}
+                          />
+                          <Image34
+                            src={`https://file.rendit.io/n/vD7mxFwfLCTBgJ2Faf4f.svg`}
+                          />
+                          <Image31
+                            src={`https://file.rendit.io/n/I9NUkKmCCYs6DRhWbmnO.svg`}
+                          />
+                        </Group16>
+                        <Group17>
+                          <Image36
+                            src={`https://file.rendit.io/n/XkyFimEMXaVBTbflyXTj.svg`}
+                          />
+                          <Image37
+                            src={`https://file.rendit.io/n/ePtWheKU3DP9UgdQZNRm.svg`}
+                          />
+                        </Group17>
+                      </Group15>
+                      <Image38
+                        src={`https://file.rendit.io/n/6vXCpPGKiNzquXx43BJA.svg`}
+                      />
+                    </Group14>
+                  </Group12>
+                  <Group13>
+                    <Image39
+                      src={`https://file.rendit.io/n/0cEd8njZbdElpJvTncd2.svg`}
+                    />
+                    <Image39
+                      src={`https://file.rendit.io/n/z7V085MjZ1PdMlYsPwHx.svg`}
+                    />
+                  </Group13>
+                </Group10>
+                <Image9
+                  src={`https://file.rendit.io/n/tTA1lebkDgQDURyVftNp.svg`}
+                />
+                <Group5>
+                  <Text5>Create collection</Text5>
+                  <Paragraph>
+                    Suspendisse tristique neque a lorem placerat pharetra. <br />
+                    Class aptent taciti sociosqu ad litora torquent per conubia{" "}
+                    <br />
+                    nostra, per inceptos himenaeos
+                  </Paragraph>
+                </Group5>
+              </FlexRow4>
+              <BlackFlexColumn1>
+                <Text4>Step 3</Text4>
+              </BlackFlexColumn1>
+            </Group2>
+          </Group>
+          <Image42 src={`https://file.rendit.io/n/8tZOLvnTp3N4TfEGyThC.png`} />
+        </Group23>
+        <Group24>
+          <FlexRow8>
+            <Group18>
+              <Image43
+                src={`https://file.rendit.io/n/17RnQlz4S5Us7wnEey2h.svg`}
+              />
+              <FlexColumn21>
+                <Image44
+                  src={`https://file.rendit.io/n/JxPMAqRYCaxtIieeht6g.svg`}
+                />
+                <FlexColumn22>
+                  <Image45
+                    src={`https://file.rendit.io/n/RGXOXJT7bxh5wo1YgSgP.svg`}
+                  />
+                </FlexColumn22>
+                <FlexColumn23>
+                  <Image46
+                    src={`https://file.rendit.io/n/xhI8SpnCvnBhu4leufdt.svg`}
+                  />
+                </FlexColumn23>
+              </FlexColumn21>
+              <Group20>
+                <Image47
+                  src={`https://file.rendit.io/n/s2iHGYrGS4fu8PHSIioN.svg`}
+                />
+                <Image48
+                  src={`https://file.rendit.io/n/yLdWG9Ti9Ep7iRF1Stgy.svg`}
+                />
+                <Image49
+                  src={`https://file.rendit.io/n/nzBfsaceHSBUgEJUZE4l.svg`}
+                />
+              </Group20>
+              <Group21>
+                <Image50
+                  src={`https://file.rendit.io/n/wr1cyUbnop6H09cjWzIm.svg`}
+                />
+                <Image51
+                  src={`https://file.rendit.io/n/Nw7F5FrwflR67tL8jcRX.svg`}
+                />
+                <Image51
+                  src={`https://file.rendit.io/n/DCua812N55h8RgQIsNOY.svg`}
+                />
+                <Image53
+                  src={`https://file.rendit.io/n/WlNnJQ3lapBlUX0t3LO9.svg`}
+                />
+              </Group21>
+              <Group22>
+                {[
+                  {
+                    src: `https://file.rendit.io/n/OX6npyU2csSL1xgObCW2.svg`,
+                  },
+                  {
+                    src: `https://file.rendit.io/n/BPbWJ3vJpCexlRPczubU.svg`,
+                  },
+                  {
+                    src: `https://file.rendit.io/n/tcfzHtI4SJRAufEzxO6d.svg`,
+                  },
+                ].map((data) => (
+                  <Image53 src={data.src} />
+                ))}
+              </Group22>
+            </Group18>
+            <Image9 src={`https://file.rendit.io/n/tTA1lebkDgQDURyVftNp.svg`} />
+            <Group19>
+              <Text7>Sell your NFT</Text7>
+              <Paragraph>
+                Suspendisse tristique neque a lorem placerat pharetra. <br />
+                Class aptent taciti sociosqu ad litora torquent per conubia <br />
+                nostra, per inceptos himenaeos
+              </Paragraph>
+            </Group19>
+          </FlexRow8>
+          <BlackFlexColumn3>
+            <Text8>Step 4</Text8>
+          </BlackFlexColumn3>
+        </Group24>
+      </FrameRootRootRoot>
+    </div>
+  );
 };
 
 const Image6 = styled.img`
