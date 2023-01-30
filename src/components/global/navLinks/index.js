@@ -20,7 +20,7 @@ const NavLinks = () => {
                 <Link to='/stacking'>STAKING</Link>
             </li>
             <li className='hover:text-primaryLight'>
-                <Link to='#'>MEDIA</Link>
+                <Link to='/media'>MEDIA</Link>
             </li>
             <li className='hover:text-primaryLight'>
                 <Link to='#'>DAO</Link>

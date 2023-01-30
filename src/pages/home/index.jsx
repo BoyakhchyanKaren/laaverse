@@ -3,22 +3,36 @@ import Banner from 'components/home/banner'
 import CharactersNFTs from 'components/home/charactersNFTs'
 import GovernanceOverview from 'components/home/governanceOverview'
 import OwnAndDevelop from 'components/home/ownAndDevelop'
+import { colors } from 'constants/colors'
 import React from 'react'
+import Fade from 'react-reveal/Fade';
 
 const Home = () => {
     return (
-        <div>
-            <Banner />
+        <div style={{
+            backgroundColor: colors.secondaryBackgroundLight
+        }}>
+            <Fade bottom>
+                <Banner />
+            </Fade>
             <section>
-                <CharactersNFTs />
+                <Fade bottom>
+                    <CharactersNFTs />
+                </Fade>
             </section>
             <section>
-                <GovernanceOverview />
+                <Fade bottom>
+                    <GovernanceOverview />
+                </Fade>
             </section>
             <section>
-                <OwnAndDevelop />
+                <Fade bottom>
+                    <OwnAndDevelop />
+                </Fade>
             </section>
-            <Drawer />
+            <Fade bottom>
+                <Drawer />
+            </Fade>
         </div>
     )
 }

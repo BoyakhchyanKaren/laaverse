@@ -1,22 +1,44 @@
 import { AboutBanner, NewsLetter, NftCollection, CreatePortfolio, TeamMembers, PartnerBrands, Statistic, JoinNft, Steps } from "components/about";
+import { colors } from "constants/colors";
+import Fade from 'react-reveal/Fade';
 
 const About = () => {
     return (
-        <div>
-            <AboutBanner />
+        <div style={{
+            backgroundColor: colors.secondaryBackgroundLight,
+        }}>
+            <Fade bottom>
+                <AboutBanner />
+            </Fade>
             <section>
-                <NftCollection />
+                <Fade bottom>
+                    <NftCollection />
+                </Fade>
             </section>
             <section>
-                <PartnerBrands />
-                <Statistic />
+                <Fade bottom>
+                    <PartnerBrands />
+                </Fade>
+                <Fade bottom>
+                    <Statistic />
+                </Fade>
             </section>
             <section>
-                <JoinNft />
-                <Steps />
-                <TeamMembers />
-                <CreatePortfolio />
-                <NewsLetter />
+                <Fade bottom>
+                    <JoinNft />
+                </Fade>
+                <Fade bottom>
+                    <Steps />
+                </Fade>
+                <Fade bottom>
+                    <TeamMembers />
+                </Fade>
+                <Fade bottom>
+                    <CreatePortfolio />
+                </Fade>
+                <Fade bottom>
+                    <NewsLetter />
+                </Fade>
             </section>
         </div>
     );
