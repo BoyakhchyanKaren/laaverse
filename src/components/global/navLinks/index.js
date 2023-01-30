@@ -17,7 +17,7 @@ const NavLinks = () => {
                 <Link to='#'>LAND MAP</Link>
             </li>
             <li className='hover:text-primaryLight'>
-                <Link to='#'>STAKING</Link>
+                <Link to='/stacking'>STAKING</Link>
             </li>
             <li className='hover:text-primaryLight'>
                 <Link to='#'>MEDIA</Link>
