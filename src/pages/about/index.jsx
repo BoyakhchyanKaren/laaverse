@@ -1,44 +1,44 @@
 import { AboutBanner, NewsLetter, NftCollection, CreatePortfolio, TeamMembers, PartnerBrands, Statistic, JoinNft, Steps } from "components/about";
 import { colors } from "constants/colors";
-import Fade from 'react-reveal/Fade';
+import { Animate } from "components/global/animation";
 
 const About = () => {
     return (
         <div style={{
-            backgroundColor: colors.secondaryBackgroundLight,
+            backgroundColor: colors.primaryBackground,
         }}>
-            <Fade bottom>
+            <Animate.FadeUp>
                 <AboutBanner />
-            </Fade>
+            </Animate.FadeUp>
             <section>
-                <Fade bottom>
+                <Animate.FadeUp>
                     <NftCollection />
-                </Fade>
+                </Animate.FadeUp>
             </section>
             <section>
-                <Fade bottom>
+                <Animate.FadeUp>
                     <PartnerBrands />
-                </Fade>
-                <Fade bottom>
+                </Animate.FadeUp>
+                <Animate.FadeUp>
                     <Statistic />
-                </Fade>
+                </Animate.FadeUp>
             </section>
             <section>
-                <Fade bottom>
+                <Animate.FadeUp>
                     <JoinNft />
-                </Fade>
-                <Fade bottom>
+                </Animate.FadeUp>
+                <Animate.FadeUp>
                     <Steps />
-                </Fade>
-                <Fade bottom>
+                </Animate.FadeUp>
+                <Animate.FadeUp>
                     <TeamMembers />
-                </Fade>
-                <Fade bottom>
+                </Animate.FadeUp>
+                <Animate.FadeUp>
                     <CreatePortfolio />
-                </Fade>
-                <Fade bottom>
+                </Animate.FadeUp>
+                <Animate.FadeUp>
                     <NewsLetter />
-                </Fade>
+                </Animate.FadeUp>
             </section>
         </div>
     );

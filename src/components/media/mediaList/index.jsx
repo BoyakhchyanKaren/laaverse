@@ -2,33 +2,33 @@ import React from "react";
 import styled from "styled-components";
 
 export const MediaList = () => {
-    return (
-        <FrameRootRootRoot>
-            <FlexRow>
-                {[1, 2, 3, 4, 5, 6].map(() => {
-                    return (
-                        <RoyalPurpleFlexColumn>
-                            <Img2 src={`https://file.rendit.io/n/hXUF8YEU8cD5Z1ffxD5u.png`} />
-                            <Text1>Metaverse</Text1>
-                            <Paragraph>
-                                Decoded : Metaverse And The <br />
-                                Future Of Banking
-                            </Paragraph>
-                            <Paragraph1>
-                                The metaverse can help the healthcare <br />
-                                fraternity by providing trainings on
-                                <br />
-                                understanding medical tools and…
-                            </Paragraph1>
-                            <FlexColumn>
-                                <Text2>READ MORE</Text2>
-                            </FlexColumn>
-                        </RoyalPurpleFlexColumn>
-                    )
-                })}
-            </FlexRow>
-        </FrameRootRootRoot>
-    );
+  return (
+    <FrameRootRootRoot>
+      <FlexRow>
+        {[1, 2, 3, 4, 5, 6].map(() => {
+          return (
+            <RoyalPurpleFlexColumn>
+              <Img2 src={`https://file.rendit.io/n/hXUF8YEU8cD5Z1ffxD5u.png`} />
+              <Text1>Metaverse</Text1>
+              <Paragraph>
+                Decoded : Metaverse And The <br />
+                Future Of Banking
+              </Paragraph>
+              <Paragraph1>
+                The metaverse can help the healthcare <br />
+                fraternity by providing trainings on
+                <br />
+                understanding medical tools and…
+              </Paragraph1>
+              <FlexColumn>
+                <Text2>READ MORE</Text2>
+              </FlexColumn>
+            </RoyalPurpleFlexColumn>
+          )
+        })}
+      </FlexRow>
+    </FrameRootRootRoot>
+  );
 };
 
 const FlexRow = styled.div`
@@ -88,13 +88,12 @@ const Paragraph1 = styled.div`
   white-space: nowrap;
   letter-spacing: -0.28px;
 `;
-const FlexColumn = styled.div`
+const FlexColumn = styled.button`
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-self: flex-end;
   margin: 0px 15px 0px 0px;
-  padding: 10px 16px 11px 20px;
+  padding: 10px;
   border-radius: 8px;
   background-image: linear-gradient(90deg, #c965f7 -42%, #3f0445 142%);
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);

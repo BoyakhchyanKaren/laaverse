@@ -5,34 +5,32 @@ import GovernanceOverview from 'components/home/governanceOverview'
 import OwnAndDevelop from 'components/home/ownAndDevelop'
 import { colors } from 'constants/colors'
 import React from 'react'
-import Fade from 'react-reveal/Fade';
+import { Animate } from 'components/global/animation'
 
 const Home = () => {
     return (
         <div style={{
-            backgroundColor: colors.secondaryBackgroundLight
+            backgroundColor: colors.primaryBackground
         }}>
-            <Fade bottom>
+            <Animate.FadeUp>
                 <Banner />
-            </Fade>
+            </Animate.FadeUp>
             <section>
-                <Fade bottom>
+                <Animate.FadeUp>
                     <CharactersNFTs />
-                </Fade>
+                </Animate.FadeUp>
             </section>
             <section>
-                <Fade bottom>
+                <Animate.FadeUp>
                     <GovernanceOverview />
-                </Fade>
+                </Animate.FadeUp>
             </section>
             <section>
-                <Fade bottom>
+                <Animate.FadeUp>
                     <OwnAndDevelop />
-                </Fade>
+                </Animate.FadeUp>
             </section>
-            <Fade bottom>
-                <Drawer />
-            </Fade>
+            <Drawer />
         </div>
     )
 }
