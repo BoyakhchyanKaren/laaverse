@@ -1,0 +1,26 @@
+input:focus {
+    outline: none;
+}
+
+.total-stake-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 30px,
+}
+
+.total-stake-input {
+    background-color: #320750;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+    width: 455px;
+    color: white;
+}
+
+.apporve-input {
+    color: white;
+    font-size: 16px;
+    font-family: Poppins;
+    white-space: nowrap;
+    letter-spacing: 0.16px;
+    background-color: #320750;
+}
