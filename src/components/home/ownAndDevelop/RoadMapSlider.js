@@ -1,10 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import SwiperCore, { Pagination, Autoplay } from "swiper";
 import { data } from './data';
 import CheckSvg from 'assets/svgs/Check';
 
-
 const RoadMapSlider = () => {
+    SwiperCore.use([Autoplay]);
     return (
         <div className="pt-16">
             <Swiper
@@ -13,7 +13,12 @@ const RoadMapSlider = () => {
                 pagination={{
                     clickable: true,
                 }}
-                modules={[Pagination]}
+                autoplay={{
+                    delay: 2000,
+                    pauseOnMouseEnter: true,
+                    disableOnInteraction: false
+                }}
+                modules={[Pagination, Autoplay]}
                 className="roadMapSlider"
                 breakpoints={{
                     1100: {

@@ -4,110 +4,110 @@ import { DiagramFlex } from "./diagram";
 import './style.css';
 
 export const Diagrams = () => {
-    return (
-        <RootRootRootRoot>
-            <RoyalPurpleFlexColumn>
-                <Text1>Participat IGO Stake</Text1>
-                <Text2>256.50 BUSD</Text2>
-                <div className="total-stake-wrapper">
-                    <Text3>Total Stake</Text3>
-                    <input
-                        className="total-stake-input"
-                    />
-                </div>
-                <Group>
-                    <DaysButton>
-                        <DaysText>7 Days</DaysText>
-                        <Element1 />
-                    </DaysButton>
-                    <DaysButton>
-                        <DaysText>14 Days</DaysText>
-                        <Element1 />
-                    </DaysButton>
-                    <DaysButton>
-                        <DaysText>30 Days</DaysText>
-                        <Element1 />
-                    </DaysButton>
-                    <Days60ButtonWrapper>
-                        <Days60>60 Days</Days60>
-                    </Days60ButtonWrapper>
-                </Group>
-                <Group1>
-                    <Text8>Lock period : 60 days</Text8>
-                    <APYRate>APY Rate </APYRate>
-                </Group1>
-                <Group2>
-                    <Text9>
-                        Re - locks on registration :{"  "}
-                        Yes
-                    </Text9>
-                    <Text10>35%</Text10>
-                </Group2>
-                <Group3>
-                    <Text11>Early unstake fee : 25%</Text11>
-                    <Text12>*APY is dynamic</Text12>
-                </Group3>
-                <Text13>Status : Unlocked</Text13>
-                <Text14>Balance: 2889.00 BUSD</Text14>
-                <Group4>
-                    <FlexRow5>
-                        <input
-                            className="apporve-input"
-                            placeholder="00.00"
-                            type="number"
-                        />
-                        <Text16>MAX</Text16>
-                    </FlexRow5>
-                    <FlexColumn3>
-                        <Text17>APPROVE</Text17>
-                    </FlexColumn3>
-                </Group4>
-                <Text18>Staked : 256.50 BUSD</Text18>
-                <Group5>
-                    <FlexRow5>
-                        <input
-                            className="apporve-input"
-                            placeholder="00.0"
-                            type="number"
-                        />
-                        <Text16>MAX</Text16>
-                    </FlexRow5>
-                    <FlexColumn4>
-                        <Text21>WITHDRAW</Text21>
-                    </FlexColumn4>
-                </Group5>
-            </RoyalPurpleFlexColumn>
-            <Group42>
-                <RoyalPurpleFlexRow>
-                    <Group9>
-                        <Group19>
-                            <Text22>$7,868,163.54</Text22>
-                            <Text23>Total Value Locked</Text23>
-                        </Group19>
-                        <DiagramFlex />
-                    </Group9>
-                </RoyalPurpleFlexRow>
-                <RoyalPurpleFlexRow>
-                    <Group9>
-                        <Group19>
-                            <Text22>158.50%</Text22>
-                            <Text23>Apy</Text23>
-                        </Group19>
-                        <DiagramFlex />
-                    </Group9>
-                </RoyalPurpleFlexRow>
-                <RoyalPurpleFlexRow>
-                    <Group9>
-                        <Group19>
-                            <Text22>5699</Text22>
-                            <Text23>Number of Stakers</Text23>
-                        </Group19>
-                        <DiagramFlex />
-                    </Group9>
-                </RoyalPurpleFlexRow>
-            </Group42>
-        </RootRootRootRoot>
-    );
+  return (
+    <RootRootRootRoot>
+      <RoyalPurpleFlexColumn>
+        <Text1>Participat IGO Stake</Text1>
+        <Text2>256.50 BUSD</Text2>
+        <div className="total-stake-wrapper">
+          <Text3>Total Stake</Text3>
+          <input
+            className="total-stake-input"
+          />
+        </div>
+        <Group>
+          <DaysButton>
+            <DaysText>7 Days</DaysText>
+            <Element1 />
+          </DaysButton>
+          <DaysButton>
+            <DaysText>14 Days</DaysText>
+            <Element1 />
+          </DaysButton>
+          <DaysButton>
+            <DaysText>30 Days</DaysText>
+            <Element1 />
+          </DaysButton>
+          <Days60ButtonWrapper>
+            <Days60>60 Days</Days60>
+          </Days60ButtonWrapper>
+        </Group>
+        <Group1>
+          <Text8>Lock period : 60 days</Text8>
+          <APYRate>APY Rate </APYRate>
+        </Group1>
+        <Group2>
+          <Text9>
+            Re - locks on registration :{"  "}
+            Yes
+          </Text9>
+          <Text10>35%</Text10>
+        </Group2>
+        <Group3>
+          <Text11>Early unstake fee : 25%</Text11>
+          <Text12>*APY is dynamic</Text12>
+        </Group3>
+        <Text13>Status : Unlocked</Text13>
+        <Text14>Balance: 2889.00 BUSD</Text14>
+        <Group4>
+          <FlexRow5>
+            <input
+              className="apporve-input"
+              placeholder="00.00"
+              type="number"
+            />
+            <Text16>MAX</Text16>
+          </FlexRow5>
+          <FlexColumn3>
+            <Text17>APPROVE</Text17>
+          </FlexColumn3>
+        </Group4>
+        <Text18>Staked : 256.50 BUSD</Text18>
+        <Group5>
+          <FlexRow5>
+            <input
+              className="withdraw-input"
+              placeholder="00.0"
+              type="number"
+            />
+            <Text16>MAX</Text16>
+          </FlexRow5>
+          <FlexColumn4>
+            <Text21>WITHDRAW</Text21>
+          </FlexColumn4>
+        </Group5>
+      </RoyalPurpleFlexColumn>
+      <DiagramsContainer>
+        <RoyalPurpleFlexRow>
+          <Group9>
+            <Group19>
+              <Text22>$7,868,163.54</Text22>
+              <Text23>Total Value Locked</Text23>
+            </Group19>
+            <DiagramFlex />
+          </Group9>
+        </RoyalPurpleFlexRow>
+        <RoyalPurpleFlexRow>
+          <Group9>
+            <Group19>
+              <Text22>158.50%</Text22>
+              <Text23>Apy</Text23>
+            </Group19>
+            <DiagramFlex />
+          </Group9>
+        </RoyalPurpleFlexRow>
+        <RoyalPurpleFlexRow>
+          <Group9>
+            <Group19>
+              <Text22>5699</Text22>
+              <Text23>Number of Stakers</Text23>
+            </Group19>
+            <DiagramFlex />
+          </Group9>
+        </RoyalPurpleFlexRow>
+      </DiagramsContainer>
+    </RootRootRootRoot>
+  );
 };
 
 const DaysButton = styled.button`
@@ -417,9 +417,8 @@ const Text21 = styled.div`
   white-space: nowrap;
   letter-spacing: 0.16px;
 `;
-const Group42 = styled.div`
-  width: 50%;
-  height: 901px;
+const DiagramsContainer = styled.div`
+  height: 900px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -23,7 +23,7 @@ const NavLinks = () => {
                 <Link to='/media'>MEDIA</Link>
             </li>
             <li className='hover:text-primaryLight'>
-                <Link to='#'>DAO</Link>
+                <Link to='/dao'>DAO</Link>
             </li>
             <li className='hover:text-primaryLight'>
                 <Link to='#'>FQA</Link>

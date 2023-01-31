@@ -59,4 +59,14 @@ export const data = [
         ],
         date: 'December 29, 2022'
     },
+    {
+        id: 7,
+        phase: 'Phase 6',
+        name: 'Planning',
+        desc: 'typesetting, remaining essentially unchanged. It was popularised',
+        features: [
+            'thas survived not only five ', 'thas survived not only five ', 'thas survived not only five ', 'thas survived not only five '
+        ],
+        date: 'December 29, 2022'
+    }
 ]

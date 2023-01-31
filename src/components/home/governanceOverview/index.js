@@ -32,7 +32,7 @@ const GovernanceOverview = () => {
                     <div className='absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 bg-primary flex items-center justify-center rounded-full w-[60px] h-[60px] cursor-pointer'>
                         <img src={Play} alt='Play' width={20} className='' />
                     </div>
-                    <div className='absolute md:left-8 md:bottom-8 bottom-4 left-4 flex flex-col gap-4 justify-start'>
+                    <div className='z-20 absolute md:left-8 md:bottom-8 bottom-4 left-4 flex flex-col gap-4 justify-start'>
                         <div
                             className='py-2 px-3 md:text-xl sm:text-base text-sm font-medium tracking-[3px]'
                             style={{
@@ -41,7 +41,7 @@ const GovernanceOverview = () => {
                             X - Laaverse
                         </div>
                         <p className='sm:text-sm text-xs text-light'>Explore Virtual Land</p>
-                        <div className='bg-light  py-2.5 font-semibold sm:text-sm text-xs px-6 text-center text-black w-fit'>
+                        <div className='hover:bg-primary hover:text-primaryLight bg-light  py-2.5 font-semibold sm:text-sm text-xs px-6 text-center text-black w-fit'>
                             <button>Join Now</button>
                         </div>
                     </div>

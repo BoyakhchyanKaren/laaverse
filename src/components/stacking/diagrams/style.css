@@ -24,3 +24,12 @@ input:focus {
     letter-spacing: 0.16px;
     background-color: #320750;
 }
+
+.withdraw-input {
+    color: white;
+    font-size: 16px;
+    font-family: Poppins;
+    white-space: nowrap;
+    letter-spacing: 0.16px;
+    background-color: #320750;
+}
