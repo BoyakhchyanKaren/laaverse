@@ -1,5 +1,6 @@
 import { useDrawerContext } from 'context/drawerContext'
 import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import useClickOutside from 'utils/clickOutside';
 import './styles.css';
 
@@ -28,54 +29,54 @@ const Drawer = () => {
                 </div>
                 <div className='mt-8'>
                     <ul className='flex flex-col gap-4 text-pure'>
-                        <a href='/' onClick={() => setShowDrawer(false)}>
+                        <Link to='/' onClick={() => setShowDrawer(false)}>
                             <li className='border-b-2 border-b-gray-300 py-2 px-2 hover:bg-primary  duration-200 ease-in-out cursor-pointer flex items-center justify-between '>
                                 <p>Game Play</p>
                                 <i className="uil uil-angle-double-right text-2xl"></i>
                             </li>
-                        </a>
-                        <a href='/' onClick={() => setShowDrawer(false)}>
+                        </Link>
+                        <Link to='/about' onClick={() => setShowDrawer(false)}>
                             <li className='border-b-2 border-b-gray-300 py-2 px-2 hover:bg-primary hover:text-white duration-200 ease-in-out cursor-pointer flex items-center justify-between'>
                                 <p>About Us</p>
                                 <i className="uil uil-angle-double-right text-2xl"></i>
                             </li>
-                        </a>
-                        <a href='/' onClick={() => setShowDrawer(false)}>
+                        </Link>
+                        <Link to='/nft' onClick={() => setShowDrawer(false)}>
                             <li className='border-b-2 border-b-gray-300 py-2 px-2 hover:bg-primary hover:text-white duration-200 ease-in-out cursor-pointer flex items-center justify-between'>
                                 <p>NFT Market</p>
                                 <i className="uil uil-angle-double-right text-2xl"></i>
                             </li>
-                        </a>
-                        <a href='/' onClick={() => setShowDrawer(false)}>
+                        </Link>
+                        <Link to='/map' onClick={() => setShowDrawer(false)}>
                             <li className='border-b-2 border-b-gray-300 py-2 px-2 hover:bg-primary hover:text-white duration-200 ease-in-out cursor-pointer flex items-center justify-between'>
                                 <p>Land Map</p>
                                 <i className="uil uil-angle-double-right text-2xl"></i>
                             </li>
-                        </a>
-                        <a href='/team' onClick={() => setShowDrawer(false)}>
+                        </Link>
+                        <Link to='/stacking' onClick={() => setShowDrawer(false)}>
                             <li className='border-b-2 border-b-gray-300 py-2 px-2 hover:bg-primary hover:text-white duration-200 ease-in-out cursor-pointer flex items-center justify-between'>
                                 <p>Staking</p>
                                 <i className="uil uil-angle-double-right text-2xl"></i>
                             </li>
-                        </a>
-                        <a href='/' onClick={() => setShowDrawer(false)}>
+                        </Link>
+                        <Link to='/media' onClick={() => setShowDrawer(false)}>
                             <li className='border-b-2 border-b-gray-300 py-2 px-2 hover:bg-primary hover:text-white duration-200 ease-in-out cursor-pointer flex items-center justify-between'>
                                 <p>Media</p>
                                 <i className="uil uil-angle-double-right text-2xl"></i>
                             </li>
-                        </a>
-                        <a href='/' onClick={() => setShowDrawer(false)}>
+                        </Link>
+                        <Link to='/dao' onClick={() => setShowDrawer(false)}>
                             <li className='border-b-2 border-b-gray-300 py-2 px-2 hover:bg-primary hover:text-white duration-200 ease-in-out cursor-pointer flex items-center justify-between'>
                                 <p>DAO</p>
                                 <i className="uil uil-angle-double-right text-2xl"></i>
                             </li>
-                        </a>
-                        <a href='/' onClick={() => setShowDrawer(false)}>
+                        </Link>
+                        <Link href='/fqa' onClick={() => setShowDrawer(false)}>
                             <li className='border-b-2 border-b-gray-300 py-2 px-2 hover:bg-primary hover:text-white duration-200 ease-in-out cursor-pointer flex items-center justify-between'>
                                 <p>FQA</p>
                                 <i className="uil uil-angle-double-right text-2xl"></i>
                             </li>
-                        </a>
+                        </Link>
 
                     </ul>
                 </div>

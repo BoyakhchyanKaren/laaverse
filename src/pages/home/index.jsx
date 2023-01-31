@@ -1,4 +1,3 @@
-import Drawer from 'components/global/drawer'
 import Banner from 'components/home/banner'
 import CharactersNFTs from 'components/home/charactersNFTs'
 import GovernanceOverview from 'components/home/governanceOverview'
@@ -30,7 +29,6 @@ const Home = () => {
                     <OwnAndDevelop />
                 </Animate.FadeUp>
             </section>
-            <Drawer />
         </div>
     )
 }
