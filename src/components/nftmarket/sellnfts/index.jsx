@@ -2,65 +2,65 @@ import React from "react";
 import styled from "styled-components";
 
 export const SellNfts = () => {
-    return (
-        <RectangleRootRootRoot>
-            <Text1>Create And Sell your NFTS</Text1>
-            <Group4>
-                <Group>
-                    <BlackFlexColumn>
-                        <Text2>Step - 01</Text2>
-                        <Text3>Create And Sell</Text3>
-                        <Paragraph>
-                            Wallet that is functional for
-                            <br />
-                            NFT purchasing. You have <br />
-                            Coinbase account at this point.
-                        </Paragraph>
-                    </BlackFlexColumn>
-                    <Nfts src={`https://file.rendit.io/n/nep9DurllDEV30Indo72.png`} />
-                </Group>
-                <Group>
-                    <BlackFlexColumn>
-                        <Text4>Step - 02</Text4>
-                        <Text5>Create Collection</Text5>
-                        <Paragraph>
-                            Wallet that is functional for
-                            <br />
-                            NFT purchasing. You have <br />
-                            Coinbase account at this point.
-                        </Paragraph>
-                    </BlackFlexColumn>
-                    <Nfts src={`https://file.rendit.io/n/ODiyPVtM60lXTdYWKpyc.png`} />
-                </Group>
-                <Group>
-                    <BlackFlexColumn2>
-                        <Text4>Step - 03</Text4>
-                        <Text7>Add Your NFTs</Text7>
-                        <Paragraph>
-                            Wallet that is functional for
-                            <br />
-                            NFT purchasing. You have <br />
-                            Coinbase account at this point.
-                        </Paragraph>
-                    </BlackFlexColumn2>
-                    <Nfts src={`https://file.rendit.io/n/ub8vsLdWoTdJWru4C7kW.png`} />
-                </Group>
-                <Group>
-                    <BlackFlexColumn2>
-                        <Text8>Step - 04</Text8>
-                        <Text9>List Them For Sale</Text9>
-                        <Paragraph>
-                            Wallet that is functional for
-                            <br />
-                            NFT purchasing. You have <br />
-                            Coinbase account at this point.
-                        </Paragraph>
-                    </BlackFlexColumn2>
-                    <Nfts src={`https://file.rendit.io/n/ENglcIF9kt6sdB6dKvky.png`} />
-                </Group>
-            </Group4>
-        </RectangleRootRootRoot>
-    );
+  return (
+    <RectangleRootRootRoot>
+      <Text1>Create And Sell your NFTS</Text1>
+      <Group4>
+        <Group>
+          <BlackFlexColumn>
+            <Text2>Step - 01</Text2>
+            <Text3>Create And Sell</Text3>
+            <Paragraph>
+              Wallet that is functional for
+              <br />
+              NFT purchasing. You have <br />
+              Coinbase account at this point.
+            </Paragraph>
+          </BlackFlexColumn>
+          <Nfts src={`https://file.rendit.io/n/nep9DurllDEV30Indo72.png`} />
+        </Group>
+        <Group>
+          <BlackFlexColumn>
+            <Text4>Step - 02</Text4>
+            <Text5>Create Collection</Text5>
+            <Paragraph>
+              Wallet that is functional for
+              <br />
+              NFT purchasing. You have <br />
+              Coinbase account at this point.
+            </Paragraph>
+          </BlackFlexColumn>
+          <Nfts src={`https://file.rendit.io/n/ODiyPVtM60lXTdYWKpyc.png`} />
+        </Group>
+        <Group>
+          <BlackFlexColumn2>
+            <Text4>Step - 03</Text4>
+            <Text7>Add Your NFTs</Text7>
+            <Paragraph>
+              Wallet that is functional for
+              <br />
+              NFT purchasing. You have <br />
+              Coinbase account at this point.
+            </Paragraph>
+          </BlackFlexColumn2>
+          <Nfts src={`https://file.rendit.io/n/ub8vsLdWoTdJWru4C7kW.png`} />
+        </Group>
+        <Group>
+          <BlackFlexColumn2>
+            <Text8>Step - 04</Text8>
+            <Text9>List Them For Sale</Text9>
+            <Paragraph>
+              Wallet that is functional for
+              <br />
+              NFT purchasing. You have <br />
+              Coinbase account at this point.
+            </Paragraph>
+          </BlackFlexColumn2>
+          <Nfts src={`https://file.rendit.io/n/ENglcIF9kt6sdB6dKvky.png`} />
+        </Group>
+      </Group4>
+    </RectangleRootRootRoot>
+  );
 };
 
 const BlackFlexColumn = styled.div`
@@ -109,18 +109,16 @@ const BlackFlexColumn2 = styled.div`
   box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.1);
 `;
 const RectangleRootRootRoot = styled.div`
-  height: 100%;
-  width: 100%;
-  gap: 42px;
+  padding: 50px;
+  gap: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 40px;
+  justify-content: space-between;
+  align-items: center;
   background-color: #0f0540;
+  overflow: hidden;
 `;
 const Text1 = styled.div`
-  width: 100%;
   height: 39px;
   color: #ffffff;
   font-size: 26px;
@@ -129,14 +127,22 @@ const Text1 = styled.div`
   white-space: nowrap;
 `;
 const Group4 = styled.div`
-  width: 100%;
+  gap: 150px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding-right: 15px;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  } 
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 300px;
+  } 
 `;
 const Group = styled.div`
-  width: 79px;
   height: 200px;
   position: relative;
   display: flex;

@@ -1,16 +1,19 @@
 .email-input12 {
     width: 400px;
-    height: 50px;
     color: white;
     font-size: 20px;
-    padding-left: 20px;
+    padding: 10px 20px;
     font-weight: 500;
     font-family: Poppins;
     background-color: #210C3854;
     z-index: 20;
     align-self: center;
-    margin-right: 240px;
-    margin-bottom: 30px;
     border: 1px solid white;
     border-radius: 10px;
+}
+
+@media (max-width: 440px) {
+    .email-input12 {
+        width: 100% !important;
+    }
 }

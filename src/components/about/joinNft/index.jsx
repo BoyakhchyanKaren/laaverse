@@ -4,7 +4,7 @@ import BgImage from 'assets/images/home/bg1.png';
 
 export const JoinNft = () => {
   return (
-    <div className='w-full md:h-[40vh] h-[55vh] flex items-center justify-center' style={{
+    <div className='w-full md:h-[40vh] h-[65vh] flex items-center justify-center' style={{
       backgroundImage: `url(${BgImage})`,
       backgroundPosition: 'center',
       backgroundSize: 'cover',
@@ -24,19 +24,22 @@ export const JoinNft = () => {
 };
 
 const RootRootRootRoot = styled.div`
-  gap: 90px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-`;
-const FlexColumn = styled.div`
+  gap: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  margin: 0px 0px 0px 286px;
-  padding: 11px 21px 11px 22px;
+  align-items: center;
+
+  @media (max-width: 450px) {
+    margin-top: 80px;
+  }
+
+  @media (max-width: 1024px) {
+    padding-top: 50px;
+  }
+`;
+const FlexColumn = styled.div`
+  padding: 20px 40px;
   border-width: 1px;
   border-radius: 41px;
   border-style: solid;
@@ -49,8 +52,6 @@ const FlexColumn = styled.div`
   z-index: 20;
 `;
 const Text1 = styled.button`
-  width: 137px;
-  height: 24px;
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
@@ -59,7 +60,6 @@ const Text1 = styled.button`
   white-space: nowrap;
 `;
 const Text2 = styled.div`
-  height: 45px;
   color: #ffffff;
   font-size: 30px;
   font-weight: 700;

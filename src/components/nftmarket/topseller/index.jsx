@@ -39,8 +39,8 @@ export const TopSeller = () => {
 };
 
 const Image1 = styled.img`
-  width: 67.5px;
-  height: 68.5px;
+  width: 100%;
+  height: 100%;
 `;
 const Eth = styled.div`
   display: contents;
@@ -55,45 +55,46 @@ const Image13 = styled.img`
 `;
 const FrameRootRootRoot = styled.div`
   width: 100%;
-  position: relative;
   display: flex;
+  gap: 20px;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 27px 34px 28px 29px;
-  background-color: #0a0427;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
   overflow: hidden;
+  background-color: #0a0427;
 `;
 const BlackFlexRow = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 70px;
-  padding: 20px 30px 47px 29px;
   background-color: #0a0427;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 `;
 const Text2 = styled.div`
-  width: 130px;
-  height: 44px;
   color: #ffffff;
   font-size: 26px;
   font-weight: 700;
   font-family: Poppins;
-  line-height: 44.32999801635742px;
-  text-align: center;
   white-space: nowrap;
-  margin-left: 40px;
 `;
 const BlackFlexColumn = styled.div`
-  gap: 10.8px;
+  gap: 10px;
+  padding: 20px 40px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-self: flex-end;
-  align-items: flex-start;
-  padding: 16.1px 73px 19.3px 14.8px;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
   border-width: 1px;
   border-radius: 8px;
   border-style: solid;
@@ -101,54 +102,36 @@ const BlackFlexColumn = styled.div`
   background-color: #150320;
 `;
 const Group13 = styled.div`
-  height: 68.5px;
-  gap: 8.44px;
+  padding: 10px;
+  gap: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 `;
 const Group15 = styled.div`
-  height: 68.5px;
-  gap: 1.97px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
+  justify-content: center;
 `;
 const Text7 = styled.div`
-  width: 120px;
-  height: 25px;
-  margin: 0px 0px 0px 0.03px;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   font-family: Poppins;
 `;
 const Eth7 = styled.div`
-  width: 79.1px;
-  height: 25.7px;
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
   font-family: Poppins;
 `;
 const Group14 = styled.div`
-  height: 19.2px;
-  gap: 6.89px;
+  gap: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 0px 76.8px 0px 75.5px;
 `;
 const AddButton = styled.button`
-  height: 20px;
-  width: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   padding: 5px;
   border-width: 1px;
   border-radius: 2px;
@@ -156,12 +139,6 @@ const AddButton = styled.button`
   border-color: #9d9898;
 `;
 const ShareButton = styled.button`
-  height: 20px;
-  width: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   padding: 5px;
   border-width: 1px;
   border-radius: 2px;

@@ -5,6 +5,7 @@ import './style.css';
 export const NewsLetter = () => {
   return (
     <FrameRootRootRoot>
+      <Image1 src={`https://file.rendit.io/n/XwxopXdjqhka24dHB9AS.svg`} />
       <Text1>Get Newsletter</Text1>
       <Text2>Get udpated with news, tips & tricks</Text2>
       <input
@@ -22,20 +23,15 @@ export const NewsLetter = () => {
 };
 
 const FrameRootRootRoot = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   background-color: #2b032a;
-  overflow: hidden;
+  gap: 30px;
   padding-top:10px;
-  padding-left: 225px;
 `;
 const Text1 = styled.div`
-  width: 330px;
-  height: 59.4px;
-  margin: 0px 0px 23.7px 366px;
   color: #ffffff;
   font-size: 30px;
   font-weight: 700;
@@ -45,9 +41,6 @@ const Text1 = styled.div`
   text-transform: capitalize;
 `;
 const Text2 = styled.div`
-  width: 344px;
-  height: 31.7px;
-  margin: 0px 0px 51.4px 359px;
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
@@ -55,21 +48,17 @@ const Text2 = styled.div`
   text-align: center;
   text-transform: capitalize;
 `;
-const BlackFlexColumn = styled.button`
-  height: 60px;
+const BlackFlexColumn = styled.div`
+  height: 70px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin: 0px 0px 40px 460px;
-  padding: 9.55px 5.92px 9.55px 7.07px;
+  padding: 10px;
   border-width: 1px;
   border-radius: 6px;
   border-style: solid;
   border-color: #ffffff;
   background-color: rgba(15, 5, 36, 0.33);
 `;
-const FlexColumn = styled.div`
+const FlexColumn = styled.button`
   height: 50px;
   display: flex;
   justify-content: center;

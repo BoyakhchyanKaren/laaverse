@@ -17,14 +17,14 @@ const AboutBanner = () => {
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat'
         }}>
-            <div className='w-3/5 md:h-[50vh] h-[35vh] flex items-center justify-center' style={{
+            <div className='w-3/5 md:h-[50vh] h-[45vh] flex items-center justify-center' style={{
                 backgroundImage: `url(${BannerImg})`,
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 borderRadius: '20px'
             }}>
-                <div className='w-4/5 md:h-[40vh] h-[25vh] flex items-center justify-center' style={{
+                <div className='w-4/5 md:h-[40vh] h-[35vh] flex items-center justify-center' style={{
                     backgroundImage: `url(${BannerContent})`,
                     backgroundPosition: 'center',
                     backgroundSize: 'cover',
@@ -33,9 +33,9 @@ const AboutBanner = () => {
                 }}>
                     <div className='flex flex-col md:gap-8 gap-6 justify-center items-center'>
                         <h1
-                            className='md:text-[1.8rem] sm:text-[2rem] text-[2.5rem] font-bold text-pure'
+                            className='md:text-[1.8rem] sm:text-[1.5rem] text-[1rem] font-bold text-pure'
                             style={{
-                                color: 'black'
+                                color: 'black',
                             }}
                         >
                             ABOUT US
@@ -69,7 +69,7 @@ const AboutBanner = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

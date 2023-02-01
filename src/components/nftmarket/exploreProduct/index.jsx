@@ -16,7 +16,6 @@ export const ExploreProduct = () => {
 
 
 const RootRootRootRoot = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,6 +23,7 @@ const RootRootRootRoot = styled.div`
   gap: 40px;
   padding: 25px;
   background-color: #06021A;
+  overflow: hidden;
 `;
 
 const RectangleRootRootRoot = styled.div`

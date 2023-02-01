@@ -4,15 +4,14 @@ import BgImage from 'assets/images/home/bg1.png';
 
 export const Statistic = () => {
   return (
-    <div className='w-full md:h-[70vh] h-[55vh] flex items-center justify-center' style={{
+    <div className='w-full flex items-center justify-center' style={{
       backgroundImage: `url(${BgImage})`,
       backgroundPosition: 'center',
       backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat'
+      backgroundRepeat: 'no-repeat',
     }}>
       <RootRootRootRoot>
         <FlexRow />
-        <Image1 src={`https://file.rendit.io/n/iJOGlq9gcEBe6Ebh5i1l.svg`} />
         <FlexRow1>
           <Group1>
             <Text1>100k</Text1>
@@ -29,10 +28,6 @@ export const Statistic = () => {
             <Text6>Yearly Trading</Text6>
           </Group3>
         </FlexRow1>
-        <FlexColumn1 />
-        <FlexRow4 />
-        <Image9 src={`https://file.rendit.io/n/mSf8hwr7ljfQ1lnVx73T.svg`} />
-        <FlexColumn3 />
         <Ellipse src={`https://file.rendit.io/n/XFKjn2Sp2Uh8EfvtWOI9.svg`} />
         <Ellipse1 src={`https://file.rendit.io/n/efp8WVar6kkdrSg4S79T.svg`} />
         <Group>
@@ -58,15 +53,11 @@ export const Statistic = () => {
 };
 
 const RootRootRootRoot = styled.div`
-  width: 100%;
-  height: 600px;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   padding: 0px 203px 0px 66px;
-  margin-left: 170px;
+  @media (max-width: 1250px) {
+    display: none;
+  }
 `;
 const FlexRow = styled.div`
   width: 1240px;
@@ -78,7 +69,7 @@ const FlexRow = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  padding: 1.25px 0px 0px 0px;
+  padding: 00px;
   border-radius: 40px;
   background-image: linear-gradient(
     270deg,
@@ -86,13 +77,6 @@ const FlexRow = styled.div`
     #c87bff -16%,
     #9a18d7 106%
   );
-`;
-const Image1 = styled.img`
-  width: 1240px;
-  height: 182px;
-  left: 0px;
-  top: 294px;
-  position: absolute;
 `;
 const FlexRow1 = styled.div`
   width: 1128px;
@@ -214,54 +198,6 @@ const Text6 = styled.div`
   text-align: center;
   white-space: nowrap;
   letter-spacing: -0.32px;
-`;
-const FlexColumn1 = styled.div`
-  width: 101.5003662109375px;
-  height: 203px;
-  left: 246px;
-  top: 160px;
-  position: absolute;
-  gap: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 66.7px 246px 70.9px 27px;
-  background-size: cover;
-  background-image: url("https://file.rendit.io/n/cxCPgJBci1dy45m3yamL.svg");
-`;
-const FlexRow4 = styled.div`
-  width: 156.5003662109375px;
-  height: 203px;
-  left: 328px;
-  top: 159px;
-  position: absolute;
-  gap: 42.5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  padding: 68.5px 128px 69.1px 90px;
-  background-size: cover;
-  background-image: url("https://file.rendit.io/n/BcSeqb1Sdd3az5ByMqsm.svg");
-`;
-const Image9 = styled.img`
-  width: 374.500244140625px;
-  height: 340px;
-  left: 776px;
-  top: 163px;
-  position: absolute;
-`;
-const FlexColumn3 = styled.div`
-  width: 283.1px;
-  height: 283px;
-  left: 866px;
-  top: 163px;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 27.8px 11px 29.2px 80.4px;
-  background-size: cover;
-  background-image: url("https://file.rendit.io/n/mSf8hwr7ljfQ1lnVx73T.svg");
 `;
 const Ellipse = styled.img`
   width: 283.070068359375px;

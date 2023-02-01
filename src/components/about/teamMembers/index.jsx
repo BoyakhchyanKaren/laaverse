@@ -10,73 +10,37 @@ export const TeamMembers = () => {
       </FlexColumn>
       <Text2>Our Amazing Team Members</Text2>
       <Group3>
-        <RoyalPurpleFlexColumn>
-          <Images1 src={`https://file.rendit.io/n/dqWttbzNSppPTjpye4bX.png`} />
-        </RoyalPurpleFlexColumn>
-        <RoyalPurpleFlexColumn>
-          <Images1 src={`https://file.rendit.io/n/1sagcYKl1KtrLxMUGMjH.png`} />
-        </RoyalPurpleFlexColumn>
-        <RoyalPurpleFlexColumn>
-          <Images1 src={`https://file.rendit.io/n/E4akVpseI5kLebeHbdXb.png`} />
-        </RoyalPurpleFlexColumn>
+        {[1, 2, 3].map(() => {
+          return (
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              gap: '10px',
+            }}>
+              <RoyalPurpleFlexColumn>
+                <Images1 src={`https://file.rendit.io/n/dqWttbzNSppPTjpye4bX.png`} />
+              </RoyalPurpleFlexColumn>
+              <Text3>Ralph Edwards</Text3>
+              <Group>
+                {[
+                  {
+                    src: `https://file.rendit.io/n/97XGhAUVE5L1xJSpHtoh.svg`,
+                  },
+                  {
+                    src: `https://file.rendit.io/n/gt2uzN4x8b0D0BrsTuIa.svg`,
+                  },
+                  {
+                    src: `https://file.rendit.io/n/RnsDWKAM0RTHyC6dhEKd.svg`,
+                  },
+                ].map((data) => (
+                  <Image3 src={data.src} />
+                ))}
+              </Group>
+            </div>
+          )
+        })}
       </Group3>
-      <Group4>
-        <Text3>Ralph Edwards</Text3>
-        <Text4>Jenny Wilson</Text4>
-        <Text5>John Wilson</Text5>
-      </Group4>
-      <Group5>
-        <Text6>Project Manager</Text6>
-        <Text7>Designer</Text7>
-        <Text8>Developer</Text8>
-      </Group5>
-      <Group6>
-        <Group>
-          {[
-            {
-              src: `https://file.rendit.io/n/97XGhAUVE5L1xJSpHtoh.svg`,
-            },
-            {
-              src: `https://file.rendit.io/n/gt2uzN4x8b0D0BrsTuIa.svg`,
-            },
-            {
-              src: `https://file.rendit.io/n/RnsDWKAM0RTHyC6dhEKd.svg`,
-            },
-          ].map((data) => (
-            <Image3 src={data.src} />
-          ))}
-        </Group>
-        <Group>
-          {[
-            {
-              src: `https://file.rendit.io/n/97XGhAUVE5L1xJSpHtoh.svg`,
-            },
-            {
-              src: `https://file.rendit.io/n/gt2uzN4x8b0D0BrsTuIa.svg`,
-            },
-            {
-              src: `https://file.rendit.io/n/RnsDWKAM0RTHyC6dhEKd.svg`,
-            },
-          ].map((data) => (
-            <Image3 src={data.src} />
-          ))}
-        </Group>
-        <Group>
-          {[
-            {
-              src: `https://file.rendit.io/n/97XGhAUVE5L1xJSpHtoh.svg`,
-            },
-            {
-              src: `https://file.rendit.io/n/gt2uzN4x8b0D0BrsTuIa.svg`,
-            },
-            {
-              src: `https://file.rendit.io/n/RnsDWKAM0RTHyC6dhEKd.svg`,
-            },
-          ].map((data) => (
-            <Image3 src={data.src} />
-          ))}
-        </Group>
-      </Group6>
     </FrameRootRootRoot>
   );
 };
@@ -162,98 +126,22 @@ const Text2 = styled.div`
   letter-spacing: 4.5px;
 `;
 const Group3 = styled.div`
-  width: 1052px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 40px;
   align-self: center;
-  align-items: flex-start;
-  margin: 0px 0px 25px 0px;
-`;
-const Group4 = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-self: center,
   align-items: center;
-  margin-left: 320px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin-top: 40px;
+  }
 `;
 const Text3 = styled.div`
-  width: 153px;
-  height: 30px;
-  margin: 0px 213px 0px 0px;
   color: #ffffff;
   font-size: 20px;
   font-weight: 700;
   font-family: Poppins;
   text-align: center;
   white-space: nowrap;
-`;
-const Text4 = styled.div`
-  width: 138px;
-  height: 30px;
-  margin: 0px 227px 0px 0px;
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: 700;
-  font-family: Poppins;
-  text-align: center;
-  white-space: nowrap;
-`;
-const Text5 = styled.div`
-  width: 126px;
-  height: 30px;
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: 700;
-  font-family: Poppins;
-  text-align: center;
-  white-space: nowrap;
-`;
-const Group5 = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin: 0 0 20px 330px;
-`;
-const Text6 = styled.div`
-  width: 133px;
-  height: 24px;
-  margin: 0px 256px 0px 0px;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: Poppins;
-  text-align: center;
-  white-space: nowrap;
-`;
-const Text7 = styled.div`
-  width: 72px;
-  height: 24px;
-  margin: 0px 282px 0px 0px;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: Poppins;
-  text-align: center;
-  white-space: nowrap;
-`;
-const Text8 = styled.div`
-  width: 82px;
-  height: 24px;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: Poppins;
-  text-align: center;
-  white-space: nowrap;
-`;
-const Group6 = styled.div`
-  width: 850px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-self: center;
-  align-items: center;
 `;

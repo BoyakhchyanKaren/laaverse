@@ -20,7 +20,6 @@ export const CreatePortfolio = () => {
         <Image1 src={`https://file.rendit.io/n/jQzpbNF0Yv9X6SGGByWq.png`} />
         <Ellipse1 src={`https://file.rendit.io/n/4PmfANswQKkBYHMVQCRe.svg`} />
       </Group1>
-      <Image2 src={`https://file.rendit.io/n/272PYl0clddWcbDxDMTt.svg`} />
     </FrameRootRootRoot>
   );
 };
@@ -29,10 +28,9 @@ const FrameRootRootRoot = styled.div`
   gap: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   background-color: #2b032a;
-  overflow: hidden;
   padding-left: 80px;
 `;
 const Group1 = styled.div`
@@ -41,9 +39,9 @@ const Group1 = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding: 0px 376px 0px 786px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 376px 0px 1000px;
 `;
 const FlexColumn1 = styled.div`
   left: 0px;
@@ -57,6 +55,21 @@ const FlexColumn1 = styled.div`
   padding: 40px 909px 44px 31.3px;
   border-radius: 7px;
   background-image: linear-gradient(270deg, #b192ca -22%, #9a18d7 135%);
+  @media (max-width: 1000px) {
+    padding: 100px;
+    left: 25%;
+    top: 10%;
+        justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 500px) {
+    padding: 10px;
+    left: 36%;
+    top: 10%;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 const Group = styled.div`
   gap: 13px;
@@ -64,18 +77,27 @@ const Group = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  @media (max-width: 500px) {
+    justify-content: center;
+    align-items: center;
+  }
+    @media (max-width: 1000px) {
+    justify-content: center;
+    align-items: center;
+  }
 `;
 const Text1 = styled.div`
-  width: 414px;
-  height: 45px;
   color: #06021a;
   font-size: 30px;
   font-weight: 700;
   font-family: Poppins;
+  @media (max-width: 500px) {
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+  }
 `;
 const Text2 = styled.div`
-  width: 299px;
-  height: 24px;
   color: #06021a;
   font-size: 16px;
   font-weight: 500;
@@ -119,6 +141,9 @@ const Ellipse = styled.img`
   left: 1041px;
   top: 235px;
   position: absolute;
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 const Image1 = styled.img`
   width: 454px;
@@ -126,13 +151,15 @@ const Image1 = styled.img`
   left: 759px;
   top: 0px;
   position: absolute;
+    @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 const Ellipse1 = styled.img`
   width: 191px;
   height: 177px;
   position: relative;
-`;
-const Image2 = styled.img`
-  width: 100%;
-  height: 1.5px;
+    @media (max-width: 1000px) {
+    display: none;
+  }
 `;

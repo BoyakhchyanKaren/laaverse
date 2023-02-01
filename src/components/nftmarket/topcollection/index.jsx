@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import './style.css';
 
 export const TopCollectionItems = () => {
   return (
-    <div style={{
+    <div className="top-collection-items" style={{
       display: 'flex',
       flexDirection: 'row',
-      gap: '50px'
+      gap: '50px',
     }}>
       {[1, 2, 3, 4].map(() => {
         return (
@@ -56,16 +57,14 @@ export const TopCollection = () => {
     <RootRootRootRoot>
       <div style={{
         display: 'flex',
-        alignSelf: 'flex-start'
+        alignSelf: 'center',
       }}>
-        <Text1 style={{
-          marginLeft: '60px'
-        }}>Top Collection</Text1>
+        <Text1>Top Collection</Text1>
       </div>
-      <div style={{
+      <div className="top-collection-wrapper" style={{
         display: 'flex',
         flexDirection: 'row',
-        gap: '50px'
+        gap: '70px'
       }}>
         {[1, 2, 3, 4].map(() => {
           return (
@@ -112,12 +111,11 @@ export const TopCollection = () => {
 };
 
 const Group = styled.div`
-  width: 256px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
-  margin: 0px 0px 17px 0px;
+  align-items: center;
 `;
 const Group3 = styled.div`
   gap: 8px;
@@ -199,12 +197,11 @@ const Image3 = styled.img`
   margin: 0px 0px 18.5px 0px;
 `;
 const Group2 = styled.div`
-  width: 256px;
-  gap: 89px;
   display: flex;
+  width: 100%;
   flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
 `;
 const Group4 = styled.button`
   width: 116px;
@@ -259,18 +256,20 @@ const Text5 = styled.div`
   font-family: Poppins;
 `;
 const RoyalPurpleFlexColumn1 = styled.div`
-  height: 420px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin: 0px 23px 0px 0px;
+  justify-content: center;
+  align-items: center;
   padding: 12px 16px;
   border-radius: 8px;
   background-color: #320651;
+
+  @media (max-width: 500px) {
+    width: 400px;
+  }
 `;
 const RootRootRootRoot = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -278,6 +277,7 @@ const RootRootRootRoot = styled.div`
   gap: 20px;
   padding: 15px 0;
   background-color: #06021A;
+  overflow: hidden;
 `;
 const Text1 = styled.div`
   width: 175px;

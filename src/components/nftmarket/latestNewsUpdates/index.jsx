@@ -49,11 +49,10 @@ export const LatestNewsUpdates = () => {
 };
 
 const Group1 = styled.div`
-  height: 100px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 `;
 const Group3 = styled.div`
   width: 284px;
@@ -109,12 +108,11 @@ const Paragraph = styled.div`
   white-space: nowrap;
 `;
 const ReadMoreButton = styled.button`
-  width: 101px;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   padding: 0px 5px 0px 178px;
 `;
 const Text4 = styled.div`
@@ -131,8 +129,8 @@ const Text4 = styled.div`
   white-space: nowrap;
 `;
 const Element1 = styled.div`
-  width: 99px;
-  height: 26px;
+  width: 100px;
+  height: 30px;
   position: relative;
   border-width: 1px;
   border-radius: 41px;
@@ -140,11 +138,10 @@ const Element1 = styled.div`
   border-color: #ffffff;
 `;
 const IstockphotoxRootRootRoot = styled.div`
-  width: 100%;  
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -157,41 +154,53 @@ const MidnightBlueFlexColumn = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 58px 157px 63px 159px;
+  padding: 60px;
   background-color: rgba(15, 5, 65, 0.7);
 `;
 const PurpleHeartFlexColumn = styled.div`
-  height: 130px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 14px 46px;
   border-radius: 18px;
   background-color: rgba(154, 24, 215, 0.31);
+
+  @media (max-width: 700px) {
+    padding: 14px 20px;
+  }
 `;
 const Text1 = styled.div`
-  width: 100%;
-  height: 100px;
   color: #ffffff;
-  font-size: 67px;
+  font-size: 50px;
   font-weight: 700;
   font-family: Poppins;
   white-space: nowrap;
-  letter-spacing: 11.1px;
+  letter-spacing: 8px;
+
+  @media (max-width: 700px) {
+    letter-spacing: 2px;
+    font-size: 40px;
+  }
+
+  @media (max-width: 400px) {
+    letter-spacing: 2px;
+    font-size: 30px;
+  }
 `;
 const Group = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
 `;
 const RoyalPurpleFlexColumn = styled.div`
   gap: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   margin: 0px 29px 0px 0px;
   padding: 19px 9px 21px 9px;
