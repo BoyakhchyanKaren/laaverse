@@ -9,7 +9,7 @@ import { Animate } from 'components/global/animation'
 const Home = () => {
     return (
         <div style={{
-            backgroundColor: colors.primaryBackground
+            backgroundColor: colors.primaryBackground,
         }}>
             <Animate.FadeUp>
                 <Banner />

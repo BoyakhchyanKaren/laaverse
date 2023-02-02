@@ -1,17 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from 'components/home/header';
-import Nav from 'components/home/nav';
 import HomeFooter from 'components/home/footer';
 import { Home, About, NftMarket, Stacking, Media, DAO } from 'pages';
 import { Animate } from 'components/global/animation';
 import Drawer from 'components/global/drawer';
+import StickyHeader from 'components/home/nav';
 
 function App() {
     return (
         <main>
             <Router>
-                <Header />
-                <Nav />
+                <StickyHeader />
                 <Routes>
                     <Route path='/' element={<Home />} />
                     <Route path='/about' element={<About />} />

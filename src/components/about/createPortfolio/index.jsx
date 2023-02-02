@@ -59,7 +59,7 @@ const FlexColumn1 = styled.div`
     padding: 100px;
     left: 25%;
     top: 10%;
-        justify-content: center;
+    justify-content: center;
     align-items: center;
   }
 
@@ -70,6 +70,7 @@ const FlexColumn1 = styled.div`
     justify-content: center;
     align-items: center;
   }
+
 `;
 const Group = styled.div`
   gap: 13px;
@@ -141,7 +142,7 @@ const Ellipse = styled.img`
   left: 1041px;
   top: 235px;
   position: absolute;
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     display: none;
   }
 `;
@@ -151,7 +152,7 @@ const Image1 = styled.img`
   left: 759px;
   top: 0px;
   position: absolute;
-    @media (max-width: 1000px) {
+    @media (max-width: 1200px) {
     display: none;
   }
 `;
@@ -159,7 +160,7 @@ const Ellipse1 = styled.img`
   width: 191px;
   height: 177px;
   position: relative;
-    @media (max-width: 1000px) {
+    @media (max-width: 1200px) {
     display: none;
   }
 `;

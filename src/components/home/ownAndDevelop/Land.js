@@ -1,4 +1,5 @@
 import LandImage from 'assets/images/home/land.png';
+import AnimatedCounter from 'components/global/animation/counter';
 
 
 const Land = () => {
@@ -26,19 +27,19 @@ const Land = () => {
                 </div>
                 <div className='flex items-center justify-between sm:gap-x-4 gap-x-3 gap-y-8 text-light mt-12 relative z-20 flex-wrap'>
                     <div className='border-2 md:w-[120px] w-[100px] h-[100px] md:h-[120px] border-dashed rounded-full flex items-center justify-center flex-col '>
-                        <h5 className='md:text-[1.8rem] text-[1.4rem] font-bold text-pure'>36K</h5>
+                        <h5 className='md:text-[1.8rem] text-[1.4rem] font-bold text-pure'><AnimatedCounter n={78} /></h5>
                         <span className='md:text-sm text-xs'>Commercial</span>
                     </div>
                     <div className='border-2 md:w-[120px] w-[100px] h-[100px] md:h-[120px] border-dashed rounded-full flex items-center justify-center flex-col '>
-                        <h5 className='md:text-[1.8rem] text-[1.4rem] font-bold text-pure'>26K</h5>
+                        <h5 className='md:text-[1.8rem] text-[1.4rem] font-bold text-pure'><AnimatedCounter n={26} /></h5>
                         <span className='text-sm'>Residential</span>
                     </div>
                     <div className='border-2 md:w-[120px] w-[100px] h-[100px] md:h-[120px] border-dashed rounded-full flex items-center justify-center flex-col '>
-                        <h5 className='md:text-[1.8rem] text-[1.4rem] font-bold text-pure'>38K</h5>
+                        <h5 className='md:text-[1.8rem] text-[1.4rem] font-bold text-pure'><AnimatedCounter n={38} /></h5>
                         <span className='text-sm'>Industrial</span>
                     </div>
                     <div className='border-2 md:w-[120px] w-[100px] h-[100px] md:h-[120px] border-dashed rounded-full flex items-center justify-center flex-col '>
-                        <h5 className='md:text-[1.8rem] text-[1.4rem] font-bold text-pure'>20K</h5>
+                        <h5 className='md:text-[1.8rem] text-[1.4rem] font-bold text-pure'><AnimatedCounter n={20} /></h5>
                         <span className='text-sm'>Parks</span>
                     </div>
                 </div>

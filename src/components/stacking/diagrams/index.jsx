@@ -6,6 +6,7 @@ import './style.css';
 export const Diagrams = () => {
   return (
     <RootRootRootRoot>
+
       <RoyalPurpleFlexColumn>
         <Text1>Participat IGO Stake</Text1>
         <Text2>256.50 BUSD</Text2>
@@ -13,6 +14,7 @@ export const Diagrams = () => {
           <Text3>Total Stake</Text3>
           <input
             className="total-stake-input"
+            type="number"
           />
         </div>
         <Group>
@@ -77,6 +79,7 @@ export const Diagrams = () => {
           </FlexColumn4>
         </Group5>
       </RoyalPurpleFlexColumn>
+
       <DiagramsContainer>
         <RoyalPurpleFlexRow>
           <Group9>
@@ -106,18 +109,14 @@ export const Diagrams = () => {
           </Group9>
         </RoyalPurpleFlexRow>
       </DiagramsContainer>
+
     </RootRootRootRoot>
   );
 };
 
 const DaysButton = styled.button`
-  width: 120px;
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin: 0px 23.1px 0px 0px;
 `;
 const Element1 = styled.div`
   width: 117px;
@@ -153,66 +152,86 @@ const Text16 = styled.div`
 const RootRootRootRoot = styled.div`
   background-color: #06021A;  
   padding: 20px 0 50px 50px;
-  width: 100%;
-  gap: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 70px;
+  overflow: hidden;
+
+  
+  @media (max-width: 600px) {
+    padding: 0;
+  }
 `;
 const RoyalPurpleFlexColumn = styled.div`  
-  width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   padding: 36px 42px;
   border-radius: 18px;
   background-color: #320750;
+
+  @media (max-width: 600px) {
+    width: 400px;
+  }
+
+  @media (max-width: 550px) {
+    width: 350px;
+  }
+
+  @media (max-width: 500px) {
+    width: 300px;
+  }
 `;
 const Text1 = styled.div`
-  width: 294px;
-  height: 42px;
   margin: 0px 0px 25px 0px;
   color: #ffffff;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 700;
   font-family: Poppins;
   white-space: nowrap;
-  letter-spacing: 0.28px;
+
+  @media (max-width: 700px) {
+    font-size: 20px;
+  }
 `;
 const Text2 = styled.div`
-  width: 156px;
-  height: 36px;
-  margin: 0px 0px 26px 0px;
+  margin-bottom: 25px;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 700;
   font-family: Poppins;
   white-space: nowrap;
-  letter-spacing: 0.24px;
+
+  @media (max-width: 700px) {
+    font-size: 15px;
+  }
 `;
 const Text3 = styled.div`
-  width: 93px;
-  height: 24px;
-  margin: 0px 0px 16.5px 0px;
+  margin: 0px 0px 17px 0px;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   font-family: Poppins;
   white-space: nowrap;
-  letter-spacing: 0.16px;
 `;
 const Group = styled.div`
-  width: 547px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin: 0px 0px 48px 0px;
+  gap: 20px;
+
+  @media (max-width: 600px) {
+   flex-direction: column;
+   margin-left: 100px;
+  }
+
+  @media (max-width: 600px) {
+   flex-direction: column;
+   margin-left: 60px;
+  }
 `;
 const DaysText = styled.div`
-  width: 68px;
-  height: 30px;
   left: 26px;
   top: 19px;
   position: absolute;
@@ -221,7 +240,6 @@ const DaysText = styled.div`
   font-weight: 700;
   font-family: Poppins;
   white-space: nowrap;
-  letter-spacing: 0.2px;
 `;
 const Days60ButtonWrapper = styled.button`
   display: flex;
@@ -350,33 +368,31 @@ const Text14 = styled.div`
   letter-spacing: 0.2px;
 `;
 const Group4 = styled.div`
-  width: 547px;
   gap: 18px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
   margin: 0px 0px 39px 0px;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
 `;
 const FlexColumn3 = styled.button`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 22px 54px;
   border-radius: 13px;
   background-image: linear-gradient(90deg, #9d4df3 -17%, #b723f2 100%);
 `;
 const Text17 = styled.div`
-  width: 77px;
-  height: 24px;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   font-family: Poppins;
   text-align: center;
   white-space: nowrap;
-  letter-spacing: 0.16px;
 `;
 const Text18 = styled.div`
   width: 218px;
@@ -390,25 +406,23 @@ const Text18 = styled.div`
   letter-spacing: 0.2px;
 `;
 const Group5 = styled.div`
-  width: 547px;
   gap: 18px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+    @media (max-width: 700px) {
+    flex-direction: column;
+  }
 `;
 const FlexColumn4 = styled.button`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 22px 54px;
   border-radius: 13px;
   background-image: linear-gradient(90deg, #6f2398 -17%, #814b9f 100%);
 `;
 const Text21 = styled.div`
-  width: 95px;
-  height: 24px;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
@@ -424,6 +438,10 @@ const DiagramsContainer = styled.div`
   justify-content: space-between;
   align-items: flex-end;
   padding-right: 50px;
+
+   @media (max-width: 1000px) {
+   display: none;
+  }
 `;
 const RoyalPurpleFlexRow = styled.div`
   width: 494px;

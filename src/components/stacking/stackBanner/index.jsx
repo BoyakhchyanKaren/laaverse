@@ -15,7 +15,6 @@ export const StackBanner = () => {
 };
 
 const HDwallpaperneonsinfuturisticcityskyscraperRootRootRoot = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: column;
   background-size: cover;
@@ -24,35 +23,33 @@ const HDwallpaperneonsinfuturisticcityskyscraperRootRootRoot = styled.div`
   background-image: url("https://file.rendit.io/n/chGtvt15bgl1IszXbCEN.jpg");
 `;
 const PurpleHeartFlexColumn = styled.div`
-  height: 416px;
   gap: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 57px 387px;
+  padding: 60px 0;
   background-color: rgba(138, 3, 239, 0.47);
 `;
 const PurpleHeartFlexColumn1 = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 15px 33px 14px 34px;
+  align-items: center;
+  justify-content: center;
   border-radius: 17px;
   background-color: rgba(128, 5, 215, 0.58);
 `;
 const Text1 = styled.div`
-  width: 439px;
-  height: 99px;
   color: #ffffff;
-  font-size: 63px;
+  font-size: 60px;
   font-weight: 700;
   font-family: Poppins;
   text-align: center;
-  letter-spacing: 14.5px;
+  letter-spacing: 15px;
+  align-self: center;
+  padding-left: 10px;
+
+  @media (max-width: 500px) {
+    font-size: 40px;
+  }
 `;
-const Image1 = styled.img`
-  width: 100%;
-  height: 30px;
-`;
+const Image1 = styled.img``;

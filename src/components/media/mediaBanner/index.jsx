@@ -13,9 +13,6 @@ export const MediaBanner = () => {
 };
 
 const RootRootRootRoot = styled.div`
-  width: 100%;
-  height: 450px;
-  position: relative;
 `;
 const Scifi = styled.div`
   width: 100%;
@@ -24,20 +21,26 @@ const Scifi = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 164px 513px 164px;
+  padding: 120px;
   background-size: cover;
   background-image: url("https://file.rendit.io/n/u5969FY5G9mzX1sg35mZ.jpg");
+
+  @media (max-width: 700px) {
+    padding: 30px;
+  }
 `;
 const Text1 = styled.div`
-  width: 100%;
-  height: 74px;
   color: #ffffff;
-  font-size: 49px;
+  font-size: 50px;
   font-weight: 600;
   font-family: Poppins;
   text-align: center;
   white-space: nowrap;
-  letter-spacing: -0.98px;
+
+  @media (max-width: 700px) {
+    margin-bottom: 70px;
+    font-size: 40px;
+  }
 `;
 const BurntOrangeRectangle = styled.div`
   width: 100%;
