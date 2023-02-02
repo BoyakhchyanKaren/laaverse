@@ -43,6 +43,7 @@ const ConnectWalletModal = () => {
                                 fontSize={'30px'}
                                 fontFamily={"Poppins"}
                                 fontWeight={500}
+                                letterSpacing={'4px'}
                                 sx={{
                                     color: 'white'
                                 }}>Connect</Typography>
@@ -51,7 +52,6 @@ const ConnectWalletModal = () => {
                             <TextField
                                 fullWidth
                                 placeholder='METAMASK'
-                                disabled
                                 sx={{
                                     "& .MuiOutlinedInput-input": {
                                         color: '#FFFFFF'
@@ -60,9 +60,10 @@ const ConnectWalletModal = () => {
                                         color: 'white',
                                         '-webkit-text-fill-color': 'white'
                                     },
-                                    "& :hover": {
-                                        cursor: 'pointer'
-                                    }
+                                    '& .MuiInputBase-root.Mui-disabled': {
+                                        color: 'white',
+                                        '-webkit-text-fill-color': 'white'
+                                    },
                                 }}
                                 InputProps={{
                                     style: {
@@ -84,7 +85,6 @@ const ConnectWalletModal = () => {
                             <TextField
                                 fullWidth
                                 placeholder='WALLET CONNECT'
-                                disabled
                                 sx={{
                                     "& .MuiOutlinedInput-input": {
                                         color: '#FFFFFF'
@@ -93,9 +93,10 @@ const ConnectWalletModal = () => {
                                         color: 'white',
                                         '-webkit-text-fill-color': 'white'
                                     },
-                                    "& :hover": {
-                                        cursor: 'pointer'
-                                    }
+                                    '& .MuiInputBase-root.Mui-disabled': {
+                                        color: 'white',
+                                        '-webkit-text-fill-color': 'white'
+                                    },
                                 }}
                                 InputProps={{
                                     style: {
@@ -103,7 +104,7 @@ const ConnectWalletModal = () => {
                                         border: '2px solid #8105DA',
                                         backgroundColor: colors.primaryBackgroundLight,
                                         borderRadius: '14px',
-                                        fontSize: '25px',
+                                        fontSize: '25px'
                                     },
                                     endAdornment: (
                                         <InputAdornment>
