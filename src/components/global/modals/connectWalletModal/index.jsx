@@ -51,12 +51,26 @@ const ConnectWalletModal = () => {
                             <TextField
                                 fullWidth
                                 placeholder='METAMASK'
+                                disabled
+                                sx={{
+                                    "& .MuiOutlinedInput-input": {
+                                        color: '#FFFFFF'
+                                    },
+                                    "& .Mui-disabled": {
+                                        color: 'white',
+                                        '-webkit-text-fill-color': 'white'
+                                    },
+                                    "& :hover": {
+                                        cursor: 'pointer'
+                                    }
+                                }}
                                 InputProps={{
                                     style: {
                                         color: 'white',
                                         border: '2px solid #FFD337',
                                         backgroundColor: '#F4B1022E',
-                                        borderRadius: '14px'
+                                        borderRadius: '14px',
+                                        fontSize: '25px',
                                     },
                                     endAdornment: (
                                         <InputAdornment>
@@ -70,12 +84,26 @@ const ConnectWalletModal = () => {
                             <TextField
                                 fullWidth
                                 placeholder='WALLET CONNECT'
+                                disabled
+                                sx={{
+                                    "& .MuiOutlinedInput-input": {
+                                        color: '#FFFFFF'
+                                    },
+                                    "& .Mui-disabled": {
+                                        color: 'white',
+                                        '-webkit-text-fill-color': 'white'
+                                    },
+                                    "& :hover": {
+                                        cursor: 'pointer'
+                                    }
+                                }}
                                 InputProps={{
                                     style: {
                                         color: 'white',
                                         border: '2px solid #8105DA',
                                         backgroundColor: colors.primaryBackgroundLight,
-                                        borderRadius: '14px'
+                                        borderRadius: '14px',
+                                        fontSize: '25px',
                                     },
                                     endAdornment: (
                                         <InputAdornment>
