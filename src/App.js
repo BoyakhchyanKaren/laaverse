@@ -4,6 +4,7 @@ import { Home, About, NftMarket, Stacking, Media, DAO } from 'pages';
 import { Animate } from 'components/global/animation';
 import Drawer from 'components/global/drawer';
 import StickyHeader from 'components/home/nav';
+import { ConnectWalletModal } from 'components/global/modals';
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
                     </Animate.FadeUp>
                 </section>
                 <Drawer />
+                <ConnectWalletModal />
             </Router>
         </main>
     );
