@@ -42,6 +42,16 @@ const Group1 = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0px 376px 0px 1000px;
+
+  @media (max-width: 500px) {
+    padding: 0 !important;
+    margin-right: 250px;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 0 !important;
+    margin-right: 400px;
+  }
 `;
 const FlexColumn1 = styled.div`
   left: 0px;

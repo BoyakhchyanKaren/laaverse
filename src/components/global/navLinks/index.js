@@ -26,7 +26,7 @@ const NavLinks = () => {
                 <Link to='/dao'>DAO</Link>
             </li>
             <li className='hover:text-primaryLight'>
-                <Link to='#'>FQA</Link>
+                <Link to='/fqa'>FQA</Link>
             </li>
         </ul>
     )

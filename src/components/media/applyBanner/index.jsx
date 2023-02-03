@@ -57,6 +57,7 @@ const Text1 = styled.div`
   font-family: Poppins;
   letter-spacing: 3.45px;
   @media (max-width: 800px) {
+    width: 200px;
     font-size: 30px;
   }
 `;

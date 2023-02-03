@@ -108,13 +108,16 @@ const BlackFlexColumn = styled.div`
   padding: 30px;
   border-radius: 6px;
   background-color: #06021a;
+  @media (max-width: 800px) {
+    display: none;
+  }
 `;
 const Image1 = styled.img`
   width: 100%;
   height: 100%;
 `;
 const BlackFlexColumn1 = styled.div`
-  width: 450px;
+  width: 430px;
   height: 440px;
   padding: 20px;
   gap: 20px;

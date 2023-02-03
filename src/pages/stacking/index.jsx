@@ -1,4 +1,4 @@
-import { StackBanner, StackButton, Diagrams, ApplyIncubation } from "components/stacking";
+import { StackBanner, StackButton, Diagrams, ApplyIncubation, FullTable } from "components/stacking";
 import { useStackingContext } from "context/stackingContext";
 import { Animate } from "components/global/animation";
 import { colors } from "constants/colors";
@@ -17,7 +17,7 @@ const Stacking = () => {
                 <StackButton />
             </Animate.FadeUp>
             <Animate.FadeUp>
-                {isLeaderBoardButtonClicked ? <div>Table</div> : <Diagrams />}
+                {isLeaderBoardButtonClicked ? <FullTable /> : <Diagrams />}
             </Animate.FadeUp>
             <Animate.FadeUp>
                 <ApplyIncubation />

@@ -12,10 +12,9 @@ export const DaoBanner = () => {
 };
 
 const FrameRootRootRoot = styled.div`
-  width: 100%;
   display: flex;
   justify-content: center;
-  padding: 88px 434px 68px 434px;
+  padding: 50px;
   background-color: #06021a;
   overflow: hidden;
 `;
@@ -28,8 +27,6 @@ const PurpleHeartFlexColumn = styled.div`
   background-color: rgba(128, 5, 215, 0.88);
 `;
 const Text1 = styled.div`
-  width: 100%;
-  height: 60px;
   color: #ffffff;
   font-size: 38px;
   font-weight: 700;
