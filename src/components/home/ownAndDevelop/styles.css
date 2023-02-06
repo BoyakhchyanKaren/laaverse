@@ -96,3 +96,75 @@
         width: 60px !important;
     }
 }
+
+.image-animated1 {
+    position: relative;
+    animation-name: image-animated1;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes image-animated1 {
+    0% {
+        right: 0px;
+        top: 0px;
+    }
+
+    50% {
+        right: 0px;
+        top: 100px;
+    }
+
+    100% {
+        right: 0px;
+        top: 0px;
+    }
+}
+
+.image-animated2 {
+    position: relative;
+    animation-name: image-animated2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes image-animated2 {
+    0% {
+        right: 500px;
+        top: 40px;
+    }
+
+    50% {
+        right: 500px;
+        top: 100px;
+    }
+
+    100% {
+        right: 500px;
+        top: 40px;
+    }
+}
+
+.image-animated3 {
+    position: relative;
+    animation-name: image-animated3;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes image-animated3 {
+    0% {
+        right: 450px;
+        top: 570px;
+    }
+
+    50% {
+        right: 450px;
+        top: 630px;
+    }
+
+    100% {
+        right: 450px;
+        top: 570px;
+    }
+}

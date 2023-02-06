@@ -1,17 +1,90 @@
 import React from "react";
 import styled from "styled-components";
-import BgImage from 'assets/images/about/nftPic.png';
+import NFTBackground from 'assets/images/about/nftBackground.png';
+import FirstLayer from 'assets/images/about/firstLayer.png';
+import GirlBackground from 'assets/images/about/girlBackground.png';
+import LeftTop from 'assets/images/about/nftCollectionLeftTop.png';
+import LeftBottom from 'assets/images/about/leftbottom.png';
+import RightTop from 'assets/images/about/rightTop.png';
+import RightBottom from 'assets/images/about/rightBottom.png';
+import Kalco from 'assets/images/about/kaylco.png';
+import Arev from 'assets/images/about/arev.png';
+import Ket from 'assets/images/about/ket.png'
+import './style.css';
 
 export const NftCollection = () => {
   return (
     <RectangleRootRootRoot>
       <Group4>
         <div className='w-full md:h-[90vh] h-[55vh] flex items-center justify-center' style={{
-          backgroundImage: `url(${BgImage})`,
+          backgroundImage: `url(${NFTBackground})`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
+          position: 'relative',
         }}>
+          <img src={FirstLayer} alt="Land" className='lg:w-[30%] w-full' style={{
+            position: 'absolute',
+            top: '10%',
+          }} />
+          <img src={GirlBackground} alt="Land" className='lg:w-[30%] w-full' style={{
+            position: 'absolute',
+            top: '25%',
+            right: '38%'
+          }} />
+          <img src={LeftTop} alt="Land" className='lg:w-[10%] w-full left-top' style={{
+            position: 'absolute',
+            top: '13%',
+            left: '20%'
+          }} />
+          <img src={LeftBottom} alt="Land" className='lg:w-[8%] w-full left-bottom' style={{
+            position: 'absolute',
+            top: '70%',
+            left: '20%'
+          }} />
+          <img src={Arev} alt="Land" className='lg:w-[12%] w-full' style={{
+            position: 'absolute',
+            top: '2%',
+            right: '22%'
+          }} />
+          <img src={RightTop} alt="Land" className='lg:w-[12%] w-full right-top' style={{
+            position: 'absolute',
+            top: '12%',
+            right: '18%'
+          }} />
+          <img src={RightBottom} alt="Land" className='lg:w-[10%] w-full right-bottom' style={{
+            position: 'absolute',
+            top: '65%',
+            right: '24%'
+          }} />
+          <img src={Kalco} alt="Land" className='lg:w-[7%] w-full' style={{
+            position: 'absolute',
+            top: '75%',
+            right: '30%'
+          }} />
+
+
+          <img src={Ket} alt="Land" className='lg:w-[1%] w-full' style={{
+            position: 'absolute',
+            top: '50%',
+            left: '20%'
+          }} />
+          <img src={Ket} alt="Land" className='lg:w-[1%] w-full' style={{
+            position: 'absolute',
+            top: '10%',
+            left: '31%'
+          }} />
+          <img src={Ket} alt="Land" className='lg:w-[1%] w-full' style={{
+            position: 'absolute',
+            top: '40%',
+            right: '15%'
+          }} />
+          <img src={Ket} alt="Land" className='lg:w-[1%] w-full' style={{
+            position: 'absolute',
+            top: '75%',
+            right: '22%'
+          }} />
+
         </div>
       </Group4>
       <Group5>

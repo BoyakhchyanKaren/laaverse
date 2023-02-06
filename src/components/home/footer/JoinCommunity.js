@@ -1,4 +1,6 @@
-import RobotImage from 'assets/images/home/robot.png';
+import BigUnder from 'assets/images/home/bigUnderRobot.png';
+import SmallFirst from 'assets/images/home/smallAfterRobot.png';
+import RobotImage from 'assets/images/home/footerRobot.png';
 import FacebookSvg from 'assets/svgs/Facebook';
 import DiscordSvg from 'assets/svgs/Discord';
 
@@ -24,7 +26,23 @@ const JoinCommunity = () => {
                 </div>
             </div>
             <div className='absolute lg:-top-[25%] md:-top-[20%] -top-[10%]  right-0 w-1/2 flex justify-end pr-4'>
-                <img src={RobotImage} alt="Robot" className='xl:w-[70%] lg:w-[80%] md:w-[95%] hidden md:block' />
+                <img src={BigUnder} alt="Land" className='lg:w-[27%] w-full big-under' style={{
+                    position: 'absolute',
+                    bottom: '25px',
+                    right: '110px',
+                }} />
+                <div className='w-full md:h-[60vh] h-[55vh] flex items-center justify-center' style={{
+                    backgroundImage: `url(${RobotImage})`,
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                    position: 'relative'
+                }}>
+                    <img src={SmallFirst} alt="Land" className='lg:w-[20%] w-full small-after' style={{
+                        position: 'absolute',
+                        bottom: 0,
+                        left: '160px',
+                    }} />
+                </div>
             </div>
         </div>
     )
