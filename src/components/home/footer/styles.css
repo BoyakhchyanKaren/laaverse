@@ -1,3 +1,51 @@
 .communityBtn:hover>div {
     border-color: var(--primary);
 }
+
+.big-under {
+    position: relative;
+    animation-name: big-under;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes big-under {
+    0% {
+        right: 110px;
+        bottom: 0;
+    }
+
+    50% {
+        right: 110px;
+        bottom: 40px;
+    }
+
+    100% {
+        right: 110px;
+        bottom: 0;
+    }
+}
+
+.small-after {
+    position: relative;
+    animation-name: small-after;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes small-after {
+    0% {
+        left: 160px;
+        bottom: 0;
+    }
+
+    50% {
+        left: 160px;
+        bottom: 40px;
+    }
+
+    100% {
+        left: 160px;
+        bottom: 0;
+    }
+}

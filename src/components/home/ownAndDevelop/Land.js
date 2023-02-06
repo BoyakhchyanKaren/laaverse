@@ -1,6 +1,9 @@
-import LandImage from 'assets/images/home/land.png';
+import BigLand from 'assets/images/about/bigLand.png';
+import BigLand1 from 'assets/images/about/bigLand1.png';
+import BigLand2 from 'assets/images/about/bigLand2.png';
+import BigLand3 from 'assets/images/about/bigLand3.png';
 import AnimatedCounter from 'components/global/animation/counter';
-
+import './styles.css';
 
 const Land = () => {
     return (
@@ -53,7 +56,28 @@ const Land = () => {
                 </div>
             </div>
             <div className='flex-1 flex items-center justify-center'>
-                <img src={LandImage} alt="Land" className='lg:w-[75%] w-full' />
+                <div className='w-full md:h-[92vh] h-[55vh] flex items-center justify-center' style={{
+                    backgroundImage: `url(${BigLand})`,
+                    backgroundPosition: 'center',
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat'
+                }}>
+                    <img src={BigLand1} alt="Land" className='lg:w-[15%] w-full image-animated1' style={{
+                        position: 'absolute',
+                        top: 0,
+                        right: 20,
+                    }} />
+                    <img src={BigLand3} alt="Land" className='lg:w-[12%] w-full image-animated2' style={{
+                        position: 'absolute',
+                        top: '6%',
+                        right: '37%',
+                    }} />
+                    <img src={BigLand2} alt="Land" className='lg:w-[10%] w-full image-animated3' style={{
+                        position: 'absolute',
+                        top: '40%',
+                        right: '31%',
+                    }} />
+                </div>
             </div>
         </div>
     )
