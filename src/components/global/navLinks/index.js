@@ -14,7 +14,7 @@ const NavLinks = () => {
                 <Link to='/nft'>NFT MARKET</Link>
             </li>
             <li className='hover:text-primaryLight'>
-                <Link to='#'>LAND MAP</Link>
+                <Link to='/map'>LAND MAP</Link>
             </li>
             <li className='hover:text-primaryLight'>
                 <Link to='/stacking'>STAKING</Link>
