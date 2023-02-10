@@ -1,10 +1,11 @@
+import { Animate } from "components/global/animation";
 import React from "react";
 import styled from "styled-components";
 
 export const TopSeller = () => {
   return (
     <FrameRootRootRoot>
-      <Text2>Top Seller</Text2>
+      <Text2><Animate.FadeUp>Top Seller</Animate.FadeUp></Text2>
       <BlackFlexRow>
         {[1, 2, 3, 4].map(() => {
           return (
@@ -12,7 +13,9 @@ export const TopSeller = () => {
               <Group13>
                 <Image1 src={`https://file.rendit.io/n/ka5Kb5BoNvAu9A8nW3wc.png`} />
                 <Group15>
-                  <Text7>Mazanov Sky</Text7>
+                  <Text7>
+                    Mazanov Sky
+                  </Text7>
                   <Eth7>
                     885.5 <Eth>Eth</Eth>
                   </Eth7>
@@ -60,17 +63,21 @@ const FrameRootRootRoot = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 30px 200px;
   overflow: hidden;
   background-color: #0a0427;
+  @media (max-width: 500px){
+    padding: 30px 0;
+  }
 `;
 const BlackFlexRow = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 70px;
+  gap: 20px;
   background-color: #0a0427;
+  overflow: hidden;
 
   @media (max-width: 500px) {
     flex-direction: column;
@@ -100,6 +107,7 @@ const BlackFlexColumn = styled.div`
   border-style: solid;
   border-color: #b98cce;
   background-color: #150320;
+  overflow: hidden;
 `;
 const Group13 = styled.div`
   padding: 10px;

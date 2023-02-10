@@ -1,3 +1,4 @@
+import { Animate } from "components/global/animation";
 import React from "react";
 import styled from "styled-components";
 import './style.css';
@@ -6,17 +7,29 @@ export const NewsLetter = () => {
   return (
     <FrameRootRootRoot>
       <Image1 src={`https://file.rendit.io/n/XwxopXdjqhka24dHB9AS.svg`} />
-      <Text1>Get Newsletter</Text1>
-      <Text2>Get udpated with news, tips & tricks</Text2>
-      <input
-        className='email-input12'
-        placeholder="Enter your email"
-      />
-      <BlackFlexColumn>
-        <FlexColumn>
-          <Text4>Subscribe</Text4>
-        </FlexColumn>
-      </BlackFlexColumn>
+      <Text1>
+        <Animate.FadeUp>
+          Get Newsletter
+        </Animate.FadeUp>
+      </Text1>
+      <Text2>
+        <Animate.FadeUp>
+          Get udpated with news, tips & tricks
+        </Animate.FadeUp>
+      </Text2>
+      <Animate.FadeUp>
+        <input
+          className='email-input12'
+          placeholder="Enter your email"
+        />
+      </Animate.FadeUp>
+      <Animate.ScaleIn>
+        <BlackFlexColumn>
+          <FlexColumn>
+            <Text4>Subscribe</Text4>
+          </FlexColumn>
+        </BlackFlexColumn>
+      </Animate.ScaleIn>
       <Image1 src={`https://file.rendit.io/n/XwxopXdjqhka24dHB9AS.svg`} />
     </FrameRootRootRoot>
   );

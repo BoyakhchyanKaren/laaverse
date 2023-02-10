@@ -7,38 +7,20 @@ const About = () => {
         <div style={{
             backgroundColor: colors.primaryBackground,
         }}>
-            <Animate.FadeUp>
-                <AboutBanner />
-            </Animate.FadeUp>
+            <AboutBanner />
             <section>
-                <Animate.FadeUp>
-                    <NftCollection />
-                </Animate.FadeUp>
+                <NftCollection />
             </section>
             <section>
-                <Animate.FadeUp>
-                    <PartnerBrands />
-                </Animate.FadeUp>
-                <Animate.FadeUp>
-                    <Statistic />
-                </Animate.FadeUp>
+                <PartnerBrands />
+                <Statistic />
             </section>
             <section>
-                <Animate.FadeUp>
-                    <JoinNft />
-                </Animate.FadeUp>
-                <Animate.FadeUp>
-                    <Steps />
-                </Animate.FadeUp>
-                <Animate.FadeUp>
-                    <TeamMembers />
-                </Animate.FadeUp>
-                <Animate.FadeUp>
-                    <CreatePortfolio />
-                </Animate.FadeUp>
-                <Animate.FadeUp>
-                    <NewsLetter />
-                </Animate.FadeUp>
+                <JoinNft />
+                <Steps />
+                <TeamMembers />
+                <CreatePortfolio />
+                <NewsLetter />
             </section>
         </div>
     );

@@ -1,3 +1,4 @@
+import { Animate } from "components/global/animation";
 import React from "react";
 import styled from "styled-components";
 import { TopCollectionItems } from '../topcollection';
@@ -6,7 +7,7 @@ export const ExploreProduct = () => {
   return (
     <RootRootRootRoot>
       <RectangleRootRootRoot>
-        <Text1>Explore Product</Text1>
+        <Animate.FadeUp><Text1>Explore Product</Text1></Animate.FadeUp>
       </RectangleRootRootRoot>
       <TopCollectionItems />
       <TopCollectionItems />

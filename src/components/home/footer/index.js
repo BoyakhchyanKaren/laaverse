@@ -6,7 +6,7 @@ import Social from './Social';
 const HomeFooter = () => {
     return (
         <div
-            className='w-full  h-full pt-20 pb-10 px-2'
+            className='w-full  h-full pt-20 pb-10 px-40 home-footer-main'
             style={{
                 backgroundImage: `url(${BgImage})`,
                 backgroundSize: 'cover',

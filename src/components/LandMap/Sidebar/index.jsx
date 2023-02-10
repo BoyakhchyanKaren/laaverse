@@ -29,7 +29,11 @@ const SideBar = () => {
                                     color: 'white',
                                 }}
                             >
-                                <Typography sx={{ letterSpacing: '1.5px' }}>{textColumn}</Typography>
+                                <Typography sx={{
+                                    letterSpacing: '1.5px', "&:hover": {
+                                        color: colors.secondaryBackgroundLight
+                                    }
+                                }}>{textColumn}</Typography>
                             </Link>
                         )
                     })}

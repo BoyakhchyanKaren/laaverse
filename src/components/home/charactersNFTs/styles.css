@@ -18,3 +18,13 @@
         width: 85%;
     }
 }
+
+.container-div {
+    padding: 0 150px;
+}
+
+@media (max-width: 1000px) {
+    .container-div {
+        padding: 0;
+    }
+}

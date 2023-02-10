@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import BgImage from 'assets/images/home/bg1.png';
+import { Animate } from "components/global/animation";
 
 export const Statistic = () => {
   return (
@@ -13,20 +14,26 @@ export const Statistic = () => {
       <RootRootRootRoot>
         <FlexRow />
         <FlexRow1>
-          <Group1>
-            <Text1>100k</Text1>
-            <Text2>Registered User</Text2>
-          </Group1>
+          <Animate.FadeUp>
+            <Group1>
+              <Text1>100k</Text1>
+              <Text2>Registered User</Text2>
+            </Group1>
+          </Animate.FadeUp>
           <Image2 src={`https://file.rendit.io/n/Hg1k6C8coBoVu2YDgLVo.svg`} />
-          <Group2>
-            <Text3>5M</Text3>
-            <Text4>Total Assets</Text4>
-          </Group2>
+          <Animate.FadeUp>
+            <Group2>
+              <Text3>5M</Text3>
+              <Text4>Total Assets</Text4>
+            </Group2>
+          </Animate.FadeUp>
           <Image10 src={`https://file.rendit.io/n/Hg1k6C8coBoVu2YDgLVo.svg`} />
-          <Group3>
-            <Text5>10B</Text5>
-            <Text6>Yearly Trading</Text6>
-          </Group3>
+          <Animate.FadeUp>
+            <Group3>
+              <Text5>10B</Text5>
+              <Text6>Yearly Trading</Text6>
+            </Group3>
+          </Animate.FadeUp>
         </FlexRow1>
         <Ellipse src={`https://file.rendit.io/n/XFKjn2Sp2Uh8EfvtWOI9.svg`} />
         <Ellipse1 src={`https://file.rendit.io/n/efp8WVar6kkdrSg4S79T.svg`} />
@@ -60,9 +67,9 @@ const RootRootRootRoot = styled.div`
   }
 `;
 const FlexRow = styled.div`
-  width: 1240px;
-  height: 343px;
-  left: 0px;
+  width: 1120px;
+  height: 340px;
+  left: 60px;
   top: 159px;
   position: absolute;
   gap: 78px;
@@ -200,17 +207,17 @@ const Text6 = styled.div`
   letter-spacing: -0.32px;
 `;
 const Ellipse = styled.img`
-  width: 283.070068359375px;
-  height: 283px;
-  left: 946px;
-  top: 191px;
+  width: 250px;
+  height: 250px;
+  left: 920px;
+  top: 200px;
   position: absolute;
 `;
 const Ellipse1 = styled.img`
-  width: 177.671630859375px;
-  height: 178px;
-  left: 652px;
-  top: 325px;
+  width: 150;
+  height: 150px;
+  left: 620px;
+  top: 340px;
   position: absolute;
 `;
 const Group = styled.div`
@@ -300,8 +307,8 @@ const Image11 = styled.img`
   height: 71.3px;
 `;
 const Image12 = styled.img`
-  width: 450px;
-  height: 450px;
+  width: 440px;
+  height: 440px;
   border-radius: 50px;
   padding-left: 20px;
 `;

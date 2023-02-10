@@ -6,7 +6,7 @@ import RoadMap from './RoadMap';
 
 const OwnAndDevelop = () => {
     return (
-        <div className='w-full h-full bg-darkBlue relative'>
+        <div className='w-full h-full relative'>
             <div>
                 <Land />
             </div>

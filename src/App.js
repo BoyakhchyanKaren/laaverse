@@ -22,9 +22,7 @@ function App() {
                     <Route path='/map' element={<LandMap />} />
                 </Routes>
                 <section className='home-footer-section'>
-                    <Animate.FadeUp>
-                        <HomeFooter />
-                    </Animate.FadeUp>
+                    <HomeFooter />
                 </section>
                 <Drawer />
                 <ConnectWalletModal />

@@ -1,5 +1,7 @@
+import { Animate } from "components/global/animation";
 import React from "react";
 import styled from "styled-components";
+import { colors } from "constants/colors";
 import './style.css';
 
 export const TopCollectionItems = () => {
@@ -7,67 +9,11 @@ export const TopCollectionItems = () => {
     <div className="top-collection-items" style={{
       display: 'flex',
       flexDirection: 'row',
-      gap: '50px',
+      gap: '20px',
     }}>
       {[1, 2, 3, 4].map(() => {
         return (
-          <RoyalPurpleFlexColumn1>
-            <Group>
-              <Group3>
-                <Ellipse>
-                  <Image1
-                    src={`https://file.rendit.io/n/iHrPlz8zRxuCVU6TK0vp.png`}
-                  />
-                </Ellipse>
-                <ByJonson1>
-                  By<ByJonson> Jonson</ByJonson>
-                </ByJonson1>
-              </Group3>
-              <button>
-                <Image2 src={`https://file.rendit.io/n/PnkkUXhoDFcxgSpoAmxS.svg`} />
-              </button>
-            </Group>
-            <Images1 src={`https://file.rendit.io/n/0AcxzlyKsRhH8x7Vpk4r.png`} />
-            <Group1>
-              <Text2>NFT Collection</Text2>
-              <Text3>5.4 ETH</Text3>
-            </Group1>
-            <Image3 src={`https://file.rendit.io/n/eDbPbJTIE5KlhF2Yp0zj.svg`} />
-            <Group2>
-              <Group4>
-                <Text4>Place Bid</Text4>
-                <Element4 />
-              </Group4>
-              <Group5>
-                <button>
-                  <Image4 src={`https://file.rendit.io/n/IoKejSjojfKF2dfETYwM.svg`} />
-                </button>
-                <Text5>50</Text5>
-              </Group5>
-            </Group2>
-          </RoyalPurpleFlexColumn1>
-        )
-      })}
-    </div>
-  )
-}
-
-export const TopCollection = () => {
-  return (
-    <RootRootRootRoot>
-      <div style={{
-        display: 'flex',
-        alignSelf: 'center',
-      }}>
-        <Text1>Top Collection</Text1>
-      </div>
-      <div className="top-collection-wrapper" style={{
-        display: 'flex',
-        flexDirection: 'row',
-        gap: '70px'
-      }}>
-        {[1, 2, 3, 4].map(() => {
-          return (
+          <Animate.FadeUp>
             <RoyalPurpleFlexColumn1>
               <Group>
                 <Group3>
@@ -103,6 +49,70 @@ export const TopCollection = () => {
                 </Group5>
               </Group2>
             </RoyalPurpleFlexColumn1>
+          </Animate.FadeUp>
+        )
+      })}
+    </div>
+  )
+}
+
+export const TopCollection = () => {
+  return (
+    <RootRootRootRoot>
+      <div style={{
+        display: 'flex',
+        alignSelf: 'center',
+      }}>
+        <Text1>
+          <Animate.FadeUp>
+            Top Collection
+          </Animate.FadeUp>
+        </Text1>
+      </div>
+      <div className="top-collection-wrapper" style={{
+        display: 'flex',
+        flexDirection: 'row',
+        gap: '25px',
+      }}>
+        {[1, 2, 3, 4].map(() => {
+          return (
+            <Animate.FadeUp>
+              <RoyalPurpleFlexColumn1>
+                <Group>
+                  <Group3>
+                    <Ellipse>
+                      <Image1
+                        src={`https://file.rendit.io/n/iHrPlz8zRxuCVU6TK0vp.png`}
+                      />
+                    </Ellipse>
+                    <ByJonson1>
+                      By<ByJonson> Jonson</ByJonson>
+                    </ByJonson1>
+                  </Group3>
+                  <button>
+                    <Image2 src={`https://file.rendit.io/n/PnkkUXhoDFcxgSpoAmxS.svg`} />
+                  </button>
+                </Group>
+                <Images1 src={`https://file.rendit.io/n/0AcxzlyKsRhH8x7Vpk4r.png`} />
+                <Group1>
+                  <Text2>NFT Collection</Text2>
+                  <Text3>5.4 ETH</Text3>
+                </Group1>
+                <Image3 src={`https://file.rendit.io/n/eDbPbJTIE5KlhF2Yp0zj.svg`} />
+                <Group2>
+                  <Group4>
+                    <Text4>Place Bid</Text4>
+                    <Element4 />
+                  </Group4>
+                  <Group5>
+                    <button>
+                      <Image4 src={`https://file.rendit.io/n/IoKejSjojfKF2dfETYwM.svg`} />
+                    </button>
+                    <Text5>50</Text5>
+                  </Group5>
+                </Group2>
+              </RoyalPurpleFlexColumn1>
+            </Animate.FadeUp>
           )
         })}
       </div>
@@ -224,6 +234,10 @@ const Text4 = styled.button`
   font-family: Poppins;
   text-align: center;
   white-space: nowrap;
+  z-index: 100;
+  &:hover {
+    color: ${colors.secondaryBackgroundLight};
+  }
 `;
 const Element4 = styled.div`
   width: 114px;
@@ -261,7 +275,7 @@ const RoyalPurpleFlexColumn1 = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 12px 12px;
   border-radius: 8px;
   background-color: #320651;
 

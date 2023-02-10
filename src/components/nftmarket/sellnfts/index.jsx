@@ -1,10 +1,13 @@
+import { Animate } from "components/global/animation";
 import React from "react";
 import styled from "styled-components";
 
 export const SellNfts = () => {
   return (
     <RectangleRootRootRoot>
-      <Text1>Create And Sell your NFTS</Text1>
+      <Text1>
+        <Animate.FadeUp>Create And Sell your NFTS</Animate.FadeUp>
+      </Text1>
       <Group4>
         <Group>
           <BlackFlexColumn>
@@ -127,7 +130,7 @@ const Text1 = styled.div`
   white-space: nowrap;
 `;
 const Group4 = styled.div`
-  gap: 150px;
+  gap: 80px;
   display: flex;
   flex-direction: row;
 

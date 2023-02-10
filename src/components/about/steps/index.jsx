@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import BgImage from 'assets/images/home/bg1.png';
+import { Animate } from "components/global/animation";
 
 export const Steps = () => {
   return (
@@ -17,55 +18,57 @@ export const Steps = () => {
           <Group>
             {[1, 2, 3, 4].map(() => {
               return (
-                <Group1>
-                  <BlackFlexColumn>
-                    <Text2>Step 1</Text2>
-                  </BlackFlexColumn>
-                  <FlexRow1>
-                    <Group4>
-                      <Image1
-                        src={`https://file.rendit.io/n/hO6iBkwhtvAcdvsCPNvO.svg`}
+                <Animate.FadeUp>
+                  <Group1>
+                    <BlackFlexColumn>
+                      <Text2>Step 1</Text2>
+                    </BlackFlexColumn>
+                    <FlexRow1>
+                      <Group4>
+                        <Image1
+                          src={`https://file.rendit.io/n/hO6iBkwhtvAcdvsCPNvO.svg`}
+                        />
+                        <Image2
+                          src={`https://file.rendit.io/n/ruHGb7HBauL4E33ZDAov.svg`}
+                        />
+                        <Image3
+                          src={`https://file.rendit.io/n/oulRPRM6pbcHAR9Cr7dJ.svg`}
+                        />
+                        <Group6>
+                          <Image4
+                            src={`https://file.rendit.io/n/glMFg9q2Th7tGZPCQarb.svg`}
+                          />
+                          <Image5
+                            src={`https://file.rendit.io/n/jVWZBZzNZpgEBmDHcxJv.svg`}
+                          />
+                          <Image6
+                            src={`https://file.rendit.io/n/suGDJyf0otMCGquKWki5.svg`}
+                          />
+                        </Group6>
+                        <Group7>
+                          <Image7
+                            src={`https://file.rendit.io/n/hiPgPNYxfyuYzrT9EBaZ.svg`}
+                          />
+                          <Image6
+                            src={`https://file.rendit.io/n/rJ9mvQDq7EZ8KN2OhnxQ.svg`}
+                          />
+                        </Group7>
+                      </Group4>
+                      <Image9
+                        src={`https://file.rendit.io/n/tTA1lebkDgQDURyVftNp.svg`}
                       />
-                      <Image2
-                        src={`https://file.rendit.io/n/ruHGb7HBauL4E33ZDAov.svg`}
-                      />
-                      <Image3
-                        src={`https://file.rendit.io/n/oulRPRM6pbcHAR9Cr7dJ.svg`}
-                      />
-                      <Group6>
-                        <Image4
-                          src={`https://file.rendit.io/n/glMFg9q2Th7tGZPCQarb.svg`}
-                        />
-                        <Image5
-                          src={`https://file.rendit.io/n/jVWZBZzNZpgEBmDHcxJv.svg`}
-                        />
-                        <Image6
-                          src={`https://file.rendit.io/n/suGDJyf0otMCGquKWki5.svg`}
-                        />
-                      </Group6>
-                      <Group7>
-                        <Image7
-                          src={`https://file.rendit.io/n/hiPgPNYxfyuYzrT9EBaZ.svg`}
-                        />
-                        <Image6
-                          src={`https://file.rendit.io/n/rJ9mvQDq7EZ8KN2OhnxQ.svg`}
-                        />
-                      </Group7>
-                    </Group4>
-                    <Image9
-                      src={`https://file.rendit.io/n/tTA1lebkDgQDURyVftNp.svg`}
-                    />
-                    <Group5>
-                      <Text1>Connect your wallet</Text1>
-                      <Paragraph>
-                        Suspendisse tristique neque a lorem placerat pharetra. <br />
-                        Class aptent taciti sociosqu ad litora torquent per conubia{" "}
-                        <br />
-                        nostra, per inceptos himenaeos
-                      </Paragraph>
-                    </Group5>
-                  </FlexRow1>
-                </Group1>
+                      <Group5>
+                        <Text1>Connect your wallet</Text1>
+                        <Paragraph>
+                          Suspendisse tristique neque a lorem placerat pharetra. <br />
+                          Class aptent taciti sociosqu ad litora torquent per conubia{" "}
+                          <br />
+                          nostra, per inceptos himenaeos
+                        </Paragraph>
+                      </Group5>
+                    </FlexRow1>
+                  </Group1>
+                </Animate.FadeUp>
               )
             })}
           </Group>

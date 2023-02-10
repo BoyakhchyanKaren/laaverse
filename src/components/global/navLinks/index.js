@@ -2,31 +2,38 @@ import { Link } from 'react-router-dom';
 import './styles.css';
 
 const NavLinks = () => {
+    const navigateTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
+    
     return (
         <ul className='w-full flex items-center gap-6 text-pure text-semibold navLinks'>
             <li className='hover:text-primaryLight'>
-                <Link to='/'>GAME PLAY</Link>
+                <Link to='/' onClick={navigateTop}>GAME PLAY</Link>
             </li>
             <li className='hover:text-primaryLight'>
-                <Link to='/about'>ABOUT US</Link>
+                <Link to='/about' onClick={navigateTop}>ABOUT US</Link>
             </li>
             <li className='hover:text-primaryLight'>
-                <Link to='/nft'>NFT MARKET</Link>
+                <Link to='/nft' onClick={navigateTop}>NFT MARKET</Link>
             </li>
             <li className='hover:text-primaryLight'>
-                <Link to='/map'>LAND MAP</Link>
+                <Link to='/map' onClick={navigateTop}>LAND MAP</Link>
             </li>
             <li className='hover:text-primaryLight'>
-                <Link to='/stacking'>STAKING</Link>
+                <Link to='/stacking' onClick={navigateTop}>STAKING</Link>
             </li>
             <li className='hover:text-primaryLight'>
-                <Link to='/media'>MEDIA</Link>
+                <Link to='/media' onClick={navigateTop}>MEDIA</Link>
             </li>
             <li className='hover:text-primaryLight'>
-                <Link to='/dao'>DAO</Link>
+                <Link to='/dao' onClick={navigateTop}>DAO</Link>
             </li>
             <li className='hover:text-primaryLight'>
-                <Link to='/fqa'>FQA</Link>
+                <Link to='/fqa' onClick={navigateTop}>FQA</Link>
             </li>
         </ul>
     )

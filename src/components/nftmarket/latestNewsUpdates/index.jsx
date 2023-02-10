@@ -1,3 +1,5 @@
+import { Animate } from "components/global/animation";
+import { colors } from "constants/colors";
 import React from "react";
 import styled from "styled-components";
 
@@ -6,40 +8,42 @@ export const LatestNewsUpdates = () => {
     <IstockphotoxRootRootRoot>
       <MidnightBlueFlexColumn>
         <PurpleHeartFlexColumn>
-          <Text1>Latest News Update</Text1>
+          <Animate.FadeUp><Text1>Latest News Update</Text1></Animate.FadeUp>
         </PurpleHeartFlexColumn>
         <Group>
           {[1, 2, 3].map(() => {
             return (
-              <RoyalPurpleFlexColumn>
-                <Group1>
-                  <Group3>
-                    <Group4>
-                      <Image1
-                        src={`https://file.rendit.io/n/GAcvJrbrqHnNEMQr7nGT.svg`}
-                      />
-                      <Text2>Admin</Text2>
-                    </Group4>
-                    <Group4>
-                      <Image1
-                        src={`https://file.rendit.io/n/ScKDiGAsC3fykaofwS9g.svg`}
-                      />
-                      <Text3>Jan 12, 2023</Text3>
-                    </Group4>
-                  </Group3>
-                  <Image3
-                    src={`https://file.rendit.io/n/auHjx6XAhkXILpAzw9Ar.svg`}
-                  />
-                  <Paragraph>
-                    NFTs, rare digital items worlds <br />
-                    crypto collectibles
-                  </Paragraph>
-                </Group1>
-                <ReadMoreButton>
-                  <Text4>Read More</Text4>
-                  <Element1 />
-                </ReadMoreButton>
-              </RoyalPurpleFlexColumn>
+              <Animate.FadeUp>
+                <RoyalPurpleFlexColumn>
+                  <Group1>
+                    <Group3>
+                      <Group4>
+                        <Image1
+                          src={`https://file.rendit.io/n/GAcvJrbrqHnNEMQr7nGT.svg`}
+                        />
+                        <Text2>Admin</Text2>
+                      </Group4>
+                      <Group4>
+                        <Image1
+                          src={`https://file.rendit.io/n/ScKDiGAsC3fykaofwS9g.svg`}
+                        />
+                        <Text3>Jan 12, 2023</Text3>
+                      </Group4>
+                    </Group3>
+                    <Image3
+                      src={`https://file.rendit.io/n/auHjx6XAhkXILpAzw9Ar.svg`}
+                    />
+                    <Paragraph>
+                      NFTs, rare digital items worlds <br />
+                      crypto collectibles
+                    </Paragraph>
+                  </Group1>
+                  <ReadMoreButton>
+                    <Text4>Read More</Text4>
+                    <Element1 />
+                  </ReadMoreButton>
+                </RoyalPurpleFlexColumn>
+              </Animate.FadeUp>
             )
           })}
         </Group>
@@ -127,6 +131,10 @@ const Text4 = styled.div`
   font-family: Poppins;
   text-align: center;
   white-space: nowrap;
+  z-index: 100;
+    &:hover {
+      color: ${colors.secondaryBackgroundLight};
+  }
 `;
 const Element1 = styled.div`
   width: 100px;

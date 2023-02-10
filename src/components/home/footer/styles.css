@@ -5,7 +5,7 @@
 .big-under {
     position: relative;
     animation-name: big-under;
-    animation-duration: 10s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
 }
 
@@ -17,7 +17,7 @@
 
     50% {
         right: 110px;
-        bottom: 40px;
+        bottom: 20px;
     }
 
     100% {
@@ -29,23 +29,41 @@
 .small-after {
     position: relative;
     animation-name: small-after;
-    animation-duration: 15s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
 }
 
 @keyframes small-after {
     0% {
-        left: 160px;
+        left: 150px;
         bottom: 0;
     }
 
     50% {
-        left: 160px;
-        bottom: 40px;
+        left: 150px;
+        bottom: 20px;
     }
 
     100% {
-        left: 160px;
+        left: 150px;
         bottom: 0;
+    }
+}
+
+@media (max-width: 1224px) {
+
+    .robot-main,
+    .big-under,
+    .small-after {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 750px) {
+
+    .home-footer-main {
+        padding: 15px;
     }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import BgImage from 'assets/images/home/bg1.png';
+import { Animate } from "components/global/animation";
 
 export const PartnerBrands = () => {
   return (
@@ -14,19 +15,23 @@ export const PartnerBrands = () => {
       alignItems: 'center'
     }}>
       <RootRootRootRoot>
-        <MidnightBlueFlexColumn>
-          <Text1>
-            We
-            {"  "}
-            Are Partnered With Top Brands
-          </Text1>
-        </MidnightBlueFlexColumn>
-        <FlexColumn>
-          <Download src={`https://file.rendit.io/n/p2930YkZXenpzNUNPAp0.png`} />
-          <Download src={`https://file.rendit.io/n/LbgBkZ88APKomUzBB8mj.png`} />
-          <Download src={`https://file.rendit.io/n/jHgjI9n1bAbeApotjzVs.png`} />
-          <Download src={`https://file.rendit.io/n/Z6XSQJXUQaaVoxlxR1cw.png`} />
-        </FlexColumn>
+        <Animate.FadeUp>
+          <MidnightBlueFlexColumn>
+            <Text1>
+              We
+              {"  "}
+              Are Partnered With Top Brands
+            </Text1>
+          </MidnightBlueFlexColumn>
+        </Animate.FadeUp>
+        <Animate.FadeUp>
+          <FlexColumn>
+            <Download src={`https://file.rendit.io/n/p2930YkZXenpzNUNPAp0.png`} />
+            <Download src={`https://file.rendit.io/n/LbgBkZ88APKomUzBB8mj.png`} />
+            <Download src={`https://file.rendit.io/n/jHgjI9n1bAbeApotjzVs.png`} />
+            <Download src={`https://file.rendit.io/n/Z6XSQJXUQaaVoxlxR1cw.png`} />
+          </FlexColumn>
+        </Animate.FadeUp>
       </RootRootRootRoot>
     </div>
   );

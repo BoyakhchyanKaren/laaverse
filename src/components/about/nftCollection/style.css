@@ -94,3 +94,10 @@
         top: 520px;
     }
 }
+
+
+@media (max-width: 700px) {
+    .child-image {
+        display: none;
+    }
+}

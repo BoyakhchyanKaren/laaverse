@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import BgImage from 'assets/images/home/bg1.png';
+import { Animate } from "components/global/animation";
 
 export const JoinNft = () => {
   return (
@@ -11,13 +12,17 @@ export const JoinNft = () => {
       backgroundRepeat: 'no-repeat',
     }}>
       <RootRootRootRoot>
-        <FlexColumn>
-          <Text1>Join NFT Portfolio</Text1>
-        </FlexColumn>
-        <Text2>
-          Become a{"  "}
-          Laaverse NFT virtual Land
-        </Text2>
+        <Animate.FadeUp>
+          <FlexColumn>
+            <Text1>Join NFT Portfolio</Text1>
+          </FlexColumn>
+        </Animate.FadeUp>
+        <Animate.FadeUp>
+          <Text2>
+            Become a{"  "}
+            Laaverse NFT virtual Land
+          </Text2>
+        </Animate.FadeUp>
       </RootRootRootRoot>
     </div>
   );

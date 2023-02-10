@@ -29,16 +29,16 @@ const NavigationBar = () => {
                 </div>
             </div>
             <div className='home-large-connectWalletBtn bg-primary py-2 rounded-md text-center text-pure px-6 hover:bg-primary hover:bg-opacity-59'>
-                <button onClick={() => setShowModal(true)}>Connect Wallet</button>
+                <button onClick={() => setShowModal(true)} className={'connect-wallet'}>Connect Wallet</button>
             </div>
-
-            <div className={`hamburger ${showDrawer ? 'change' : ''}`}
-                onClick={() => setShowDrawer(!showDrawer)}>
-                <div className="bar1"></div>
-                <div className="bar2"></div>
-                <div className="bar3"></div>
+            <div onClick={() => setShowDrawer(!showDrawer)} >
+                <div className={`hamburger ${showDrawer ? 'change' : ''}`}
+                >
+                    <div className="bar1"></div>
+                    <div className="bar2"></div>
+                    <div className="bar3"></div>
+                </div>
             </div>
-
         </div>
     )
 }

@@ -1,3 +1,4 @@
+import { Animate } from "components/global/animation";
 import React from "react";
 import styled from "styled-components";
 
@@ -8,26 +9,36 @@ export const NftBanner = () => {
         <Group6>
           <Group7>
             <Text1>
-              Buy
-              {"  "}
-              and
-              {"  "}
-              Sell
-              {"  "}
-              <br />
-              Digital art <br />
-              <Text2>NFT</Text2>
-              <Text3> </Text3>
-              <Text4>collection</Text4>
+              <Animate.FadeUp>
+                Buy
+                {"  "}
+                and
+                {"  "}
+                Sell
+                {"  "}
+                <br />
+                Digital art <br />
+              </Animate.FadeUp>
+              <Animate.FadeUp>
+                <Text2>NFT</Text2>
+                <Text3> </Text3>
+                <Text4>collection</Text4>
+              </Animate.FadeUp>
             </Text1>
             <Paragraph>
-              Everything you need to build, host, scale amazing
-              <br />
-              dapps free by creating account today
+              <Animate.FadeUp>
+                Everything you need to build, host, scale amazing
+                <br />
+                dapps free by creating account today
+              </Animate.FadeUp>
             </Paragraph>
           </Group7>
           <GetStartedButton>
-            <Text5>Let’s Get Started</Text5>
+            <Text5>
+              <Animate.ScaleIn>
+                Let’s Get Started
+              </Animate.ScaleIn>
+            </Text5>
             <Image1
               src={`https://file.rendit.io/n/AMBIC2P5VGnKETp1zUGK.svg`}
             />
@@ -35,7 +46,7 @@ export const NftBanner = () => {
         </Group6>
         <Image2 src={`https://file.rendit.io/n/eb4rTsVH1b5zyMsE9Ofh.png`} />
       </FlexRow>
-    </RootRootRootRoot>
+    </RootRootRootRoot >
   );
 };
 
@@ -48,7 +59,7 @@ const FlexRow = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 50px;
+  padding: 0 50px;
   background-image: url("https://file.rendit.io/n/xzYqtGLwimk99c5gkGxx.png");
 `;
 const Group6 = styled.div`
@@ -56,8 +67,11 @@ const Group6 = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding: 40px 0  0 150px;
   align-items: flex-start;
-  padding: 27px 0px;
+  @media (max-width: 600px){
+    padding: 0;
+  }
 `;
 const Group7 = styled.div`
   display: flex;
@@ -127,6 +141,7 @@ const Image1 = styled.img`
   margin: 7.73px 0px 0px 0px;
 `;
 const Image2 = styled.img`
+  padding-right: 100px;
   @media (max-width: 1024px) {
     display: none;
   } 

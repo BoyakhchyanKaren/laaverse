@@ -4,13 +4,14 @@ import { useModalsContext } from 'context/modalsContext';
 import Fox from '../../../../assets/svgs/fox.svg';
 import Wallet from '../../../../assets/svgs/walletConect.svg';
 import { colors } from 'constants/colors';
+import { CloseOutlined } from '@mui/icons-material';
 
 const style = {
     position: 'absolute',
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 500,
+    width: 400,
     bgcolor: '#06021A',
     border: '2px solid #000',
     boxShadow: 24,
@@ -38,15 +39,22 @@ const ConnectWalletModal = () => {
                     borderTopRightRadius: '80px',
                 }}>
                     <Grid item container xs={12} gap={5} direction={"column"} justifyContent={"center"} alignItems={"center"}>
-                        <Grid>
-                            <Typography
-                                fontSize={'30px'}
-                                fontFamily={"Poppins"}
-                                fontWeight={500}
-                                letterSpacing={'4px'}
-                                sx={{
-                                    color: 'white'
-                                }}>Connect</Typography>
+                        <Grid item container direction={"row"} justifyContent={'space-between'}>
+                            <Grid>
+                                <CloseOutlined fontSize='large' sx={{ color: 'white', "&:hover": { cursor: 'pointer' } }} onClick={handleClose} />
+                            </Grid>
+                            <Grid>
+                                <Typography
+                                    fontSize={'30px'}
+                                    fontFamily={"Poppins"}
+                                    fontWeight={500}
+                                    letterSpacing={'4px'}
+                                    mr={3}
+                                    sx={{
+                                        color: 'white'
+                                    }}>Connect</Typography>
+                            </Grid>
+                            <Grid />
                         </Grid>
                         <Grid width={"100%"}>
                             <TextField
@@ -71,7 +79,7 @@ const ConnectWalletModal = () => {
                                         border: '2px solid #FFD337',
                                         backgroundColor: '#F4B1022E',
                                         borderRadius: '14px',
-                                        fontSize: '25px',
+                                        fontSize: '20px',
                                     },
                                     endAdornment: (
                                         <InputAdornment>
@@ -104,7 +112,7 @@ const ConnectWalletModal = () => {
                                         border: '2px solid #8105DA',
                                         backgroundColor: colors.primaryBackgroundLight,
                                         borderRadius: '14px',
-                                        fontSize: '25px'
+                                        fontSize: '20px'
                                     },
                                     endAdornment: (
                                         <InputAdornment>

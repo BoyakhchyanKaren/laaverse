@@ -11,6 +11,7 @@ import Kalco from 'assets/images/about/kaylco.png';
 import Arev from 'assets/images/about/arev.png';
 import Ket from 'assets/images/about/ket.png'
 import './style.css';
+import { Animate } from "components/global/animation";
 
 export const NftCollection = () => {
   return (
@@ -32,54 +33,54 @@ export const NftCollection = () => {
             top: '25%',
             right: '38%'
           }} />
-          <img src={LeftTop} alt="Land" className='lg:w-[10%] w-full left-top' style={{
+          <img src={LeftTop} alt="Land" className='lg:w-[10%] w-full left-top child-image' style={{
             position: 'absolute',
             top: '13%',
             left: '20%'
           }} />
-          <img src={LeftBottom} alt="Land" className='lg:w-[8%] w-full left-bottom' style={{
+          <img src={LeftBottom} alt="Land" className='lg:w-[8%] w-full left-bottom child-image' style={{
             position: 'absolute',
             top: '70%',
             left: '20%'
           }} />
-          <img src={Arev} alt="Land" className='lg:w-[12%] w-full' style={{
+          <img src={Arev} alt="Land" className='lg:w-[12%] w-full child-image' style={{
             position: 'absolute',
             top: '2%',
             right: '22%'
           }} />
-          <img src={RightTop} alt="Land" className='lg:w-[12%] w-full right-top' style={{
+          <img src={RightTop} alt="Land" className='lg:w-[12%] w-full right-top child-image' style={{
             position: 'absolute',
             top: '12%',
             right: '18%'
           }} />
-          <img src={RightBottom} alt="Land" className='lg:w-[10%] w-full right-bottom' style={{
+          <img src={RightBottom} alt="Land" className='lg:w-[10%] w-full right-bottom child-image' style={{
             position: 'absolute',
             top: '65%',
             right: '24%'
           }} />
-          <img src={Kalco} alt="Land" className='lg:w-[7%] w-full' style={{
+          <img src={Kalco} alt="Land" className='lg:w-[7%] w-full child-image' style={{
             position: 'absolute',
             top: '75%',
             right: '30%'
           }} />
 
 
-          <img src={Ket} alt="Land" className='lg:w-[1%] w-full' style={{
+          <img src={Ket} alt="Land" className='lg:w-[1%] w-full child-image' style={{
             position: 'absolute',
             top: '50%',
             left: '20%'
           }} />
-          <img src={Ket} alt="Land" className='lg:w-[1%] w-full' style={{
+          <img src={Ket} alt="Land" className='lg:w-[1%] w-full child-image' style={{
             position: 'absolute',
             top: '10%',
             left: '31%'
           }} />
-          <img src={Ket} alt="Land" className='lg:w-[1%] w-full' style={{
+          <img src={Ket} alt="Land" className='lg:w-[1%] w-full child-image' style={{
             position: 'absolute',
             top: '40%',
             right: '15%'
           }} />
-          <img src={Ket} alt="Land" className='lg:w-[1%] w-full' style={{
+          <img src={Ket} alt="Land" className='lg:w-[1%] w-full child-image' style={{
             position: 'absolute',
             top: '75%',
             right: '22%'
@@ -88,21 +89,29 @@ export const NftCollection = () => {
         </div>
       </Group4>
       <Group5>
-        <Paragraph>
-          Laaverse will allow users to purchase virtual land or properties using
-          NFTs.
-        </Paragraph>
-        <Paragraph1>
-          In Laaverse, users who own virtual land will be able to develop and
-          customise their properties as they see fit. <br />
-          This could include building virtual homes or businesses, or even
-          creating unique landscapes.
-        </Paragraph1>
-        <PurpleMountainsMajestyFlexColumn>
-          <FlexColumn5>
-            <Text1>More About US</Text1>
-          </FlexColumn5>
-        </PurpleMountainsMajestyFlexColumn>
+        <Animate.FadeUp>
+          <Paragraph>
+            Laaverse will allow users to purchase virtual land or properties using
+            NFTs.
+          </Paragraph>
+        </Animate.FadeUp>
+        <Animate.FadeUp>
+          <Paragraph1>
+            In Laaverse, users who own virtual land will be able to develop and
+            customise their properties as they see fit. <br />
+            This could include building virtual homes or businesses, or even
+            creating unique landscapes.
+          </Paragraph1>
+        </Animate.FadeUp>
+        <Animate.FadeUp>
+
+          <PurpleMountainsMajestyFlexColumn>
+            <FlexColumn5>
+              <Text1 >More About US</Text1>
+            </FlexColumn5>
+          </PurpleMountainsMajestyFlexColumn>
+        </Animate.FadeUp>
+
       </Group5>
     </RectangleRootRootRoot>
   );
@@ -137,6 +146,10 @@ const Group5 = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 600px) {
+    margin-top: 140px;
+  }
 `;
 const Paragraph = styled.div`
   margin: 0px 0px 15px 0px;

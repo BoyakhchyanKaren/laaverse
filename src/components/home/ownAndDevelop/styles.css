@@ -100,24 +100,24 @@
 .image-animated1 {
     position: relative;
     animation-name: image-animated1;
-    animation-duration: 15s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
 }
 
 @keyframes image-animated1 {
     0% {
-        right: 0px;
-        top: 0px;
+        right: 220px;
+        top: 20px;
     }
 
     50% {
-        right: 0px;
-        top: 100px;
+        right: 220px;
+        top: 50px;
     }
 
     100% {
-        right: 0px;
-        top: 0px;
+        right: 220px;
+        top: 20px;
     }
 }
 
@@ -130,18 +130,18 @@
 
 @keyframes image-animated2 {
     0% {
-        right: 500px;
-        top: 40px;
+        right: 550px;
+        top: 90px;
     }
 
     50% {
-        right: 500px;
-        top: 100px;
+        right: 550px;
+        top: 130px;
     }
 
     100% {
-        right: 500px;
-        top: 40px;
+        right: 550px;
+        top: 90px;
     }
 }
 
@@ -154,17 +154,48 @@
 
 @keyframes image-animated3 {
     0% {
-        right: 450px;
-        top: 570px;
+        right: 470px;
+        top: 510px;
     }
 
     50% {
-        right: 450px;
-        top: 630px;
+        right: 470px;
+        top: 540px;
     }
 
     100% {
-        right: 450px;
-        top: 570px;
+        right: 470px;
+        top: 510px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+
+    .image-animated1,
+    .image-animated2,
+    .image-animated3 {
+        display: none;
+    }
+
+    .main-image {
+        width: 350px;
+        height: 100%;
+    }
+}
+
+@media (max-width: 1040px) {
+
+    .main-image {
+        width: 500px;
+        height: 200px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .main-image {
+        width: 400px;
     }
 }

@@ -18,7 +18,6 @@ export const CreatePortfolio = () => {
         </FlexColumn1>
         <Ellipse src={`https://file.rendit.io/n/xgm1s4HCgyMfZNxY0JsG.svg`} />
         <Image1 src={`https://file.rendit.io/n/jQzpbNF0Yv9X6SGGByWq.png`} />
-        <Ellipse1 src={`https://file.rendit.io/n/4PmfANswQKkBYHMVQCRe.svg`} />
       </Group1>
     </FrameRootRootRoot>
   );
@@ -54,7 +53,7 @@ const Group1 = styled.div`
   }
 `;
 const FlexColumn1 = styled.div`
-  left: 0px;
+  left: 100px;
   top: 142px;
   position: absolute;
   gap: 54px;
@@ -62,7 +61,7 @@ const FlexColumn1 = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 40px 909px 44px 31.3px;
+  padding: 40px 740px 44px 31.3px;
   border-radius: 7px;
   background-image: linear-gradient(270deg, #b192ca -22%, #9a18d7 135%);
   @media (max-width: 1000px) {
@@ -74,8 +73,9 @@ const FlexColumn1 = styled.div`
   }
 
   @media (max-width: 500px) {
+    width: 350px;
     padding: 10px;
-    left: 36%;
+    left: 40%;
     top: 10%;
     justify-content: center;
     align-items: center;
@@ -147,9 +147,9 @@ const Text3 = styled.div`
   letter-spacing: -0.32px;
 `;
 const Ellipse = styled.img`
-  width: 305px;
-  height: 282px;
-  left: 1041px;
+  width: 250px;
+  height: 250px;
+  left: 900px;
   top: 235px;
   position: absolute;
   @media (max-width: 1200px) {
@@ -157,9 +157,9 @@ const Ellipse = styled.img`
   }
 `;
 const Image1 = styled.img`
-  width: 454px;
-  height: 480px;
-  left: 759px;
+  width: 400px;
+  height: 400px;
+  left: 650px;
   top: 0px;
   position: absolute;
     @media (max-width: 1200px) {

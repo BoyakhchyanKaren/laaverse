@@ -34,14 +34,14 @@ const FadeIn = ({ children }) => (
 );
 const FadeUp = ({ children }) => (
     <AnimateIn
-        from={{ opacity: 0.2, translate: "0 5rem" }}
+        from={{ opacity: 0.5, translate: "0 15rem" }}
         to={{ opacity: 1, translate: "none" }}
     >
         {children}
     </AnimateIn>
 );
 const ScaleIn = ({ children }) => (
-    <AnimateIn from={{ scale: "0" }} to={{ scale: "1" }}>
+    <AnimateIn from={{ scale: "-0.2" }} to={{ scale: "1" }}>
         {children}
     </AnimateIn>
 );

@@ -1,3 +1,4 @@
+import { Animate } from "components/global/animation";
 import React from "react";
 import styled from "styled-components";
 
@@ -6,38 +7,52 @@ export const TeamMembers = () => {
     <FrameRootRootRoot>
       <Image1 src={`https://file.rendit.io/n/GyJIBsHdzTzYPye9Y2Es.svg`} />
       <FlexColumn>
-        <Text1>Team Member</Text1>
+        <Text1>
+          <Animate.ScaleIn>
+            Team Member
+          </Animate.ScaleIn>
+        </Text1>
       </FlexColumn>
-      <Text2>Our Amazing Team Members</Text2>
+      <Text2>
+        <Animate.FadeUp>
+          Our Amazing Team Members
+        </Animate.FadeUp>
+      </Text2>
       <Group3>
         {[1, 2, 3].map(() => {
           return (
-            <div style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              gap: '10px',
-            }}>
-              <RoyalPurpleFlexColumn>
-                <Images1 src={`https://file.rendit.io/n/dqWttbzNSppPTjpye4bX.png`} />
-              </RoyalPurpleFlexColumn>
-              <Text3>Ralph Edwards</Text3>
-              <Group>
-                {[
-                  {
-                    src: `https://file.rendit.io/n/97XGhAUVE5L1xJSpHtoh.svg`,
-                  },
-                  {
-                    src: `https://file.rendit.io/n/gt2uzN4x8b0D0BrsTuIa.svg`,
-                  },
-                  {
-                    src: `https://file.rendit.io/n/RnsDWKAM0RTHyC6dhEKd.svg`,
-                  },
-                ].map((data) => (
-                  <Image3 src={data.src} />
-                ))}
-              </Group>
-            </div>
+            <Animate.FadeUp>
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                gap: '10px',
+              }}>
+                <RoyalPurpleFlexColumn>
+                  <Images1 src={`https://file.rendit.io/n/dqWttbzNSppPTjpye4bX.png`} />
+                </RoyalPurpleFlexColumn>
+                <Animate.ScaleIn>
+                  <Text3>Ralph Edwards</Text3>
+                </Animate.ScaleIn>
+                <Group>
+                  {[
+                    {
+                      src: `https://file.rendit.io/n/97XGhAUVE5L1xJSpHtoh.svg`,
+                    },
+                    {
+                      src: `https://file.rendit.io/n/gt2uzN4x8b0D0BrsTuIa.svg`,
+                    },
+                    {
+                      src: `https://file.rendit.io/n/RnsDWKAM0RTHyC6dhEKd.svg`,
+                    },
+                  ].map((data) => (
+                    <Animate.ScaleIn>
+                      <Image3 src={data.src} />
+                    </Animate.ScaleIn>
+                  ))}
+                </Group>
+              </div>
+            </Animate.FadeUp>
           )
         })}
       </Group3>
