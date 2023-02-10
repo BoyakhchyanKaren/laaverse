@@ -1,6 +1,5 @@
 import { AboutBanner, NewsLetter, NftCollection, CreatePortfolio, TeamMembers, PartnerBrands, Statistic, JoinNft, Steps } from "components/about";
 import { colors } from "constants/colors";
-import { Animate } from "components/global/animation";
 
 const About = () => {
     return (

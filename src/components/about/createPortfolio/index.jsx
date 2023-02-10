@@ -166,11 +166,3 @@ const Image1 = styled.img`
     display: none;
   }
 `;
-const Ellipse1 = styled.img`
-  width: 191px;
-  height: 177px;
-  position: relative;
-    @media (max-width: 1200px) {
-    display: none;
-  }
-`;
