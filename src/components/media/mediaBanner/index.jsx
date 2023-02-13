@@ -1,3 +1,4 @@
+import { Animate } from "components/global/animation";
 import React from "react";
 import styled from "styled-components";
 
@@ -5,7 +6,7 @@ export const MediaBanner = () => {
   return (
     <RootRootRootRoot>
       <Scifi>
-        <Text1>MEDIA LIST</Text1>
+        <Text1><Animate.FadeUp>MEDIA LIST</Animate.FadeUp></Text1>
       </Scifi>
       <BurntOrangeRectangle />
     </RootRootRootRoot>

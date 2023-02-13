@@ -1,9 +1,10 @@
-import React from "react";
-import styled from "styled-components";
-import { colors } from "constants/colors";
+import { Button, Grid, Typography, useTheme } from "@mui/material"
+import { Animate } from "components/global/animation";
 import { useStackingContext } from "context/stackingContext";
 
+
 export const StackButton = () => {
+  const theme = useTheme();
   const { isLeaderBoardButtonClicked, setLeaderBoardButtonActive } = useStackingContext();
 
   const onLeaderBoardClick = () => {
@@ -11,62 +12,56 @@ export const StackButton = () => {
   };
 
   return (
-    <div style={{
-      backgroundColor: colors.primaryBackground,
-      padding: '50px'
-    }}>
-      <RectangleRootRootRoot>
-        <Text1>Staking</Text1>
-        <FlexColumn
-          onClick={onLeaderBoardClick}
-        >
-          <Text2>LeaderBoard</Text2>
-        </FlexColumn>
-      </RectangleRootRootRoot>
-    </div>
-  );
-};
-
-const RectangleRootRootRoot = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px;
-  border-radius: 16px;
-  background-color: #320750;
-
-  @media (max-width: 700px) {
-    padding: 40px 20px;
-    flex-direction: column;
-    gap: 15px;
-  }
-`;
-const Text1 = styled.div`
-  color: #ffffff;
-  font-size: 50px;
-  font-weight: 700;
-  font-family: Poppins;
-  white-space: nowrap;
-  letter-spacing: 4px;
-
-  @media (max-width: 700px) {
-    font-size: 40px;
-  }
-`;
-const FlexColumn = styled.button`
-  padding: 20px;
-  border-radius: 20px;
-  background-image: linear-gradient(270deg, #9a18d7 0%, #bf6ec6 107%);
-`;
-const Text2 = styled.div`
-  color: #ffffff;
-  font-size: 30px;
-  font-weight: 700;
-  font-family: Poppins;
-  white-space: nowrap;
-  letter-spacing: 1.8px;
-  @media (max-width: 700px) {
-    font-size: 20px;
-  }
-`;
+    <Grid item container alignItems={"center"} justifyContent={'center'}>
+      <Grid
+        item
+        px={4}
+        py={5}
+        container
+        lg={9.1}
+        xl={9.1}
+        sx={{
+          backgroundColor: '#320751',
+          marginRight: 1,
+          marginTop: 5,
+          borderRadius: '10px',
+          [theme.breakpoints.down('sm')]: {
+            justifyContent: 'center',
+          },
+          [theme.breakpoints.down('md')]: {
+            marginBottom: '20px'
+          }
+        }}
+        direction={'row'}
+        justifyContent={'space-between'}
+        alignItems={'center'}
+      >
+        <Grid>
+          <Typography sx={{
+            fontWeight: 600,
+            fontSize: '30px',
+            color: 'white',
+            letterSpacing: '3px'
+          }}>
+            <Animate.FadeUp>Stacking</Animate.FadeUp>
+          </Typography>
+        </Grid>
+        <Grid>
+          <Button
+            onClick={onLeaderBoardClick}
+            sx={{
+              color: 'white',
+              backgroundColor: '#9A18D7',
+              padding: '15px 30px',
+              textTransform: 'none',
+              fontSize: '21px',
+              borderRadius: '12px',
+              letterSpacing: '3px',
+            }}>
+            <Animate.FadeUp>LeaderBoard</Animate.FadeUp>
+          </Button>
+        </Grid>
+      </Grid>
+    </Grid >
+  )
+}

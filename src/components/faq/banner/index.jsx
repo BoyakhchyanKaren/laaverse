@@ -1,3 +1,4 @@
+import { Animate } from "components/global/animation";
 import { colors } from "constants/colors";
 import React from "react";
 import styled from "styled-components";
@@ -7,8 +8,8 @@ export const FAQBanner = () => {
     <FrameRootRootRoot>
       <Thumb>
         <BlackFlexColumn>
-          <Text1>FAQ</Text1>
-          <Text2>Frequently Asked Question</Text2>
+          <Text1><Animate.FadeUp>FAQ</Animate.FadeUp></Text1>
+          <Text2><Animate.FadeUp>Frequently Asked Question</Animate.FadeUp></Text2>
           <Paragraph>
             Track your entire project from start to finish with beautiful views
             that make project planning a breeze.<br />

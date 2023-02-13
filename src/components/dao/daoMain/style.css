@@ -25,3 +25,7 @@
     /* Microsoft Edge */
     color: red;
 }
+
+input:focus {
+    outline: none;
+}

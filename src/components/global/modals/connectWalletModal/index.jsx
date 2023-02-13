@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Box, Grid, Backdrop, Modal, Typography, TextField, InputAdornment } from '@mui/material';
+import { Box, Grid, Backdrop, Modal, Typography, InputAdornment, Button } from '@mui/material';
 import { useModalsContext } from 'context/modalsContext';
 import Fox from '../../../../assets/svgs/fox.svg';
 import Wallet from '../../../../assets/svgs/walletConect.svg';
@@ -38,7 +38,7 @@ const ConnectWalletModal = () => {
                     borderRadius: '15px',
                     borderTopRightRadius: '80px',
                 }}>
-                    <Grid item container xs={12} gap={5} direction={"column"} justifyContent={"center"} alignItems={"center"}>
+                    <Grid item container xs={12} gap={3} direction={"column"} justifyContent={"center"} alignItems={"center"}>
                         <Grid item container direction={"row"} justifyContent={'space-between'}>
                             <Grid>
                                 <CloseOutlined fontSize='large' sx={{ color: 'white', "&:hover": { cursor: 'pointer' } }} onClick={handleClose} />
@@ -57,70 +57,48 @@ const ConnectWalletModal = () => {
                             <Grid />
                         </Grid>
                         <Grid width={"100%"}>
-                            <TextField
+                            <Button
                                 fullWidth
-                                placeholder='METAMASK'
                                 sx={{
-                                    "& .MuiOutlinedInput-input": {
-                                        color: '#FFFFFF'
-                                    },
-                                    "& .Mui-disabled": {
-                                        color: 'white',
-                                        '-webkit-text-fill-color': 'white'
-                                    },
-                                    '& .MuiInputBase-root.Mui-disabled': {
-                                        color: 'white',
-                                        '-webkit-text-fill-color': 'white'
-                                    },
+                                    display: 'flex',
+                                    justifyContent: 'space-between',
+                                    padding: '15px',
+                                    color: 'white',
+                                    border: '2px solid #FFD337',
+                                    backgroundColor: '#F4B1022E',
+                                    borderRadius: '14px',
+                                    fontSize: '20px',
                                 }}
-                                InputProps={{
-                                    style: {
-                                        color: 'white',
-                                        border: '2px solid #FFD337',
-                                        backgroundColor: '#F4B1022E',
-                                        borderRadius: '14px',
-                                        fontSize: '20px',
-                                    },
-                                    endAdornment: (
-                                        <InputAdornment>
-                                            <img src={Fox} alt="Fox Icon" />
-                                        </InputAdornment>
-                                    )
-                                }}
-                            />
+                                endIcon={
+                                    <InputAdornment>
+                                        <img src={Fox} alt="Fox Icon" />
+                                    </InputAdornment>
+                                }
+                            >
+                                METAMASK
+                            </Button>
                         </Grid>
                         <Grid width={"100%"}>
-                            <TextField
+                            <Button
                                 fullWidth
-                                placeholder='WALLET CONNECT'
                                 sx={{
-                                    "& .MuiOutlinedInput-input": {
-                                        color: '#FFFFFF'
-                                    },
-                                    "& .Mui-disabled": {
-                                        color: 'white',
-                                        '-webkit-text-fill-color': 'white'
-                                    },
-                                    '& .MuiInputBase-root.Mui-disabled': {
-                                        color: 'white',
-                                        '-webkit-text-fill-color': 'white'
-                                    },
+                                    display: 'flex',
+                                    justifyContent: 'space-between',
+                                    padding: '15px',
+                                    color: 'white',
+                                    border: '2px solid #8105DA',
+                                    backgroundColor: colors.primaryBackgroundLight,
+                                    borderRadius: '14px',
+                                    fontSize: '20px'
                                 }}
-                                InputProps={{
-                                    style: {
-                                        color: 'white',
-                                        border: '2px solid #8105DA',
-                                        backgroundColor: colors.primaryBackgroundLight,
-                                        borderRadius: '14px',
-                                        fontSize: '20px'
-                                    },
-                                    endAdornment: (
-                                        <InputAdornment>
-                                            <img src={Wallet} alt="Connect Wallet" />
-                                        </InputAdornment>
-                                    )
-                                }}
-                            />
+                                endIcon={
+                                    <InputAdornment>
+                                        <img src={Wallet} alt="Connect Wallet" />
+                                    </InputAdornment>
+                                }
+                            >
+                                WALLET CONNECT
+                            </Button>
                         </Grid>
                         <Grid />
                     </Grid>

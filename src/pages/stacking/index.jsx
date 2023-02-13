@@ -1,6 +1,5 @@
 import { StackBanner, StackButton, Diagrams, ApplyIncubation, FullTable } from "components/stacking";
 import { useStackingContext } from "context/stackingContext";
-import { Animate } from "components/global/animation";
 import { colors } from "constants/colors";
 
 const Stacking = () => {
@@ -10,18 +9,10 @@ const Stacking = () => {
         <div style={{
             backgroundColor: colors.primaryBackground
         }}>
-            <Animate.FadeUp>
-                <StackBanner />
-            </Animate.FadeUp>
-            <Animate.FadeUp>
-                <StackButton />
-            </Animate.FadeUp>
-            <Animate.FadeUp>
-                {isLeaderBoardButtonClicked ? <FullTable /> : <Diagrams />}
-            </Animate.FadeUp>
-            <Animate.FadeUp>
-                <ApplyIncubation />
-            </Animate.FadeUp>
+            <StackBanner />
+            <StackButton />
+            {isLeaderBoardButtonClicked ? <FullTable /> : <Diagrams />}
+            <ApplyIncubation />
         </div>
     )
 };

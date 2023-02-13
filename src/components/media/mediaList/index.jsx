@@ -1,3 +1,4 @@
+import { Animate } from "components/global/animation";
 import React from "react";
 import styled from "styled-components";
 
@@ -7,23 +8,25 @@ export const MediaList = () => {
       <FlexRow>
         {[1, 2, 3, 4, 5, 6].map(() => {
           return (
-            <RoyalPurpleFlexColumn>
-              <Img2 src={`https://file.rendit.io/n/hXUF8YEU8cD5Z1ffxD5u.png`} />
-              <Text1>Metaverse</Text1>
-              <Paragraph>
-                Decoded : Metaverse And The <br />
-                Future Of Banking
-              </Paragraph>
-              <Paragraph1>
-                The metaverse can help the healthcare <br />
-                fraternity by providing trainings on
-                <br />
-                understanding medical tools and…
-              </Paragraph1>
-              <FlexColumn>
-                <Text2>READ MORE</Text2>
-              </FlexColumn>
-            </RoyalPurpleFlexColumn>
+            <Animate.ScaleIn>
+              <RoyalPurpleFlexColumn>
+                <Img2 src={`https://file.rendit.io/n/hXUF8YEU8cD5Z1ffxD5u.png`} />
+                <Text1>Metaverse</Text1>
+                <Paragraph>
+                  Decoded : Metaverse And The <br />
+                  Future Of Banking
+                </Paragraph>
+                <Paragraph1>
+                  The metaverse can help the healthcare <br />
+                  fraternity by providing trainings on
+                  <br />
+                  understanding medical tools and…
+                </Paragraph1>
+                <FlexColumn>
+                  <Text2><Animate.FadeUp>READ MORE</Animate.FadeUp></Text2>
+                </FlexColumn>
+              </RoyalPurpleFlexColumn>
+            </Animate.ScaleIn>
           )
         })}
       </FlexRow>
@@ -32,16 +35,19 @@ export const MediaList = () => {
 };
 
 const FlexRow = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 25px;
+  padding: 100px;
+  @media (max-width: 700px) {
+    padding: 50px
+  }
 `;
 const RoyalPurpleFlexColumn = styled.div`
-  width: 400px;
+  width: 350px;
   height: 433px;
   display: flex;
   flex-direction: column;
@@ -110,11 +116,9 @@ const Text2 = styled.div`
   letter-spacing: -0.32px;
 `;
 const FrameRootRootRoot = styled.div`
-  gap: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px;
   background-color: #06021a;
   overflow: hidden;
 `;

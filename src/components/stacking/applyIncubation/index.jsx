@@ -1,3 +1,4 @@
+import { Animate } from "components/global/animation";
 import React from "react";
 import styled from "styled-components";
 
@@ -8,15 +9,21 @@ export const ApplyIncubation = () => {
         <Image1 src={`https://file.rendit.io/n/FWpF9deVUKxvsF56AXO0.svg`} />
         <FlexColumn>
           <Text1>
-            APPLY FOR PROJECT
-            <br />
-            INCUBATION{" "}
+            <Animate.FadeUp>
+              APPLY FOR PROJECT
+              <br />
+              INCUBATION{" "}
+            </Animate.FadeUp>
           </Text1>
           <Paragraph>
-            If you want to lanuch an IGO/IDO, It will be your perfect choice
+            <Animate.FadeUp>
+              If you want to lanuch an IGO/IDO, It will be your perfect choice
+            </Animate.FadeUp>
           </Paragraph>
           <PurpleHeartFlexColumn>
-            <Text2>APPLY FOR IGO</Text2>
+            <Text2>
+              APPLY FOR IGO
+            </Text2>
           </PurpleHeartFlexColumn>
         </FlexColumn>
         <Image2 src={`https://file.rendit.io/n/vTXXdCInuuHoO01kR0XD.svg`} />

@@ -1,3 +1,4 @@
+import { Animate } from "components/global/animation";
 import React from "react";
 import styled from "styled-components";
 import './style.css';
@@ -15,10 +16,12 @@ export const DaoMain = () => {
               <Image7
                 src={`https://file.rendit.io/n/6BltUXCyYD1rJM5i3sZY.svg`}
               />
-              <Text1>Xlaaverse</Text1>
+              <Text1>
+                <Animate.FadeUp>Xlaaverse</Animate.FadeUp>
+              </Text1>
             </Group2>
             <Balance3>
-              Balance<Balance> : 0</Balance>
+              <Animate.FadeUp> Balance<Balance> : 0</Balance></Animate.FadeUp>
             </Balance3>
           </Group1>
           <ShockingPinkFlexRow>
@@ -28,7 +31,7 @@ export const DaoMain = () => {
               className="amount-input"
             />
             <RoyalPurpleFlexColumn>
-              <Text2>MAX</Text2>
+              <Animate.FadeUp><Text2>MAX</Text2></Animate.FadeUp>
             </RoyalPurpleFlexColumn>
           </ShockingPinkFlexRow>
           <Group1>
@@ -36,10 +39,10 @@ export const DaoMain = () => {
               <Image7
                 src={`https://file.rendit.io/n/6BltUXCyYD1rJM5i3sZY.svg`}
               />
-              <Text1>Xlaaverse</Text1>
+              <Text1><Animate.FadeUp>Xlaaverse</Animate.FadeUp></Text1>
             </Group2>
             <Balance3>
-              Balance<Balance> : 0.0000</Balance>
+              <Animate.FadeUp>Balance<Balance> : 0.0000</Balance></Animate.FadeUp>
             </Balance3>
           </Group1>
           <ShockingPinkFlexRow>
@@ -51,7 +54,7 @@ export const DaoMain = () => {
           </ShockingPinkFlexRow>
           <PurpleHeartFlexColumn>
             <FlexColumn>
-              <Text5>Swap</Text5>
+              <Text5><Animate.FadeUp>Swap</Animate.FadeUp></Text5>
             </FlexColumn>
           </PurpleHeartFlexColumn>
         </BlackFlexColumn1>
@@ -96,7 +99,7 @@ const RoyalPurpleFlexRow = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 20px;
   padding: 50px 18px;
   border-radius: 7px;
   background-color: #320750;

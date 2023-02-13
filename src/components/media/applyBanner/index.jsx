@@ -1,20 +1,21 @@
+import { Animate } from "components/global/animation";
 import React from "react";
 import styled from "styled-components";
 
 export const ApplyBanner = () => {
-    return (
-        <ApplyBannerWrapper>
-            <RoyalPurpleFlexColumn>
-                <FlexColumn>
-                    <Text1>Launch On Laaverse</Text1>
-                    <Text2>Full support in project incubation</Text2>
-                </FlexColumn>
-                <PurpleHeartFlexColumn>
-                    <Text3>APPLY NOW</Text3>
-                </PurpleHeartFlexColumn>
-            </RoyalPurpleFlexColumn>
-        </ApplyBannerWrapper>
-    );
+  return (
+    <ApplyBannerWrapper>
+      <RoyalPurpleFlexColumn>
+        <FlexColumn>
+          <Text1><Animate.FadeUp>Launch On Laaverse</Animate.FadeUp></Text1>
+          <Text2><Animate.FadeUp>Full support in project incubation</Animate.FadeUp></Text2>
+        </FlexColumn>
+        <PurpleHeartFlexColumn>
+          <Text3><Animate.ScaleIn>APPLY NOW</Animate.ScaleIn></Text3>
+        </PurpleHeartFlexColumn>
+      </RoyalPurpleFlexColumn>
+    </ApplyBannerWrapper>
+  );
 };
 
 const ApplyBannerWrapper = styled.div`
@@ -27,7 +28,7 @@ const ApplyBannerWrapper = styled.div`
 const RoyalPurpleFlexColumn = styled.div`
   display: flex;
   gap: 100px;
-  padding: 100px;
+  padding: 100px 200px;
   flex-direction: column;
   align-items: flex-start;
   background-color: rgba(50, 7, 81, 0.71);
