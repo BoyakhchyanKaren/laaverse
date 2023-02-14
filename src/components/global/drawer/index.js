@@ -1,5 +1,5 @@
 import { useDrawerContext } from 'context/drawerContext'
-import { useRef } from 'react';
+import { useCallback, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import useClickOutside from 'utils/clickOutside';
 import './styles.css';
@@ -13,12 +13,12 @@ const Drawer = () => {
         setShowDrawer(false);
     })
 
-    const navigateTop = () => {
+    const navigateTop = useCallback(() => {
         window.scrollTo({
             top: 0,
             behavior: "smooth",
         });
-    };
+    }, []);
 
     return (
         <div className={`m-nav ${showDrawer ? 'show' : ''} fixed top-0 left-0 w-[300px] h-screen z-50 `} ref={drawerRef}>

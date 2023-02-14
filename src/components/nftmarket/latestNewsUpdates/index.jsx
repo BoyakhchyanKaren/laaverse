@@ -11,9 +11,9 @@ export const LatestNewsUpdates = () => {
           <Animate.FadeUp><Text1>Latest News Update</Text1></Animate.FadeUp>
         </PurpleHeartFlexColumn>
         <Group>
-          {[1, 2, 3].map(() => {
+          {[1, 2, 3].map((key, index) => {
             return (
-              <Animate.FadeUp>
+              <Animate.FadeUp key={`${key}-${index}`}>
                 <RoyalPurpleFlexColumn>
                   <Group1>
                     <Group3>

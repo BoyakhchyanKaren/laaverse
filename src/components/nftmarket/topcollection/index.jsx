@@ -11,9 +11,9 @@ export const TopCollectionItems = () => {
       flexDirection: 'row',
       gap: '20px',
     }}>
-      {[1, 2, 3, 4].map(() => {
+      {[1, 2, 3, 4].map((key, index) => {
         return (
-          <Animate.FadeUp>
+          <Animate.FadeUp key={`${key}-${index}`}>
             <RoyalPurpleFlexColumn1>
               <Group>
                 <Group3>

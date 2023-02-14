@@ -7,9 +7,9 @@ export const TopSeller = () => {
     <FrameRootRootRoot>
       <Text2><Animate.FadeUp>Top Seller</Animate.FadeUp></Text2>
       <BlackFlexRow>
-        {[1, 2, 3, 4].map(() => {
+        {[1, 2, 3, 4].map((key, index) => {
           return (
-            <BlackFlexColumn>
+            <BlackFlexColumn key={`${key}-${index}`}>
               <Group13>
                 <Image1 src={`https://file.rendit.io/n/ka5Kb5BoNvAu9A8nW3wc.png`} />
                 <Group15>

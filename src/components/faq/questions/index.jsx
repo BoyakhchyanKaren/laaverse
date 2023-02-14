@@ -17,13 +17,19 @@ const Questions = () => {
             }}>
             {questions.map((question) => {
                 return (
-                    <Grid item container justifyContent={"space-between"} padding={5}
+                    <Grid
+                        key={question.id}
+                        item
+                        container
+                        justifyContent={"space-between"}
+                        padding={5}
                         sx={{
                             borderBottom: '1px solid white',
                             [theme.breakpoints.down('md')]: {
                                 gap: '10px'
                             }
-                        }}>
+                        }}
+                    >
                         <Grid>
                             <Typography sx={{
                                 color: 'white',

@@ -1,14 +1,15 @@
+import { useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import './styles.css';
 
 const NavLinks = () => {
-    const navigateTop = () => {
+    const navigateTop = useCallback(() => {
         window.scrollTo({
             top: 0,
             behavior: "smooth",
         });
-    };
-    
+    }, []);
+
     return (
         <ul className='w-full flex items-center gap-6 text-pure text-semibold navLinks'>
             <li className='hover:text-primaryLight'>

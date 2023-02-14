@@ -8,9 +8,9 @@ export const DiagramFlex = () => {
     <Grid item container direction={"column"} xl={4} lg={4} py={4} gap={7.5} justifyContent={"space-between"}>
 
       {
-        [1, 2, 3].map(() => {
+        [1, 2, 3].map((key, index) => {
           return (
-            <Grid item container direction={"row"} justifyContent={'space-between'} sx={{
+            <Grid key={`${key}-${index}`} item container direction={"row"} justifyContent={'space-between'} sx={{
               backgroundColor: '#320751',
               borderRadius: '8px',
               position: 'relative',

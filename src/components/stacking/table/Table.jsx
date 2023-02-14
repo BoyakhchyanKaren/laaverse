@@ -13,7 +13,7 @@ import Paper from '@mui/material/Paper';
 import { visuallyHidden } from '@mui/utils';
 import tableData from 'constants/tableData';
 import { colors } from 'constants/colors';
-
+import { headCells } from 'constants/headCell';
 
 function descendingComparator(a, b, orderBy) {
     if (b[orderBy] < a[orderBy]) {
@@ -31,10 +31,6 @@ function getComparator(order, orderBy) {
         : (a, b) => -descendingComparator(a, b, orderBy);
 }
 
-// Since 2020 all major browsers ensure sort stability with Array.prototype.sort().
-// stableSort() brings sort stability to non-modern browsers (notably IE11). If you
-// only support modern browsers you can replace stableSort(exampleArray, exampleComparator)
-// with exampleArray.slice().sort(exampleComparator)
 function stableSort(array, comparator) {
     const stabilizedThis = array.map((el, index) => [el, index]);
     stabilizedThis.sort((a, b) => {
@@ -46,39 +42,6 @@ function stableSort(array, comparator) {
     });
     return stabilizedThis.map((el) => el[0]);
 }
-
-const headCells = [
-    {
-        id: 'rank',
-        numeric: false,
-        disablePadding: true,
-        label: '#RANK',
-    },
-    {
-        id: 'name',
-        numeric: true,
-        disablePadding: false,
-        label: 'NAME',
-    },
-    {
-        id: 'public_key',
-        numeric: true,
-        disablePadding: false,
-        label: 'PUBLIC KEY',
-    },
-    {
-        id: 'locked',
-        numeric: true,
-        disablePadding: false,
-        label: 'LOCKED',
-    },
-    {
-        id: 'balance',
-        numeric: true,
-        disablePadding: false,
-        label: 'BALANCE',
-    },
-];
 
 function EnhancedTableHead(props) {
     const { order, orderBy, onRequestSort } =
@@ -176,7 +139,6 @@ export default function EnhancedTable() {
     };
 
 
-    // Avoid a layout jump when reaching the last page with empty tableData.
     const emptyRows =
         page > 0 ? Math.max(0, (1 + page) * rowsPerPage - tableData.length) : 0;
     return (

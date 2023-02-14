@@ -6,9 +6,9 @@ export const MediaList = () => {
   return (
     <FrameRootRootRoot>
       <FlexRow>
-        {[1, 2, 3, 4, 5, 6].map(() => {
+        {[1, 2, 3, 4, 5, 6].map((key, index) => {
           return (
-            <Animate.ScaleIn>
+            <Animate.ScaleIn key={`${key}-${index}`}>
               <RoyalPurpleFlexColumn>
                 <Img2 src={`https://file.rendit.io/n/hXUF8YEU8cD5Z1ffxD5u.png`} />
                 <Text1>Metaverse</Text1>

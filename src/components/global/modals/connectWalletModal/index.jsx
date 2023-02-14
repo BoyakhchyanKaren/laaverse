@@ -5,6 +5,7 @@ import Fox from '../../../../assets/svgs/fox.svg';
 import Wallet from '../../../../assets/svgs/walletConect.svg';
 import { colors } from 'constants/colors';
 import { CloseOutlined } from '@mui/icons-material';
+import { useCallback } from 'react';
 
 const style = {
     position: 'absolute',
@@ -20,7 +21,7 @@ const style = {
 
 const ConnectWalletModal = () => {
     const { showModal, setShowModal } = useModalsContext();
-    const handleClose = () => setShowModal(false);
+    const handleClose = useCallback(() => setShowModal(false), [setShowModal]);
 
     return (
         <div>
